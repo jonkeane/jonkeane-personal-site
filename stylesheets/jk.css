@@ -131,12 +131,12 @@ div.doc-section {
 
 }
 
-/* Mobile */
+/* Mobile (portrait) */
 @media only screen and (max-width: 767px) {
     div.container {
 	padding-top: 0px; }
     header h1 { font-size: 34px; line-height: 37px; }
-    #links { display: none; }
+
     nav { position: relative; }
     nav img#jon {
 	display: none;
@@ -171,17 +171,40 @@ div.doc-section {
 		margin: 0;
 		background: #ddd;
 		font-size: 13px; }
-    #logo { text-align: left; }
-    #examples .four.columns {
-	padding-top: 30px;
+
+    nav ul#mainnav {
+	width: 300px;
+    }
+
+    nav ul#external {
+	width: 300px;
+    }
+
+nav ul#mainnav li a {
+	padding: 0 5px;
+    }
+
+
     }
 }
 
+
+
 /* Mobile Landscape */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-    nav ul {
-/*	display: none; */
+
+    nav ul#mainnav {
+	width: 420px;
     }
+
+    nav ul#external {
+	width: 420px;
+    }
+
+nav ul#mainnav li a {
+	padding: 0 20px;
+    }
+
 }
 
 /* Non 960 */
@@ -213,8 +236,6 @@ div.doc-section {
 @media only screen and (min-width: 480px) and (max-width: 767px) and (max-device-width: 1000px) {}
 
 /* Anything smaller than standard 960 on a device */
-@media only screen and (max-width: 959px) and (max-device-width: 1000px) {
-    .resize { display: none; }
-}
+@media only screen and (max-width: 959px) and (max-device-width: 1000px) {}
 
 
