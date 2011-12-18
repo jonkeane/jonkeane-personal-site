@@ -203,6 +203,10 @@ nav ul#external li a:focus {
     color: #EEE;
 }
 
+header img#mark {
+    float: right;
+    margin: 3px 0 0 0;
+}
 
 header h1 {
     font-size: 52px;
@@ -255,6 +259,10 @@ div.doc-section {
     div.container {
 	padding-top: 0px; }
     header h1 { font-size: 34px; line-height: 37px; }
+    header img#mark {
+	height: 23px;
+	margin: -1px 0 0 0;
+    }
 
     nav { position: relative; }
     nav img#jon,
