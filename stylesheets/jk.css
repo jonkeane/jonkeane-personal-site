@@ -1,4 +1,102 @@
-/* http://colorschemedesigner.com/#2u11Tw0w0w0w0 */
+/* Palette color codes */
+/* Palette URL: http://colorschemedesigner.com/#3we1Mw0w0w0w0 */
+/* Not using the secondary a color, to archetypally blue for my tastes */
+
+.primary-1 { background-color: #006699 }
+.primary-2 { background-color: #336666 }
+.primary-3 { background-color: #003366 }
+.primary-4 { background-color: #3399CC }
+.primary-5 { background-color: #6699CC }
+
+.secondary-a-1 { background-color: #003399 }
+.secondary-a-2 { background-color: #333399 }
+.secondary-a-3 { background-color: #003366 }
+.secondary-a-4 { background-color: #3366CC }
+.secondary-a-5 { background-color: #6699CC }
+
+.secondary-b-1 { background-color: #009966 }
+.secondary-b-2 { background-color: #336666 }
+.secondary-b-3 { background-color: #006666 }
+.secondary-b-4 { background-color: #33CC99 }
+.secondary-b-5 { background-color: #66CCCC }
+
+.complement-1 { background-color: #FF9900 }
+.complement-2 { background-color: #CC9933 }
+.complement-3 { background-color: #996600 }
+.complement-4 { background-color: #FF9933 }
+.complement-5 { background-color: #FFCC66 }
+
+/* end Palette color codes */
+
+
+
+/* From base, supersedes */
+
+
+
+/* #Typography
+================================================== */
+	h1, h2, h3, h4, h5, h6 {
+		color: #181818;
+		font-family: Azuro; /*, "Georgia", "Times New Roman", Helvetica, Arial, sans-serif; */
+		font-weight: normal; }
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+	h1 { color: #181818; font-size: 46px; line-height: 50px; margin-bottom: 14px;}
+	h2 { color: #009966; font-size: 35px; line-height: 40px; margin-bottom: 10px;}
+	h3 { color: #006699; font-size: 21px; line-height: 30px; margin-bottom: 8px; font-weight: bold; }
+	h4 { color: #009966; font-size: 21px; line-height: 30px; margin-bottom: 4px; }
+	h5 { color: #006699; font-size: 14px; line-height: 21px;  font-weight: bold;}
+	h6 { color: #009966; font-size: 14px; line-height: 21px; }
+	.subheader { color: #777; }
+
+	p { margin: 0 0 20px 0; }
+	p img { margin: 0; }
+	p.lead { font-size: 21px; line-height: 27px; color: #777;  }
+
+	em { font-style: italic; }
+	strong { font-weight: bold; color: #009966; }
+	small { font-size: 80%; }
+
+/*	Blockquotes  */
+	blockquote, blockquote p { font-size: 17px; line-height: 24px; color: #666; font-style: italic; }
+	blockquote { margin: 0 0 20px; padding: 9px 20px 0 19px; border-left: 2px solid #009966; }
+	blockquote cite { display: block; font-size: 12px; color: #555; }
+	blockquote cite:before { content: "\2014 \0020"; }
+	blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #555; }
+
+	hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
+
+
+/* #Links
+================================================== */
+	a, a:visited { color: #006699; text-decoration: none; outline: 0; }
+	a:hover, a:focus { color: #003366; }
+	p a, p a:visited { line-height: inherit; }
+
+
+/* #Lists
+================================================== */
+	ul, ol { margin-bottom: 10px; }
+	ul { list-style: none outside; }
+	ol { list-style: decimal; }
+	ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
+	ul.square { list-style: square outside; }
+	ul.circle { list-style: circle outside; }
+	ul.disc { list-style: disc outside; }
+	ul ul, ul ol,
+	ol ol, ol ul { margin: 4px 0 5px 30px; font-size: 90%;  }
+	ul ul li, ul ol li,
+	ol ol li, ol ul li { margin-bottom: 6px; }
+	li { line-height: 18px; margin-bottom: 12px; }
+	ul.large li { line-height: 21px; }
+	li p { line-height: 21px; }
+
+/* end base changing */
+
+
+
+
+
 html, body {
   background-image: url("../images/white_texture.png");
 }
@@ -14,7 +112,7 @@ html, body {
 
 a.cite {
   text-decoration: none;
-  border-bottom: 1px DASHED #AAA;
+  /* border-bottom: 1px DASHED #AAA; */
 }
 
 .alignRight {
@@ -35,7 +133,7 @@ a.cite {
   margin-bottom: 1em;
 
   
-  border-top: solid #888 1px;
+  border-top: solid #FF9900 1px;
   padding: 5px;
   font-size: 12px;
   line-height: 14px;
@@ -70,12 +168,10 @@ nav ul li a,
 nav ul li a:visited,
 nav ul li a:active  {
     font-size: 20px;
-    color: #555;
     text-decoration: none;
     font-weight: bold; }
 nav ul li a:hover,
-nav ul li a:focus {
-    color: #222; }
+nav ul li a:focus {}
 
 nav ul#external {
     display: block;
@@ -89,7 +185,9 @@ nav ul#external li {
     padding: 0 0;
     margin: 0 0 5px 0; 
 }
-nav ul#external li a {
+nav ul#external li a,
+nav ul#external li a:visited,
+nav ul#external li a:active {
     display: block;
     text-decoration: none;
     height: 29px;
@@ -99,6 +197,12 @@ nav ul#external li a {
     background: #767676;
     color: #EEE;
 }
+nav ul#external li a:hover,
+nav ul#external li a:focus {
+    background: #006699;
+    color: #EEE;
+}
+
 
 header h1 {
     font-size: 52px;
@@ -108,14 +212,13 @@ header h1 {
 }
 hr.large {
     border: none;
-    height: 10px;
-    background: #767676;
+    height: 6px;
     margin: 10px 0 0 0; }
 
 hr {
     border: none;
     height: 4px;
-    background: #767676;
+    background: #FF9900;
     margin: 10px 0 0 0; }
 div.doc-section {
     margin: 5px 0px 30px 0px; }

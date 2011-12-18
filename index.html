@@ -156,7 +156,7 @@
         </blockquote>
 	
    
-	<h4>Scrambling</h4>
+	<h3>Scrambling</h3>
         
         <p>I conducted a web-based experiment to look at scrambling and it's constraints in a variety of languages. I have so far mostly looked into binding and the effect that scrambling has on binding in Japanese.
         </p>
@@ -165,7 +165,7 @@
         </blockquote>
 	
    
-	<h4>Other</h4>
+	<h3>Other</h3>
         
         <p>
           I am in the process of editing the proceedings of the Chicago Linguistic Society's 46th Annual meeting.
@@ -180,11 +180,9 @@
   
   <p>Some interesting, and hopefully helpful tools for others. Most of it is software in a very, very broad sense of the word.</p>
    
-  <h3><a href="http://github.com/jonkeane/fingerspell">Fingerspell LaTeX package</a></h3>
-	
-  <p>There are numerous ways of glossing <span style="font-variant: small-caps;">asl</span> lexical items. In an effort to keep these glosses integrated in running text I have adopted clear and elegant typographic conventions of <a class="cite" href="http://scholar.google.com/scholar?q=One+hand+or+two%3F+nativisation+of+fingerspelling+in+ASL+and+BANZSL" title="Cormier, K., Schembri, A., and Tyrone, M. E. (2008). One hand or two? nativisation of fingerspelling in ASL and BANZSL. Sign Language &amp; Linguistics, 11(1):3–44.">Cormier et al. (2008)</a>. Not only are this consistent with separating <span style="font-variant: small-caps;">asl</span> forms from the text as well as reliably marking the difference between <span style="font-variant: small-caps;">asl</span> native signs (smallcaps: <span style="font-variant: small-caps;">group</span>) and fingerspelled forms (smallcaps, with hyphens: <span style="font-variant: small-caps;">a-t-l-a-n-t-i-c</span>) but it also is easier to read than many other systems. Following from this, single finger spelled letters will be flanked by hyphens on either side (<span style="font-variant: small-caps;">eg -t-</span>).</p>
+  <h3>Fingerspell LaTeX package</h3>
   
-  <p>I've developed the <a href="http://github.com/jonkeane/fingerspell">Fingerspell LaTeX package</a> to make it easier to typeset examples of fingerspelling. It allows for fingerspelled words, as well as lists of individual letters with hyphens on either side. On top of dealing with setting smallcaps and adding hyphens, it also keeps words together, as well as protecting the hyphens around a letter near line breaks. See the readme at GitHub for more information.</p>
+  <p>I've developed <a href="http://github.com/jonkeane/fingerspell">the Fingerspell LaTeX package</a> to make it easier to typeset examples of fingerspelling. It allows for fingerspelled words, as well as lists of individual letters with hyphens on either side. On top of dealing with setting smallcaps and adding hyphens, it also keeps words together, as well as protecting the hyphens around a letter near line breaks. See the readme at GitHub for more information.</p>
        
 <h3><span style="font-variant: small-caps;">asl</span> fingerspelling chart</h3>
 
@@ -205,15 +203,8 @@
 
 	
 <h4>Minion Pro</h4>
-<p>
-There are a few walkthroughs online for installing Minion Pro. The two that standout are <a href="http://carlo-hamalainen.net/blog/?p=8">Carlo Hamalainen's</a> and <a href="http://jklukas.blogspot.com/2010/02/installing-minionpro-tex-package.html">Jeff Klukas's</a>. Using both of those as a guide I have created a bash script that runs with very little user intervention. The major caveat is that there is also very little error checking, so if a step fails the script usually continues, I might fix this later. If you have any comments or suggestions please <a href="mailto:jonkeane@uchicago.edu">let me know</a>.
+<p>I've created <a href="http://github.com/jonkeane/MinionProforLaTeX">a bash script</a> that installs Minion Pro to a local tex live tree with very little user intervention.
 </p>
-
-<ol>
-  <li>Grab <a href="MinionProforLaTeX.sh">MinionProforLaTeX.sh</a></li>
-  <li>Locate Minion Pro files and change that variable at the beginning of the script. (minion_folder)</li>
-  <li>Determine which version of Minion Pro you have, and change which encoding file is used at the beginning of the script. (encoding)</li>
-</ol>
 
 <h4>otfinst.py</h4>
 <p>
