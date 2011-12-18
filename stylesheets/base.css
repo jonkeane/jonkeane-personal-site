@@ -269,7 +269,7 @@
 	ul.tabs:after {
 	  clear: both; }
 	ul.tabs {
-	  zoom: 1; }
+	  /* zoom: 1; for ie only -- disabled for validation */ }
 
 
 /* #Forms
@@ -306,8 +306,8 @@
 	textarea:focus {
 		border: 1px solid #aaa;
  		color: #444;
- 		-moz-box-shadow: 0 0 3px rgba(0,0,0,.2);
-		-webkit-box-shadow: 0 0 3px rgba(0,0,0,.2);
+ 		-moz-box-shadow: 0px 0px 3px rgba(0,0,0,.2);
+		-webkit-box-shadow: 0px 0px 3px rgba(0,0,0,.2);
 		box-shadow:  0 0 3px rgba(0,0,0,.2); }
 	textarea {
 		min-height: 60px; }

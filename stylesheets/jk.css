@@ -13,7 +13,6 @@ html, body {
 }
 
 a.cite {
-    # cursor: pointer;
   text-decoration: none;
   border-bottom: 1px DASHED #AAA;
 }
@@ -22,13 +21,27 @@ a.cite {
   text-align: right;
 }
 
-conf p{
+.conf p{
     margin-bottom: 10px;
 }
 
-conf .alignRight{
-    margin-top: -13px;
+.conf .alignRight{
+    margin-top: -10px;
     margin-bottom: 20px;
+}
+
+.footer {
+  margin-top: 1em;
+  margin-bottom: 1em;
+
+  
+  border-top: solid #888 1px;
+  padding: 5px;
+  font-size: 12px;
+  line-height: 14px;
+}
+.footer p{
+    margin:0;
 }
 
 div.container {
@@ -40,9 +53,14 @@ nav {
     width: 160px; }
 nav img {
     width: 160px;
-    margin: 0 0 20px 0;
+    margin: 20px 0 20px 0;
     padding: 0;
 }
+
+nav img#jon {
+    margin: 0 0 20px 0;
+}
+
 nav ul {
     float: left;  }
 nav ul li {
@@ -63,7 +81,6 @@ nav ul#external {
     display: block;
     margin: 0;
     padding: 0;
-    # border-top: solid 4px #ddd;
     width: 160px;
 }
 
@@ -88,7 +105,6 @@ header h1 {
     line-height: 61px;
     letter-spacing: -1px;
     font-weight: bold;
-    # font-family: "Georgia", "Times New Roman", Helvetica, Arial, sans-serif; 
 }
 hr.large {
     border: none;
@@ -138,14 +154,14 @@ div.doc-section {
     header h1 { font-size: 34px; line-height: 37px; }
 
     nav { position: relative; }
-    nav img#jon {
+    nav img#jon,
+    nav img#html5 {
 	display: none;
     }
     nav ul#mainnav {
 	display: block;
 	margin: 0 0 0 0;
 	padding: 0;
-	# border-top: solid 4px #ddd;
 	width: 420px;
     }
 
@@ -184,8 +200,6 @@ nav ul#mainnav li a {
 	padding: 0 5px;
     }
 
-
-    }
 }
 
 
