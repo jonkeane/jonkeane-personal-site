@@ -99,7 +99,9 @@
   <!-- <h2>Introduction</h2> -->
   <p>I am a PhD student in <a href="http://linguistics.uchicago.edu">Linguistics</a> at the <a href="http://uchicago.edu">University of Chicago</a>. I also work as a research assistant in the <a href="http://signlanguagelab.uchicago.edu">Sign Language Linguistics Lab</a> as well as the <a href="http://clml.uchicago.edu">Chicago Language Modeling Lab</a>. I have many research interests, particularly articulatory phonetics and phonology, morphology, and computational approaches to each. I am currently working on projects involving sign language phonetics and phonology.</p>
 
- <p>Since the fall of 2009 I've been working with a research group consisting of researchers specializing in linguistics, speech and language processing, and computer vision problems, with the goal of developing automated sign language recognition tools. This collaboration fostered my interest in the phonetics of fingerspelling. I hope to continue to develop models and tools that contribute both to our knowledge of phonetics generally, as well as inform automatic recognizers of fingerspelling.</p>
+<p>Broadly speaking I'm interested in how humans use their bodies to communicate both linguistically and non-linguistically. My primary focus is on how people, who use sign languages, use their body, arms, and hands in linguistic systems. How are the infinite possible configurations for a given articulator divided into meaningful groups (ie phonological units)? How much variation is allowed within these groups? What are the factors that contribute to this variation?</p>
+  
+ <p>Since the fall of 2009 I've been working with a research group consisting of researchers specializing in linguistics, speech and language processing, and computer vision, with the goal of developing automated sign language recognition tools. This collaboration fostered my interest in the phonetics of sign languages. I hope to continue to develop models and tools that contribute both to our knowledge of phonetics generally, as well as inform automatic recognizers of fingerspelling.</p>
 </div>
 <hr />
 
@@ -108,36 +110,24 @@
 <div class="doc-section clearfix" id="research">
   <h2>Research</h2>
 
-  <p> For a mostly current list of my publications please see my <a href="http://pubs.jonkeane.com">publications page</a>.</p>
+  <p> For a mostly current list of my publications please see <a href="http://pubs.jonkeane.com">my publications</a>.</p>
 
-        <h3><span style="font-variant: small-caps;">asl</span> fingerspelling</h3>
-	<p>
-          Since the fall of 2009 I've been working with a research group consisting of researchers specializing in linguistics, speech and language processing, and computer vision problems, with the goal of developing automated sign language recognition tools. This collaboration fostered my interest in the phonetics of fingerspelling. 
-        </p>
+        <h3>American Sign Language (<span style="font-variant: small-caps;">asl</span>) fingerspelling</h3>
 
-	<p>Fingerspelling is used anywhere from 12 to 35
+  <p>Fingerspelling is used anywhere from 12 to 35
 	percent of the time in <span style="font-variant:
 	small-caps;">asl</span>, (<a class="cite"
 	href="http://scholar.google.com/scholar?q=%22How+the+alphabet+came+to+be+used+in+a+sign+language%22"
 	title="C. Padden and D. Gunsauls. How the alphabet came to be used in a sign language. Sign Language Studies, 4:10–33, 2003.">Padden and Gunsauls, 2003</a>) and as such should not
 	be set aside as extralinguistic. There has only been a small amount of information put together on the phonetics of fingerspelling. The only work on fingerspelling phonetics explicitly that I've found is (<a class="cite" href="http://scholar.google.com/scholar?q=%22The+phonetics+of+fingerspelling%22" title="S. Wilcox. The phonetics of fingerspelling. John Benjamins Publishing Company, 1992.">Wilcox 1992</a>) as well as (<a class="cite" href="http://scholar.google.com/scholar?q=%22Interarticulator+co-ordination+in+deaf+signers+with+parkinson’s+disease%22" title="M. Tyrone, J. Kegl, and H. Poizner. Interarticulator co-ordination in deaf signers with parkinson’s disease. Neuropsychologia, 37(11):1271–1283, 1999.">Tyrone et al. 1999</a>).</p>
 
-  <p>My current work explores how fingerspelling production, with the ultimate goal of describing and modeling variation that exists in handshape, orientation, timing, &amp;c. We are working on developing a system for coding fingerspelling phonetically that is reliable and easy to implement.</p>
+  <p>My current work explores how fingerspelling production, with the ultimate goal of describing and modeling variation that exists in handshape, orientation, timing, &amp;c.</p>
 
+  <h4>Dissertation project</h4>
+  <p>The aim of my dissertation is to explore handshape as a linguistic system. I'm especially interested in how contextual variation can be modeled based on linguistic (eg articulator activation, phonological features) as well as non-linguistic (eg physiology) factors. To test theories of this variation (as well as others about phonetics, phonology, and their interface), I study how signers produce <span style="font-variant: small-caps;">asl</span> fingerspelling. Studying fingerspelling provides opportunities to find contextual and time conditioned variation in handshape that are relatively limited in signing. This work builds on phonological systems of sign language production, but with a detailed focus on the specific aspects that make up handshapes in <span style="font-variant: small-caps;">asl</span>.</p>
 
-<blockquote class="go">
-          <p><b>18 October 2010</b> <br/> I successfully defended my first qualifying paper <i>Segment duration and the phonetics of fingerspelling in <span style="font-variant: small-caps;">asl</span></i>.</p>
-        </blockquote>
-	
-   
-	<h3>Scrambling</h3>
-        
-        <p>I conducted a web-based experiment to look at scrambling and it's constraints in a variety of languages. I have so far mostly looked into binding and the effect that scrambling has on binding in Japanese.
-        </p>
-		<blockquote class="go">
-          <p><b>24 May 2011</b> <br/> I successfully defended my second qualifying paper <i>A new look at Japanese Scrambling</i>.</p>
-        </blockquote>
-	
+<p>I use a variety of methods including annotated video data and instrumented capture to generate large, robust, quantitative sets of data. Similar methods have a (relatively) long tradition in spoken language linguistics, however they are only beginning to be used to look at signed languages.</p>
+
 </div>
 <hr />
 
@@ -149,11 +139,21 @@
    <h3>Pyelan</h3>
   
   <p>I've developed <a href="https://github.com/jonkeane/pyelan">pyelan</a>, a python module that allows for eas[y | ier] extraction and manipulation of annotation data from <a href="http://www.lat-mpi.eu/tools/elan/">elan</a> files. Although this is very much a work in progress, some core functionality has been implemented (reading, writing, and some manipulation of eaf files). Please feel free to use, fork, submit issues, and submit pull requests.</p>
-   
-  <h3>Fingerspell LaTeX package</h3>
+
+   <h3>PhaseSpaceHelper for PhaseSpace motion capture systems</h3>
+ 
+  <p><a href="https://github.com/jonkeane/PhaseSpaceHelper">PhaseSpaceHelper</a> is a python module that contains some convenience functions to deal with synchronizing stimulus presentation and data collection (through <span style="font-variant: small-caps;">smpte</span> timecode), as well as verifying the accuracy of calibration given a set object. Warning: this is very much in active development right now.</p>
   
-  <p>I've developed <a href="http://github.com/jonkeane/fingerspell">the Fingerspell LaTeX package</a> to make it easier to typeset examples of fingerspelling. It allows for fingerspelled words, as well as lists of individual letters with hyphens on either side. On top of dealing with setting smallcaps and adding hyphens, it also keeps words together, as well as protecting the hyphens around a letter near line breaks. See the readme at GitHub for more information.</p>
-       
+  <h3>SLGloss LaTeX package</h3>
+  
+  <p>In collaboration with <a href="https://files.nyu.edu/ik747/public/">Itamar Kastner</a>, I've helped developed <a href="https://github.com/itamarkast/slgloss">the SLGloss LaTeX package</a> to make it easier to typeset sign language glosses. It has three main features:
+<ol>
+  <li> It typesets sign glosses in smallcaps to integrate typographically with surrounding text, as well as allows for non-manual markings over specific constituents.</li>
+  <li> It typesets fingerspelled words in small caps with hyphens between the letters</li>
+  <li>It typesets lists of individual (fingerspelled) letters with hyphens on either side.</li>
+  </ol>
+  </p>
+  
 <h3><span style="font-variant: small-caps;">asl</span> fingerspelling chart</h3>
 
 <img src="Asl_alphabet_gallaudet.jpg" alt="Chart of ASL fingerspelling" />
