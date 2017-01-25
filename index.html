@@ -9,11 +9,11 @@
 <!-- Basic Page Needs
 ================================================== -->
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>Jonathan Keane - Linguist</title>
+<title>Jonathan Keane - Data Scientist</title>
 <meta name="description" content="Jonathan Keane's Professional Website" />
 <meta name="author" content="Jonathan Keane" />
-<meta name="keywords" content="graduate student, research, teaching, linguistics, ASL, American Sign Language, fingerspelling, phonetics, computational, syntax, morphology" />
-<meta name="description" content="PhD student of Linguistics at the University of Chicago. Research interests include articulatory phonetics, syntax, morphology, and computational approaches, sign language phonetics and phonology, and scrambling cross linguistically. " />
+<meta name="keywords" content="Data science, predictive models, statistics, test driven development, software carpentry, data carpentry, data analysis, research, teaching, linguistics, ASL, American Sign Language, fingerspelling, phonetics, computational, syntax, morphology" />
+<meta name="description" content="Data scientist and software developer with a PhD in Linguistics. Interests include data science, software developement, predictive models, articulatory phonetics, and computational approaches to language modeling, sign language phonetics and phonology." />
 <meta name="robots" content="index, follow, noarchive" />
 <meta name="googlebot" content="noarchive" />
 
@@ -66,16 +66,19 @@
   <img id="jon" alt="Picture of Jonathan Keane" src="images/jonSquareRev.png" />
   <ul id="mainnav">
     <li><a href="#">Introduction</a></li>
+    <li><a href="#projects">Projects</a></li>
     <li><a href="#research">Research</a></li>
     <li><a href="#software">Software</a></li>
     <li><a href="#hardware">Hardware</a></li>
   </ul>
 
   <ul id="external">
+    <li><a href="keane-resume.pdf">resume</a></li>
     <li><a href="http://pubs.jonkeane.com">publications</a></li>
-    <li><a href="http://cv.jonkeane.com">cv</a></li>
+    <li><a href="http://cv.jonkeane.com">academic cv</a></li>
     <li><a href="http://blog.jonkeane.com">blog</a></li>
-    <li><a href="mailto:jonkeane@uchicago.edu">email</a></li>
+    <li><a href="https://github.com/jonkeane">github</a></li>
+	<li><a href="mailto:jkeane@gmail.com">email</a></li>
   </ul>
   </nav>
   <br/>
@@ -83,21 +86,49 @@
 <div class="twelve columns offset-by-one">
   <header>
   <!-- <img id="mark" src="images/jk.png" /> -->
-  <h1 class="remove-bottom">Jonathan Keane</h1>
+  <h1 class="remove-bottom">Jonathan Keane, PhD</h1>
  </header>
   <hr class="large" />
 <div class="doc-section clearfix" id="intro">
   <!-- <h2>Introduction</h2> -->
-  <p>I am a postdoctoral scholar at the <a href="http://gslcenter.uchicago.edu/">Center for Sign, Gesture, and Language</a> at the <a href="http://uchicago.edu">University of Chicago</a>. Previously, I worked as a research assistant in the <a href="http://signlanguagelab.uchicago.edu">Sign Language Linguistics Lab</a> as well as the <a href="http://clml.uchicago.edu">Chicago Language Modeling Lab</a>. I have many research interests, particularly articulatory phonetics and phonology, morphology, and computational approaches to each. I am currently working on projects involving sign language phonetics and phonology, how perception and action influence gesture, and how gesture and sign languages interact.</p>
 
-<p>Broadly speaking, I'm interested in how humans use their bodies to communicate both linguistically and non-linguistically. My primary focus is on how signers (people who use sign languages) use their body, arms, and hands in linguistic systems. How are the infinite number of possible configurations for a given articulator divided into meaningful groups (<em>ie</em> phonological units)? How much variation is allowed within these groups? What are the factors that contribute to this variation?</p>
+<p>I am a data scientist driven by a strong desire to find, analyze, and predict patterns in data with a commitment and focus on reproducibility and scalability. My training has strengths in software development, predictive models, social science, as well as quantitative and statistical reasoning, giving me a unique ability to synthesize and manage quantitative data for reliable insights.</p>
 
- <p>Since the fall of 2009, I've been working with a research group consisting of researchers who specialize in linguistics, speech and language processing, and computer vision, with the goal of developing automated sign language recognition tools. This collaboration fostered my interest in the phonetics of sign languages. I hope to continue to develop models and tools that contribute both to our knowledge of phonetics generally, and inform automatic recognizers of fingerspelling.</p>
 </div>
 <hr />
 
+<div  class="doc-section clearfix" id="projects">
+  <h2>Projects</h2>
+
+  <p>A selected list of past and current projects.</p>
+
+  <h3>Police Early Intervention System</h3>
+
+	<p> <a href="https://dssg.uchicago.edu/project/expanding-our-early-intervention-system-for-adverse-police-interactions/">project webpage</a> | <a href="https://github.com/dssg/police-eis/">project github repo</a> </p>
+
+  <p>Adverse interactions between police and the communities that they are tasked with protecting are an ongoing problem in the United States. The worst of these interactions have fatal consequences, but even interactions that don't result in death do irreparable harm and are devastating to the citizens involved. Preventing these interactions is critical to a just society and is one step in building trust between communities and police.</p>
+
+  <p>During the summer of 2016, I was a data science fellow with <a href="https://dssg.uchicago.edu/">Data Science for Social Good</a>. I worked on a team that developed an early intervention system in partnership with the Metropolitan Nashville Police Department. This system is designed to identify police officers who are at high risk of having an adverse incident; so that the department can step in and provide additional training, resources, counseling, or take other appropriate actions in order to try and prevent adverse incidents from happening in the first place. Although it would be impossible to predict and prevent all negative interactions between police and the public, an early intervention system is one piece of a broader movement for criminal justice reform that can help lead to fewer negative interactions and better outcomes for the communities that the police serve.</p>
+
+  <p>In addition to developing a predictive model for our partner department, we also worked closely with <a href="https://dssg.uchicago.edu/project/building-a-deeper-police-early-intervention-system/">another team</a> who was working with the Charlotte Mecklenburg Police department. Together we developed a pipeline, database schema, and model that is department-independent. This added layer of collaboration is a key proving ground that the systems we developed can be implemented not just at one department, but, given the right data, almost any department in the country.</p>
+
+  <p>We used 5 years of internal department data (including arrest records, dispatches, patrol areas, internal and external discipline, citizen complaints, &c.) as inputs to our model. For each officer, we made a prediction (which can also be thought of as a risk score) of how at risk of being involved in an adverse incident that officer is over the next year. Our best preforming model (a variation on random forests) correctly identified 80% of officers who went on to have an adverse incident (during our test period), while only requiring intervention on 30% of officers in the department. This is a drastic improvement over using the current state of the art in most police departments (a threshold-based flagging system): which would have needed to intervene on 67% of the department for the same level of accuracy.</p>
+
+  <p>Since the summer, the <a href="http://dsapp.uchicago.edu/">Center for Data Science and Public Policy</a> has continued work with both police departments and is in the process of implementing these models. This is the first data-driven early intervention system of its kind to be implemented in any department in the United States.</p>
+
+</div>
+<hr />
+
+
+
 <div class="doc-section clearfix" id="research">
-  <h2>Research</h2>
+  <h2>Academic Research</h2>
+
+    <p>I was a postdoctoral scholar at the <a href="http://gslcenter.uchicago.edu/">Center for Sign, Gesture, and Language</a> at the <a href="http://uchicago.edu">University of Chicago</a> from 2014 to 2016. Previously, I worked as a research assistant in the <a href="http://signlanguagelab.uchicago.edu">Sign Language Linguistics Lab</a> as well as the <a href="http://clml.uchicago.edu">Chicago Language Modeling Lab</a>. I have many research interests, particularly articulatory phonetics and phonology, morphology, and computational approaches to each. I have worked on a number of projects involving sign language phonetics and phonology, how perception and action influence gesture, and how gesture and sign languages interact.</p>
+
+  <p>Broadly speaking, I'm interested in how humans use their bodies to communicate both linguistically and non-linguistically. My primary focus is on how signers (people who use sign languages) use their body, arms, and hands in linguistic systems. How are the infinite number of possible configurations for a given articulator divided into meaningful groups (<em>ie</em> phonological units)? How much variation is allowed within these groups? What are the factors that contribute to this variation?</p>
+
+   <p>Since the fall of 2009, I've been working with a research group consisting of researchers who specialize in linguistics, speech and language processing, and computer vision, with the goal of developing automated sign language recognition tools. This collaboration fostered my interest in the phonetics of sign languages. I hope to continue to develop models and tools that contribute both to our knowledge of phonetics generally, and inform automatic recognizers of fingerspelling.</p>
 
   <p> For a current list of my publications please see <a href="http://pubs.jonkeane.com">my publications</a>.</p>
 
@@ -112,9 +143,7 @@
 
   <p>I'm especially interested in how contextual variation can be modeled based on linguistic (<em>eg</em> articulator activation, phonological features) as well as non-linguistic (<em>eg</em> physiological) factors. To test theories of this variation (as well as others about phonetics, phonology, and their interface), I study how signers produce <span style="font-variant: small-caps;">asl</span> fingerspelling. Studying fingerspelling provides opportunities to find contextual and time-conditioned variation in handshape that are relatively limited in signing. This work builds on phonological systems of sign language production, but with a detailed focus on the specific aspects that make up handshapes in <span style="font-variant: small-caps;">asl</span>.</p>
 
-
-
-  <p>My current work continues to explore fingerspelling production. I am continuing to model handshape and temporal variation that was the focus of my dissertation. I'm also involved in projects that look at how native signers as well as second language learners perceive and comprehend fingerspelling, and especially what factors contribute to successful fingerspelling comprehension; in projects that look at how handshape similarity can be quantified and tested.</p>
+  <p>My work continues to explore fingerspelling production. I am continuing to model handshape and temporal variation that was the focus of my dissertation. I'm also involved in projects that look at how native signers as well as second language learners perceive and comprehend fingerspelling, and especially what factors contribute to successful fingerspelling comprehension; in projects that look at how handshape similarity can be quantified and tested.</p>
 
   <p>I use a variety of methods including annotated video data and instrumented capture to generate large, robust, quantitative sets of data. Similar methods have a (relatively) long tradition in spoken language linguistics, however they are only beginning to be used to look at signed languages. My work is supported in part by <span style="font-variant: small-caps;">nsf bcs</span> 1251807.</p>
 
@@ -122,9 +151,6 @@
 
   <p><a href="http://pubs.jonkeane.com/papers/Keane2014ad.html">My dissertation (defended August, 2014)</a> develops an articulatory phonology model (for more information, see the more detailed description <a href="#amohs">below</a>) linking the phonology and phonetics of handshapes in American Sign Language (<span style="font-variant: small-caps;">asl</span>), which was validated against data on handshape variation. On top of handshape variation, my dissertation includes detailed analyses of temporal information of the fingerspelling of native <span style="font-variant: small-caps;">asl</span> signers.</p>
 
-<h3>Sign, Gesture, and Language</h3>
-
-<p>I have been involved with projects with the <a href="http://gslcenter.uchicago.edu/">Center for Sign, Gesture, and Language</a> at the University of Chicago since its founding. I am currently involved with a few projects with other researchers that test the interface of gesture, action, perception, and sign languages.</p>
 </div>
 <hr />
 
@@ -132,6 +158,10 @@
   <h2>Software</h2>
 
   <p>Some interesting, and hopefully helpful tools for others.</p>
+
+  <h3>MocapGrip</h3>
+	 <p><a href="https://github.com/jonkeane/mocapGrip">MocapGrip</a> is a complete data processing and analysis pipeline R package. MocapGrip contains a full pipeline for motion capture data collection, from initial data processing to statistical modelling and report generation.  The package includes functions to check human annotated data for consistency and errors, as well as a flexible analysis and reporting system for use by novice users.</p>
+	 <p>This was my first large-scale foray into building a stand-alone R package. For a number of reasons, I adopted a test-drive development approach to this package. Being test driven allowed me to better address (and ensure that I was reliable in addressing) data validation as well as providing feedback to users when there were errors was consistent and accurate. As the project grew, the number of possible edge-case errors exploded. Testing each one manually was unsustainable and error-prone. Whereas, using unit (and integration) tests through the <a href="https://github.com/hadley/testthat">testthat package</a> being constantly run using <a href="https://travis-ci.com">travis <span style="font-variant: small-caps;">ci</span></a>.</p>
 
    <h3>Pyelan</h3>
 
@@ -148,7 +178,7 @@
 
   <p>On top of the computational implementation described above, the module uses an external library, <a href="http://www.libhand.org/">LibHand</a> to render images of synthesized handshapes. Currently, the model only renders isolated handshapes, but in the future could be extended to sequences of handshapes (including transitions), that is, video of handshapes moving over time. Because they are based on representations that can be linked to multiple levels of phonetics and phonology, these videos could include information about coarticulation (contextual dependencies) of the kind that was demonstrated in my dissertation.</p>
 
-  <p>At the time that I was trying, <a href="http://www.libhand.org/">LibHand</a> failed to compile on modern versions of OS X. I have setup <a href="https://github.com/jonkeane/libhand">a repository</a> that includes the changes needed to compile LibHand on OS X 10.9 Mavericks. Compiling via <a href="http://brew.sh/">homebrew</a> is possible, with some <a href="https://github.com/jonkeane/homebrew-libhand">alterations</a> to ogre as well.</p>
+  <p>At the time that I was trying, <a href="http://www.libhand.org/">LibHand</a> failed to compile on modern versions of OS X. I help maintain <a href="https://github.com/libhand/libhand">a repository</a> that includes the changes needed to compile LibHand on modern linux, OS X, and windows systems. Compiling via <a href="http://brew.sh/">homebrew</a> is possible, with some <a href="https://github.com/jonkeane/homebrew-libhand">alterations</a> to ogre as well.</p>
 
   <h3>SLGloss LaTeX package</h3>
 
