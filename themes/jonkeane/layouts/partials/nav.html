@@ -1,0 +1,20 @@
+<div class="three columns sidebar">
+  <nav>
+  <a href="#"><img id="jon" alt="{{ .Site.Params.logo.alt }}" src="{{ .Site.Params.logo.url }}" /></a>
+  <ul id="mainnav">
+    {{ range .Pages }}
+      <li><a href="#{{ .Title }}">{{ .Title }}</a></li>
+    {{ end }}
+  </ul>
+
+
+
+  <ul id="external">
+    {{ range .Site.Menus.external }}
+    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+    {{ end }}
+  </ul>
+  </nav>
+  <br/>
+</div>
+

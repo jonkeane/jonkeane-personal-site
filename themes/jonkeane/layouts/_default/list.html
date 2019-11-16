@@ -1,0 +1,21 @@
+{{ partial "header.html" . }}
+
+<div class="doc-section clearfix" id="intro">
+{{ .Content }}
+</div>
+
+{{ range .Pages }}
+<hr />
+<div class="doc-section clearfix" id="{{ .Title }}">
+  {{ if .Params.full_title }}
+  <h2>{{ .Params.full_title }}</h2>
+  {{ else }}
+  <h2>{{ .Title }}</h2>
+  {{ end }}
+
+{{ .Content }}
+
+</div>
+{{ end }}
+
+{{ partial "footer.html" . }}

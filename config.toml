@@ -1,0 +1,54 @@
+baseurl = "jonkeane.com"
+languageCode = "en-us"
+title = "Jonathan Keane, PhD"
+theme = "jonkeane"
+googleAnalytics = "UA-27797895-1"
+disqusShortname = ""
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+keywords = ["Data science", "predictive models", "statistics", "test driven development", "software carpentry", "data carpentry", "data analysis", "research", "teaching", "linguistics", "ASL", "American Sign Language", "fingerspelling", "phonetics", "syntax", "morphology"]
+
+[permalinks]
+    post = "/:year/:month/:day/:slug/"
+
+[[menu.external]]
+    name = "photography"
+    url = "https://photo.jonkeane.com"
+    weight = 1
+[[menu.external]]
+    name = "resume"
+    url = "keane-resume.pdf"
+    weight = 2
+[[menu.external]]
+    name = "publications"
+    url = "https://pubs.jonkeane.com"
+    weight = 3
+[[menu.external]]
+    name = "github"
+    url = "https://github.com/jonkeane"
+    weight = 4
+[[menu.external]]
+    name = "email"
+    url = "mailto:jkeane@gmail.com"
+    weight = 5
+
+[params]
+    description = "Jonathan Keane's Professional Website Data scientist and software developer with a PhD in Linguistics. Interests include data science, software developement, predictive models, articulatory phonetics, and computational approaches to language modeling, sign language phonetics and phonology."
+    author = "Jonathan Keane"
+
+    # options for highlight.js (version, additional languages, and theme)
+    highlightjsVersion = "9.12.0"
+    highlightjsCDN = "//cdnjs.cloudflare.com/ajax/libs"
+    highlightjsLang = ["r", "yaml"]
+    highlightjsTheme = "github"
+
+    MathJaxCDN = "//cdnjs.cloudflare.com/ajax/libs"
+    MathJaxVersion = "2.7.5"
+
+    # path to the favicon, under "static"
+    favicon = "favicon.ico"
+
+
+    [params.logo]
+    url = "images/jonSquareRev.png"
+    alt = "Picture of Jonathan Keane"
+
