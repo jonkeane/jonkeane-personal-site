@@ -15,21 +15,17 @@ keywords = ["Data science", "predictive models", "statistics", "test driven deve
     url = "https://photo.jonkeane.com"
     weight = 1
 [[menu.external]]
-    name = "resume"
-    url = "keane-resume.pdf"
-    weight = 2
-[[menu.external]]
     name = "publications"
     url = "https://pubs.jonkeane.com"
-    weight = 3
+    weight = 2
 [[menu.external]]
     name = "github"
     url = "https://github.com/jonkeane"
-    weight = 4
+    weight = 3
 [[menu.external]]
     name = "email"
     url = "mailto:jkeane@gmail.com"
-    weight = 5
+    weight = 4
 
 [params]
     description = "Jonathan Keane's Professional Website Data scientist and software developer with a PhD in Linguistics. Interests include data science, software developement, predictive models, articulatory phonetics, and computational approaches to language modeling, sign language phonetics and phonology."
