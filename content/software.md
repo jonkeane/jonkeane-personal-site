@@ -5,9 +5,9 @@ weight: 2
 
 Some interesting and hopefully helpful tools for others.
 
-### dbtest
+### dittodb
 
-[dbtest](https://github.com/jonkeane/dbtest) is a package that makes testing against databases easy. When writing code that relies on interactions with databases, testing has been difficult without recreating test databases in your <span style="font-variant: small-caps;">ci</span> environment, or resorting to using <span style="font-variant: small-caps;">sql</span>ite databases instead of the database engines you have in production. Both have their downsides: recreating database infrastructure is slow, error prone, and hard to iterate with. Using <span style="font-variant: small-caps;">sql</span>ite works well, right up until you use a feature (like [a full outer join](https://www.sqlite.org/omitted.html)) or has [quirks](https://www.sqlite.org/quirks.html) that might differ from your production database. dbtest solves this by recording database interactions, saving them as mocks, and then replaying them seamlessly during testing. This means that if you can get a query from your database, you can record the response and reliably reproduce that response in tests.
+[dittodb](https://github.com/jonkeane/dittodb) is a package that makes testing against databases easy. When writing code that relies on interactions with databases, testing has been difficult without recreating test databases in your <span style="font-variant: small-caps;">ci</span> environment, or resorting to using <span style="font-variant: small-caps;">sql</span>ite databases instead of the database engines you have in production. Both have their downsides: recreating database infrastructure is slow, error prone, and hard to iterate with. Using <span style="font-variant: small-caps;">sql</span>ite works well, right up until you use a feature (like [a full outer join](https://www.sqlite.org/omitted.html)) or has [quirks](https://www.sqlite.org/quirks.html) that might differ from your production database. dittodb solves this by recording database interactions, saving them as mocks, and then replaying them seamlessly during testing. This means that if you can get a query from your database, you can record the response and reliably reproduce that response in tests.
 
 ### MocapGrip
 
