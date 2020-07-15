@@ -249,6 +249,7 @@ p.abstract {margin-top: 1em}
 
 pre, code {
   font-family: 'Inconsolata', monospace;
+  background-color: #fafafa;
 }
 
 pre {
