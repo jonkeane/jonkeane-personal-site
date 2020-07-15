@@ -1,0 +1,9 @@
+  <ul id="mainnav">
+    {{ range .Pages }}
+    {{ if .IsPage }}
+      <li><a href="#{{ .Title }}">{{ lower .Title }}</a></li>
+    {{ else }}
+      <li><a href="/{{ .Title }}/">{{ lower .Title }}</a></li>
+    {{ end }}
+    {{ end }}
+  </ul>

@@ -2,27 +2,28 @@
 
 <header>
   <!-- <img id="mark" src="images/jk.png" /> -->
-  <h1 class="remove-bottom">Jonathan Keane, PhD</h1>
+  <h1 class="remove-bottom">{{ humanize .Type }} </h1>
 </header>
 <hr class="large" />
 <div class="doc-section clearfix" id="intro">
 {{ .Content }}
 </div>
 {{ range .Pages }}
-{{ if ne .Type "blog" }}
 <hr />
 <div class="doc-section clearfix" id="{{ .Title }}">
+  <a href="{{ .Permalink }}">
   {{ if .Params.full_title }}
   <h2>{{ .Params.full_title }}</h2>
   {{ else }}
   <h2>{{ .Title }}</h2>
   {{ end }}
+  <h5>{{ .Date.Format "2006-01-02" }}</h5>
+  </a>
   <div class="spacer"></div>
 
-{{ .Content }}
+{{ .Summary }} ...
 
 </div>
-{{ end }}
 {{ end }}
 
 {{ partial "footer.html" . }}

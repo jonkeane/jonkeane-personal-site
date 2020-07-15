@@ -1,17 +1,19 @@
 <div class="three columns sidebar">
   <nav>
-  <a href="#"><img id="jon" alt="{{ .Site.Params.logo.alt }}" src="{{ .Site.Params.logo.url }}" /></a>
-  <ul id="mainnav">
-    {{ range .Pages }}
-      <li><a href="#{{ .Title }}">{{ .Title }}</a></li>
-    {{ end }}
-  </ul>
 
-
+  <a href="{{ .Site.BaseURL }}"><img id="jon" alt="{{ .Site.Params.logo.alt }}" src="{{ .Site.Params.logo.url | relURL }}" /></a>
+  {{ if .IsHome }}
+  {{ partial "main-nav.html" . }}
+  {{ else }}
+  {{ partial "sub-nav.html" . }}
+  {{ end }}
 
   <ul id="external">
+    {{ if not .IsHome }}
+          <li><a href="{{ .Site.BaseURL }}">jonkeane.com</a></li>
+    {{ end }}
     {{ range .Site.Menus.external }}
-    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+      <li><a href="{{ .URL }}">{{ .Name }}</a></li>
     {{ end }}
   </ul>
   </nav>

@@ -1,4 +1,4 @@
-baseurl = "jonkeane.com"
+baseURL = "https://jonkeane.com"
 languageCode = "en-us"
 title = "Jonathan Keane, PhD"
 theme = "jonkeane"
@@ -27,6 +27,10 @@ keywords = ["Data science", "predictive models", "statistics", "test driven deve
     url = "mailto:jkeane@gmail.com"
     weight = 4
 
+[markup]
+  [markup.highlight]
+    style = "monokailight"
+
 [params]
     description = "Jonathan Keane's Professional Website Data scientist and software developer with a PhD in Linguistics. Interests include data science, software developement, predictive models, articulatory phonetics, and computational approaches to language modeling, sign language phonetics and phonology."
     author = "Jonathan Keane"
@@ -35,7 +39,7 @@ keywords = ["Data science", "predictive models", "statistics", "test driven deve
     highlightjsVersion = "9.12.0"
     highlightjsCDN = "//cdnjs.cloudflare.com/ajax/libs"
     highlightjsLang = ["r", "yaml"]
-    highlightjsTheme = "github"
+    highlightjsTheme = "tomorrow"
 
     MathJaxCDN = "//cdnjs.cloudflare.com/ajax/libs"
     MathJaxVersion = "2.7.5"
