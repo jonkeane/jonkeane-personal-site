@@ -11,7 +11,7 @@
 {{ range .Pages }}
 <hr />
 <div class="doc-section clearfix" id="{{ .Title }}">
-  <a href="{{ .Permalink }}">
+  <a href="{{ .RelPermalink }}">
   {{ if .Params.full_title }}
   <h2>{{ .Params.full_title }}</h2>
   {{ else }}
