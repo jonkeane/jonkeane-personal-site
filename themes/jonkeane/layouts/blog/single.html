@@ -2,13 +2,26 @@
 
 <main class="content" role="main">
   <article class="article">
-
     <h2 class="article-title">{{ .Title }}</h2>
     {{ if eq .Section "blog" }}
-    <h5>{{ .Date.Format "2006-01-02" }}</h5>
+      <h5>{{ .Date.Format "2006-01-02" }}</h5>
     {{ end }}
-    <div class="spacer"></div>
 
+    {{ if .Params.image }}
+      {{ $image := .Resources.GetMatch .Params.image }}
+      {{ $x1600x := $image.Resize "1800x" }}
+      {{ $x800x := $image.Resize "900x" }}
+      {{ $x400x := $image.Resize "400x" }}
+      <div class="blog-image">
+          <picture>
+              <source
+              srcset="{{ $x1600x.Permalink }} 3x,
+                      {{ $x800x.Permalink }} 2x,
+                      {{ $x400x.Permalink }} 1x" />
+              <img src="{{ $x800x.Permalink }}">
+          </picture>
+      </div>
+    {{ end }}
 
     <div class="article-content">
       {{ .Content }}

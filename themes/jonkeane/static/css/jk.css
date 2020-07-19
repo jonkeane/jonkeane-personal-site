@@ -280,10 +280,22 @@ nav ul#subnav li a {
     font-size: 15px;
 }
 
-.blog-image picture, img {
+.article-content {
+    margin-top: 1rem;
+}
+
+.blog-image {
+  display: flex;
   width: 100%;
   padding: 0px;
 }
+
+.blog-image a, .blog-image picture, .blog-image img {
+  width: 100%;
+  padding: 0px;
+}
+
+
 
 /* Anything smaller than standard 960 */
 @media only screen and (max-width: 959px) {

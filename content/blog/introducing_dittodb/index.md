@@ -1,7 +1,7 @@
 ---
-title: Introducing dittodb
+title: Introducing {dittodb}
 date: 2020-07-19
-image: kindleWeather.jpg
+image: _DSC1176.jpg
 ---
 
 Today {dittodb} was released on CRAN. It is designed to make testing database connections easy, reliable, and even fun.
@@ -21,7 +21,7 @@ get_an_airline <- function(con) {
 }
 ```
 
-But we want to make sure that this function returns what we expect. To do this, we first record the response we get from the production database:
+ But we want to make sure that this function returns what we expect. To do this, we first record the response we get from the production database:
 
 ```r
 start_db_capturing()
