@@ -70,7 +70,7 @@ This is just one of many [hard-to-test things that {dittodb} and other similar t
 
 ### What's in a name?
 
-{{< figure src="/images/132.png" caption="Ditto ©Pokémon" width="125px" class="floatright" >}}
+{{< img "132.png" "Ditto ©Pokémon" "floatright" "125 px" >}}
 
 {dittodb} takes inspiration from a few sources for its name. The first, and most obvious for developers of a certain age, is the [ditto pokemon](https://www.pokemon.com/us/pokedex/ditto) known for its ability to take on the form of, and impersonate any other pokemon. Following this, {dittodb} takes on the form and properties of a database backend, without actually being that database backend. For different (likely non-overlapping) set of developers {dittodb} will recall the [spirit duplicators](https://en.wikipedia.org/wiki/Spirit_duplicator) used to make duplications of printed materials by making an artifact during the writing process that can be used to make further copies. {dittodb} is similar when it is recording fixtures: during the process of interacting with a live backend, it makes copies of the responses that can be used ~~to make further copies~~ while running tests as fixtures.
 

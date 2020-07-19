@@ -295,7 +295,13 @@ nav ul#subnav li a {
   padding: 0px;
 }
 
-
+figure {
+  display: table;
+}
+figcaption {
+  display: table-caption;
+  caption-side: bottom;
+}
 
 /* Anything smaller than standard 960 */
 @media only screen and (max-width: 959px) {
