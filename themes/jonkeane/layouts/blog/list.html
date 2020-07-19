@@ -9,21 +9,36 @@
 {{ .Content }}
 </div>
 {{ range .Pages }}
-<hr />
-<div class="doc-section clearfix" id="{{ .Title }}">
-  <a href="{{ .RelPermalink }}">
-  {{ if .Params.full_title }}
-  <h2>{{ .Params.full_title }}</h2>
-  {{ else }}
-  <h2>{{ .Title }}</h2>
-  {{ end }}
-  <h5>{{ .Date.Format "2006-01-02" }}</h5>
-  </a>
-  <div class="spacer"></div>
+    <hr />
+    <div class="doc-section clearfix" id="{{ .Title }}">
+      {{ if .Params.image }}
+        {{ $image := .Resources.GetMatch .Params.image }}
+        {{ $x1600x := $image.Resize "1800x" }}
+        {{ $x800x := $image.Resize "900x" }}
+        {{ $x400x := $image.Resize "400x" }}
+        <a href="{{ .Permalink }}" class="blog-image">
+            <picture>
+                <source
+                srcset="{{ $x1600x.Permalink }} 3x,
+                        {{ $x800x.Permalink }} 2x,
+                        {{ $x400x.Permalink }} 1x" />
+                <img src="{{ $x800x.Permalink }}">
+            </picture>
+        </a>
+      {{ end }}
+      <a href="{{ .RelPermalink }}">
+      {{ if .Params.full_title }}
+      <h2>{{ .Params.full_title }}</h2>
+      {{ else }}
+      <h2>{{ .Title }}</h2>
+      {{ end }}
+      <h5>{{ .Date.Format "2006-01-02" }}</h5>
+      </a>
+      <div class="spacer"></div>
 
-{{ .Summary }} ...
+    {{ .Summary }} ...
 
-</div>
+    </div>
 {{ end }}
 
 {{ partial "footer.html" . }}

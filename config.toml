@@ -44,8 +44,8 @@ keywords = ["Data science", "predictive models", "statistics", "test driven deve
     MathJaxCDN = "//cdnjs.cloudflare.com/ajax/libs"
     MathJaxVersion = "2.7.5"
 
-    # path to the favicon, under "static"
-    favicon = "favicon.ico"
+    # path to the favicon folder, under "static"
+    favicon = "images/favicons/"
 
 
     [params.logo]

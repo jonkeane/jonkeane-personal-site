@@ -280,16 +280,10 @@ nav ul#subnav li a {
     font-size: 15px;
 }
 
-/***
-.sidebar { padding-top: 1em}
-.sidebar ul {list-style: inside disc; margin-bottom: 1em;}
-.sidebar li {display: inline;}
-.sidebar h3 {font-size: 1.5em;}
-
-.sidebar li:before {
-	content: "• ";
-	}
-***/
+.blog-image picture, img {
+  width: 100%;
+  padding: 0px;
+}
 
 /* Anything smaller than standard 960 */
 @media only screen and (max-width: 959px) {
