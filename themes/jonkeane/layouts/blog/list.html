@@ -26,13 +26,13 @@
         {{ $x800x := $image.Resize "900x" }}
         {{ $x400x := $image.Resize "400x" }}
         <div class="blog-image">
-            <a href="{{ .Permalink }}">
+            <a href="{{ .RelPermalink }}">
                 <picture>
                     <source
-                    srcset="{{ $x1600x.Permalink }} 3x,
-                            {{ $x800x.Permalink }} 2x,
-                            {{ $x400x.Permalink }} 1x" />
-                    <img src="{{ $x800x.Permalink }}">
+                    srcset="{{ $x1600x.RelPermalink }} 3x,
+                            {{ $x800x.RelPermalink }} 2x,
+                            {{ $x400x.RelPermalink }} 1x" />
+                    <img src="{{ $x800x.RelPermalink }}">
                 </picture>
             </a>
         </div>
