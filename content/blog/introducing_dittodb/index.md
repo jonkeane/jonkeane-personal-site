@@ -1,6 +1,6 @@
 ---
 title: Introducing {dittodb}
-date: 2020-07-19
+date: 2020-07-24
 image: _DSC1176.jpg
 ---
 
@@ -72,7 +72,7 @@ This is just one of many [hard-to-test things that {dittodb} and other similar t
 
 {{< img "132.png" "Ditto ©Pokémon" "floatright" "125 px" >}}
 
-{dittodb} takes inspiration from a few sources for its name. The first, and most obvious for developers of a certain age, is the [ditto pokemon](https://www.pokemon.com/us/pokedex/ditto) known for its ability to take on the form of, and impersonate any other pokemon. Following this, {dittodb} takes on the form and properties of a database backend, without actually being that database backend. For different (likely non-overlapping) set of developers {dittodb} will recall the [spirit duplicators](https://en.wikipedia.org/wiki/Spirit_duplicator) used to make duplications of printed materials by making an artifact during the writing process that can be used to make further copies. {dittodb} is similar when it is recording fixtures: during the process of interacting with a live backend, it makes copies of the responses that can be used ~~to make further copies~~ while running tests as fixtures.
+{dittodb} takes inspiration from a few sources for its name. The first, and most obvious for developers of a certain age, is the [ditto pokemon](https://www.pokemon.com/us/pokedex/ditto) known for its ability to take on the form of, and impersonate, any other pokemon. Following this, {dittodb} takes on the form and properties of a database backend, without actually being that database backend. For different (likely non-overlapping) set of developers {dittodb} will recall the [spirit duplicators](https://en.wikipedia.org/wiki/Spirit_duplicator) used to make duplications of printed materials by making an artifact during the writing process that can be used to make further copies. {dittodb} is similar when it is recording fixtures: during the process of interacting with a live backend, it makes copies of the responses that can be used ~~to make further copies~~ while running tests as fixtures.
 
 ### What's coming next?
 
