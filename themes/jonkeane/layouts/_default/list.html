@@ -1,10 +1,15 @@
 {{ partial "header.html" . }}
 
+<header>
+  <!-- <img id="mark" src="images/jk.png" /> -->
+  <h1 class="remove-bottom">Jonathan Keane, PhD</h1>
+</header>
+<hr class="large" />
 <div class="doc-section clearfix" id="intro">
 {{ .Content }}
 </div>
-
 {{ range .Pages }}
+{{ if ne .Type "blog" }}
 <hr />
 <div class="doc-section clearfix" id="{{ .Title }}">
   {{ if .Params.full_title }}
@@ -12,10 +17,12 @@
   {{ else }}
   <h2>{{ .Title }}</h2>
   {{ end }}
+  <div class="spacer"></div>
 
 {{ .Content }}
 
 </div>
+{{ end }}
 {{ end }}
 
 {{ partial "footer.html" . }}

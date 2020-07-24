@@ -21,10 +21,10 @@
 
 <!-- CSS
 ================================================== -->
-<link rel="stylesheet" href="css/base.css" />
-<link rel="stylesheet" href="css/skeleton.css" />
-<link rel="stylesheet" href="css/layout.css" />
-<link rel="stylesheet" href="css/jk.css" />
+<link rel="stylesheet" href='{{ "css/base.css" | relURL }}' />
+<link rel="stylesheet" href='{{ "css/skeleton.css" | relURL }}' />
+<link rel="stylesheet" href='{{ "css/layout.css" | relURL }}'  />
+<link rel="stylesheet" href='{{ "css/jk.css" | relURL }}' />
 
 {{ partial "head.html" . }}
 
@@ -37,8 +37,3 @@
 <div class="container">
 {{ partial "nav.html" . }}
 <div class="twelve columns offset-by-one">
-  <header>
-  <!-- <img id="mark" src="images/jk.png" /> -->
-  <h1 class="remove-bottom">Jonathan Keane, PhD</h1>
- </header>
- <hr class="large" />

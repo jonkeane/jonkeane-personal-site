@@ -1,0 +1,11 @@
+  <ul id="mainnav">
+      {{ if .IsPage }}
+      <li><a href="{{ .Parent.RelPermalink }}"> &lt; {{ lower .Parent.Title }}</a></li>
+      {{ end }}
+  </ul>
+
+  <ul id="subnav">
+    {{ range .Pages }}
+      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+    {{ end }}
+  </ul>
