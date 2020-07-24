@@ -20,9 +20,8 @@
       <h5>{{ .Date.Format "2006-01-02" }}</h5>
       </a>
       <div class="spacer"></div>
-      {{ if .Params.images }}
-        {{ $image_name := index .Params.images 0 }}
-        {{ $image := .Resources.GetMatch $image_name }}
+      {{ if .Params.cover_image }}
+        {{ $image := .Resources.GetMatch .Params.cover_image }}
         {{ $x1600x := $image.Resize "1800x" }}
         {{ $x800x := $image.Resize "900x" }}
         {{ $x400x := $image.Resize "400x" }}

@@ -1,7 +1,7 @@
 ---
 title: Introducing {dittodb}
 date: 2020-07-24
-images: [_DSC1176.jpg]
+cover_image: cover_DSC1176.jpg
 ---
 
 Today {dittodb} was released on CRAN. It is designed to make testing database connections easy, reliable, and even fun.
