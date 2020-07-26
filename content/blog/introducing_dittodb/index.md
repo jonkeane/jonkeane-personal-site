@@ -17,7 +17,10 @@ For example, we have the simple function that retrieves one airline:
 
 ```r
 get_an_airline <- function(con) {
-  return(dbGetQuery(con, "SELECT carrier, name FROM airlines LIMIT 1"))
+  return(dbGetQuery(
+    con, 
+    "SELECT carrier, name FROM airlines LIMIT 1"
+  ))
 }
 ```
 
