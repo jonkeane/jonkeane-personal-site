@@ -4,7 +4,7 @@ date: 2020-07-24
 cover_image: cover_DSC1176.jpg
 ---
 
-Today {dittodb} was released on CRAN. It is designed to make testing database connections easy, reliable, and even fun.
+Today [{dittodb}](https://dittodb.jonkeane.com) was released on [CRAN](https://CRAN.R-project.org/package=dittodb). It is designed to make testing database connections easy, reliable, and even fun.
 
 There are already a number of packages that facilitate HTTP-based external services (eg [{httptest}](https://enpiar.com/r/httptest/), [{webmockr}](https://docs.ropensci.org/webmockr/)), but there haven't been good solutions for testing against databases. {dittodb} is designed to solve that: It works by recording (and editing if needed) database interactions as fixtures and then uses those fixtures for automated testing. 
 
