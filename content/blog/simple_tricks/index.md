@@ -1,6 +1,6 @@
 ---
 title: 4 tricks to be a more efficient data scientist
-date: 2020-08-10
+date: 2020-08-08
 cover_image: cover_IMG_5793.jpg
 ---
 
