@@ -60,6 +60,22 @@
 	strong { font-weight: bold; color: #009966; }
 	small { font-size: 80%; }
 
+/* Prevent Superscripts and Subscripts from Affecting Line-Height */
+
+sup{
+  vertical-align: super;
+}
+
+sup, sub {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+}
+
+sub {
+  top: 0.4em;
+}
+
 /*	Blockquotes  */
 	blockquote, blockquote p { font-size: 17px; line-height: 24px; color: #666; font-style: italic; }
 	blockquote { margin: 0 0 20px; padding: 9px 20px 0 19px; border-left: 2px solid #009966; }
@@ -97,13 +113,10 @@
 /* end base changing */
 
 
-
-
-
 html, body {
   background-image: url("../images/diagonal-noisejk.png");
 }
- img {
+img {
       margin-right: 10px;
       padding: 5px;
       float: left;
@@ -244,12 +257,21 @@ div.doc-section {
 
 /* added for vita site */
 
-
 p.abstract {margin-top: 1em}
+
+code  {
+  font-size: 85%;
+  color: #009966;
+  background-color: #efefef;
+}
+
+pre>code {
+  font-size: 90%;
+  background-color: #fafafa;
+}
 
 pre, code {
   font-family: 'Inconsolata', monospace;
-  background-color: #fafafa;
 }
 
 pre {
@@ -282,6 +304,30 @@ nav ul#subnav li a {
 
 .article-content {
     margin-top: 1rem;
+}
+
+/**** blog posts ****/
+article ul li {
+    list-style-type: disc;
+    margin-bottom: 2px;
+}
+
+article ul {
+    margin-bottom: 20px;
+    margin-left: 2rem;
+}
+
+article ol li {
+    margin-bottom: .5rem;
+}
+
+article ol p {
+    margin-bottom: 0;
+}
+
+article ol {
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .blog-image {
