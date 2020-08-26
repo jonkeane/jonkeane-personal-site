@@ -120,9 +120,18 @@
 /* #Images
 ================================================== */
 
-	img.scale-with-grid {
+	img.scale-with-grid, figure.scale-with-grid {
 		max-width: 100%;
-		height: auto; }
+		height: auto;
+	}
+
+	.scale-with-grid > img {
+		max-width: 100%;
+		height: auto;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
 
 
 /* #Buttons

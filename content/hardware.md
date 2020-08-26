@@ -18,4 +18,4 @@ I developed a [setup](https://github.com/jonkeane/kindle-weather-display) that g
 
 Not content to just tack a kindle on the wall, I built [a wood frame](https://www.flickr.com/photos/jonkeane/sets/72157639487321246/) using a laser cutter to house the kindle and reroute the usb cable for charging.
 
-<img class="scale-with-grid" alt="Image of the kindle weather and arrival times display, in a wood frame." src="images/kindleWeather.jpg" />
+{{< figure src="images/kindleWeather.jpg" alt="Image of the kindle weather and arrival times display, in a wood frame." class="scale-with-grid">}}
