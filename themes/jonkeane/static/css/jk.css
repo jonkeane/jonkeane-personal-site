@@ -483,20 +483,3 @@ nav ul#mainnav li a {
 
 /* Mobile/Browser */
 @media only screen and (max-width: 767px) {}
-
-/* Mobile Landscape/Browser */
-@media only screen and (min-width: 480px) and (max-width: 767px) {}
-
-/* iPad Portrait Only */
-@media only screen and (min-width: 768px) and (max-width: 959px) and (max-device-width: 1000px) {}
-
-/* Mobile Only */
-@media only screen and (max-width: 767px) and (max-device-width: 1000px) {}
-
-/* Mobile Landscape Only */
-@media only screen and (min-width: 480px) and (max-width: 767px) and (max-device-width: 1000px) {}
-
-/* Anything smaller than standard 960 on a device */
-@media only screen and (max-width: 959px) and (max-device-width: 1000px) {}
-
-

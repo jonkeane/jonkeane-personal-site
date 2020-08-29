@@ -11,10 +11,15 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 {{ if .IsPage }}
   <title>{{ .Title }}</title>
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:type" content="website">
 {{ else if .IsHome }}
   <title>Jonathan Keane</title>
+  <meta property="og:title" content="{{ .Site.Title }}">
+  <meta property="og:type" content="website">
 {{ else }}
-  <title>Jonathan Keane — {{ lower .Title }}</title>
+  <title>{{ .Title }}{{ with .Params.subtitle }} - {{ . }} {{ end }} - {{ .Site.Title }}</title>
+  <meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}">
 {{ end}}
 
 <!--[if lt IE 9]>
