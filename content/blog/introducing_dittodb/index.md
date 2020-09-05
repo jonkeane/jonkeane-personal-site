@@ -2,6 +2,7 @@
 title: Introducing {dittodb}
 date: 2020-07-24
 cover_image: cover_DSC1176.jpg
+slug: intro_dittodb
 ---
 
 Today [{dittodb}](https://dittodb.jonkeane.com) was released on [CRAN](https://CRAN.R-project.org/package=dittodb). It is designed to make testing database connections easy, reliable, and even fun.
