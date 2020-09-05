@@ -25,6 +25,7 @@
         {{ $x2100x := $image.Resize "2100x q90" }}
         {{ $x1400x := $image.Resize "1400x q90" }}
         {{ $x700x := $image.Resize "700x q90" }}
+        {{ $alt_text := $image.Exif.Tags.ImageDescription }}
         <div class="blog-image">
             <a href="{{ .RelPermalink }}">
                 <picture>
@@ -32,7 +33,7 @@
                     srcset="{{ $x2100x.RelPermalink }} 3x,
                             {{ $x1400x.RelPermalink }} 2x,
                             {{ $x700x.RelPermalink }} 1x" />
-                    <img src="{{ $x700x.RelPermalink }}">
+                    <img src="{{ $x700x.RelPermalink }}" alt = "{{ $alt_text }}">
                 </picture>
             </a>
         </div>
