@@ -5,4 +5,8 @@ keane-cv.out
 .Rhistory
 public/
 resources/
+<<<<<<< HEAD
 **.DS_Store
+=======
+*.DS_Store
+>>>>>>> 2d01dc4 (in progress)
