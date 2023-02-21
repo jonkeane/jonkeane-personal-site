@@ -52,7 +52,10 @@
     .spacer { height: 10px; }
 
 
-	p { margin: 0 0 20px 0; }
+	p {
+        margin: 0 0 20px 0;
+        font-size: 16px;
+    }
 	p img { margin: 0; }
 	p.lead { font-size: 21px; line-height: 27px; color: #777;  }
 
@@ -162,6 +165,7 @@ a.cite {
 }
 .footer p{
     margin:0;
+    font-size: 12px;
 }
 
 div.container {
@@ -223,6 +227,10 @@ nav ul#external li a:hover,
 nav ul#external li a:focus {
     background: #006699;
     color: #EEE;
+}
+
+nav ul#subnav {
+    clear: both
 }
 
 header img#mark {

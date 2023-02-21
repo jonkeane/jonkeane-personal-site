@@ -9,7 +9,7 @@
 {{ .Content }}
 </div>
 {{ range .Pages }}
-{{ if ne .Type "blog" }}
+{{ if and (ne .Type "blog") .IsPage }}
 <hr />
 <div class="doc-section clearfix" id="{{ .Title }}">
   {{ if .Params.full_title }}
