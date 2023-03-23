@@ -4,10 +4,10 @@
 
   <ul id="subnav">
     {{ range .Pages }}
-    {{ if .IsPage }}
+    {{ if and (ne .Type "blog") .IsPage }}
       <li><a href="#{{ .Title }}">{{ lower .Title }}</a></li>
     {{ else }}
-      <li><a href="/{{ .Slug }}/">{{ lower .Title }}</a></li>
+      <li><a href="{{ .Slug }}/">{{ lower .Title }}</a></li>
     {{ end }}
     {{ end }}
   </ul>

@@ -3,6 +3,9 @@
 <main class="content">
   <article class="article">
     <h2 class="article-title">{{ .Title }}</h2>
+    {{ if .Params.subtitle }}
+        <h3>{{ .Params.subtitle }}</h3>
+    {{ end }}
     {{ if eq .Section "blog" }}
       <h5>{{ .Date.Format "2006-01-02" }}</h5>
     {{ end }}
