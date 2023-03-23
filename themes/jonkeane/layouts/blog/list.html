@@ -17,7 +17,7 @@
       {{ else }}
         <h2>{{ .Title }}</h2>
       {{ end }}
-      <h5>{{ .Date.Format "2006-01-02" }}</h5>
+        <h5>{{ .Date.Format "2006-01-02" }}</h5>
       </a>
       <div class="spacer"></div>
       {{ if .Params.cover_image }}
@@ -39,6 +39,12 @@
         </div>
         <div class="spacer"></div>
       {{ end }}
+      {{ if .Params.subtitle }}
+        <a href="{{ .RelPermalink }}">
+            <h3>{{ .Params.subtitle }}</h3>
+        </a>
+      {{ end }}
+
         {{ .Summary }} ...
       </div>
 {{ end }}
