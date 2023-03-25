@@ -1,15 +1,15 @@
 {{ partial "header.html" . }}
 
 <header>
-  <!-- <img id="mark" src="images/jk.png" /> -->
+  <!-- <img id="mark" src="images/jk.png"> -->
   <h1 class="remove-bottom">{{ humanize .Type }} </h1>
 </header>
-<hr class="large" />
+<hr class="large">
 <div class="doc-section clearfix" id="intro">
 {{ .Content }}
 </div>
 {{ range .Pages }}
-    <hr />
+    <hr>
     <div class="doc-section clearfix" id="{{ .Slug }}">
       <a href="{{ .RelPermalink }}">
       {{ if .Params.full_title }}
@@ -32,7 +32,7 @@
                     <source
                     srcset="{{ $x2100x.RelPermalink }} 3x,
                             {{ $x1400x.RelPermalink }} 2x,
-                            {{ $x700x.RelPermalink }} 1x" />
+                            {{ $x700x.RelPermalink }} 1x">
                     <img src="{{ $x700x.RelPermalink }}" alt = "{{ $alt_text }}">
                 </picture>
             </a>

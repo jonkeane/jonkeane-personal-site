@@ -223,7 +223,7 @@
     .clearfix {
       /* zoom: 1; for ie only -- disabled for validation */ }
 
-    /* You can also use a <br class="clear" /> to clear columns */
+    /* You can also use a <br class="clear"> to clear columns */
     .clear {
       clear: both;
       display: block;

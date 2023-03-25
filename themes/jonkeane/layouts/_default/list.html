@@ -1,16 +1,16 @@
 {{ partial "header.html" . }}
 
 <header>
-  <!-- <img id="mark" src="images/jk.png" /> -->
+  <!-- <img id="mark" src="images/jk.png"> -->
   <h1 class="remove-bottom">Jonathan Keane, PhD</h1>
 </header>
-<hr class="large" />
+<hr class="large">
 <div class="doc-section clearfix" id="intro">
 {{ .Content }}
 </div>
 {{ range .Pages }}
 {{ if and (ne .Type "blog") .IsPage }}
-<hr />
+<hr>
 <div class="doc-section clearfix" id="{{ .Title }}">
   {{ if .Params.full_title }}
   <h2>{{ .Params.full_title }}</h2>

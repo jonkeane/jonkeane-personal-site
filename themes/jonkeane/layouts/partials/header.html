@@ -8,19 +8,41 @@
 
 <!-- Basic Page Needs
 ================================================== -->
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+
+<!-- Alternate to {{ template "_internal/opengraph.html" . }} {{ template "_internal/twitter_cards.html" . }} -->
 {{ if .IsPage }}
   <title>{{ .Title }}</title>
   <meta property="og:title" content="{{ .Title }}">
+  <meta name="twitter:title" content="{{ .Title }}">
+  {{ if .Params.subtitle }}
+      <meta property="og:description" content="{{ .Params.subtitle }}">
+      <meta name="description" content="{{ .Params.subtitle }}">
+      <meta name="twitter:description" content="{{ .Params.subtitle }}">
+  {{ end }}
+  {{ if .Params.cover_image }}
+      {{ $image := .Resources.GetMatch .Params.cover_image }}
+      <meta property="og:image" content="{{ $image.Permalink }}">
+      <meta name="twitter:image" content="{{ $image.Permalink }}">
+  {{ end }}
   <meta property="og:type" content="website">
 {{ else if .IsHome }}
   <title>Jonathan Keane</title>
   <meta property="og:title" content="{{ .Site.Title }}">
+  <meta name="twitter:title" content="{{ .Site.Title }}">
+  <meta property="og:image" content="{{ .Site.Params.logo.url | absURL }}">
+  <meta name="twitter:image" content="{{ .Site.Params.logo.url | absURL }}">
   <meta property="og:type" content="website">
 {{ else }}
   <title>{{ .Title }}{{ with .Params.subtitle }} - {{ . }} {{ end }} - {{ .Site.Title }}</title>
   <meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}">
-{{ end}}
+  <meta name="twitter:title" content="{{ .Title }} - {{ .Site.Title }}">
+{{ end }}
+
+<meta property="twitter:domain" content="{{ .Site.BaseURL }} ">
+<meta property="twitter:url" content="{{ .Permalink }}">
+
 
 <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -28,16 +50,16 @@
 
 <!-- Mobile Specific Metas
 ================================================== -->
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <!-- CSS
 ================================================== -->
-<link rel="stylesheet" href='{{ "css/base.css" | relURL }}' />
-<link rel="stylesheet" href='{{ "css/skeleton.css" | relURL }}' />
-<link rel="stylesheet" href='{{ "css/layout.css" | relURL }}'  />
-<link rel="stylesheet" href='{{ "css/jk.css" | relURL }}' />
+<link rel="stylesheet" href='{{ "css/base.css" | relURL }}'>
+<link rel="stylesheet" href='{{ "css/skeleton.css" | relURL }}'>
+<link rel="stylesheet" href='{{ "css/layout.css" | relURL }}'>
+<link rel="stylesheet" href='{{ "css/jk.css" | relURL }}'>
 
-<link rel="me" href="https://fosstodon.org/@jonkeane" />
+<link rel="me" href="https://fosstodon.org/@jonkeane">
 
 {{ partial "head.html" . }}
 
