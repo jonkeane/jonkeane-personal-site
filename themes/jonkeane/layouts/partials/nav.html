@@ -1,7 +1,7 @@
 <div class="three columns sidebar">
   <nav>
 
-  <a href="{{ .Site.BaseURL }}"><img id="jon" alt="{{ .Site.Params.logo.alt }}" src="{{ .Site.Params.logo.url | relURL }}" /></a>
+  <a href="{{ .Site.BaseURL }}"><img id="jon" alt="{{ .Site.Params.logo.alt }}" src="{{ .Site.Params.logo.url | relURL }}"></a>
   {{ if .IsHome }}
   {{ partial "main-nav.html" . }}
   {{ else }}

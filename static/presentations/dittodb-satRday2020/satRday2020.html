@@ -2,11 +2,11 @@
 <html lang="" xml:lang="">
   <head>
     <title>dittodb</title>
-    <meta charset="utf-8" />
-    <meta name="author" content="Jonathan Keane · Socure" />
+    <meta charset="utf-8">
+    <meta name="author" content="Jonathan Keane · Socure">
     <script src="libs/header-attrs/header-attrs.js"></script>
-    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
-    <link rel="stylesheet" href="Azuro.css" type="text/css" />
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css">
+    <link rel="stylesheet" href="Azuro.css" type="text/css">
   </head>
   <body>
     <textarea id="source">
@@ -65,8 +65,8 @@ but a good test is worth its (metaphorical) weight in gold
 ---
 # CI + DBs = ☠️
 
-Continuous integration (like GitHub Actions, Travis, AppVeyor) is wonderful, 
-you can run your code on someone else's ☁️ 💻 
+Continuous integration (like GitHub Actions, Travis, AppVeyor) is wonderful,
+you can run your code on someone else's ☁️ 💻
 &lt;br/&gt; &lt;br/&gt;
 
 --
@@ -116,16 +116,16 @@ get_an_airline &lt;- function(n = 1) {
 
   query &lt;- paste0(
     "SELECT carrier, name FROM airlines ",
-    "ORDER BY random() LIMIT ", 
+    "ORDER BY random() LIMIT ",
     n
   )
-  
+
   out &lt;- dbGetQuery(con, query)
-  
+
   if (out$name == "Testy McAirline") {
     stop("This is the test airline 🙃")
   }
-  
+
   return(out)
 }
 ```
@@ -139,18 +139,18 @@ Locally is “easy” we:
 
 --
 
-On CI we “just” do the same:  
+On CI we “just” do the same:
  * setup a local postgres server
  * make sure the correct users exist
  * add the test data
 --
 &lt;br/&gt;
 &lt;div class = "large"&gt;❌ ❌ ❌ ❌ ☠️ ☠️ ☠️ ❌ ❌ ❌ ❌&lt;/div&gt;
- 
+
 ---
 # `dittodb` lets you ...
 
-Write tests that act like they are connected to a real-live database using 
+Write tests that act like they are connected to a real-live database using
 `with_mock_db({...})` without ever having to set one up.
 
 &lt;br/ &gt;
@@ -185,8 +185,8 @@ with_mock_db({
 
 ???
 
-* mocks -- objects pre-programmed with expectations which form a specification 
-* fixtures -- data used by mocked objects to configure them or provide info 
+* mocks -- objects pre-programmed with expectations which form a specification
+* fixtures -- data used by mocked objects to configure them or provide info
 * stubs -- provide canned answers to calls made during the test, usually not responding at all to anything outside what's programmed in for the test.
 * spies -- stubs, but keep and provide info about how and if they were called
 * fakes -- objects actually have working implementations, but usually take some shortcut which makes them not suitable for production (an in memory database is a good example)
@@ -199,7 +199,7 @@ Much of the above is from https://www.martinfowler.com/articles/mocksArentStubs.
 
 * mocks
 
-* fixtures 
+* fixtures
 
 .gray[
 * stubs
@@ -250,8 +250,8 @@ This response is saved to `testthat/tests/nycflights` in a file called `SELECT-c
 
 ```r
 structure(
-  list(carrier = "AS", name = "Alaska Airlines Inc."), 
-  class = "data.frame", 
+  list(carrier = "AS", name = "Alaska Airlines Inc."),
+  class = "data.frame",
   row.names = c(NA, -1L)
 )
 ```
@@ -332,9 +332,9 @@ Install `dittodb` with `remotes::install_github("jonkeane/dittodb")`
 
 Extra special thanks to Mauricio Vargas @pachamaltese and thanks to [`httptest`](https://enpiar.com/r/httptest) for inspiration.
 
-@jonkeane 
+@jonkeane
 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
-[_jonkeane.com_](https://jonkeane.com) 
+[_jonkeane.com_](https://jonkeane.com)
 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
 [github.com/jonkeane](https://github.com/jonkeane)
 

@@ -26,10 +26,10 @@
     <meta name="msapplication-TileImage" content="{{ .Site.Params.favicon }}favicon-144.png">
 
     <!-- Windows 8.1 + IE11 and above -->
-    <meta name="msapplication-config" content="{{ .Site.Params.favicon }}browserconfig.xml" />
+    <meta name="msapplication-config" content="{{ .Site.Params.favicon }}browserconfig.xml">
 {{ end }}
 
-<meta name="author" content="{{ .Site.Params.author }}" />
+<meta name="author" content="{{ .Site.Params.author }}">
 {{ if eq .RelPermalink "/" }}
 <meta property="description" content="{{ .Site.Params.description }}">
 {{ else }}
@@ -41,14 +41,14 @@
 {{ if .Keywords }}
 <meta property="keywords" content ="{{ delimit .Keywords ", " }}">
 {{ end }}
-<meta name="robots" content="index, follow, noarchive" />
-<meta name="googlebot" content="noarchive" />
+<meta name="robots" content="index, follow, noarchive">
+<meta name="googlebot" content="noarchive">
 
 {{ template "_internal/opengraph.html" . }}
 {{ template "_internal/twitter_cards.html" . }}
 
 {{ with .OutputFormats.Get "RSS" }}
-<link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
+<link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}">
 {{ end }}
 {{ partial "head_highlightjs" . }}
 {{ partial "head_custom" . }}

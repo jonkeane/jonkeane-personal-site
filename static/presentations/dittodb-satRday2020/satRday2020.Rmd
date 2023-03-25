@@ -97,11 +97,11 @@ class: inverse, center, middle
 ---
 # Easier said than done
 
-<br /><br />
+<br><br>
 Any test is better than no tests
 
 --
-<br /><br />
+<br><br>
 
 but a good test is worth its (metaphorical) weight in gold
 
@@ -290,7 +290,7 @@ capture_db_requests({
 })
 ```
 
-<br />
+<br>
 
 Where `one_airline` is
 
@@ -395,8 +395,8 @@ Extra special thanks to Mauricio Vargas @pachamaltese and thanks to [`httptest`]
 [github.com/jonkeane](https://github.com/jonkeane)
 
 .colophon[
-created with the R package [**xaringan**](https://github.com/yihui/xaringan) · all photos taken by Jonathan Keane, all rights reserved <br />
-presentation slides + content (except for photos) are licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) <br />
+created with the R package [**xaringan**](https://github.com/yihui/xaringan) · all photos taken by Jonathan Keane, all rights reserved <br>
+presentation slides + content (except for photos) are licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) <br>
 ]
 ]
 
