@@ -11,7 +11,7 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
 
-
+<!-- Alternate to {{ template "_internal/opengraph.html" . }} {{ template "_internal/twitter_cards.html" . }} -->
 {{ if .IsPage }}
   <title>{{ .Title }}</title>
   <meta property="og:title" content="{{ .Title }}">
@@ -31,8 +31,8 @@
   <title>Jonathan Keane</title>
   <meta property="og:title" content="{{ .Site.Title }}">
   <meta name="twitter:title" content="{{ .Site.Title }}">
-  <meta property="og:image" content="{{ .Site.Params.logo.url }}">
-  <meta name="twitter:image" content="{{ .Site.Params.logo.url }}">
+  <meta property="og:image" content="{{ .Site.Params.logo.url | absURL }}">
+  <meta name="twitter:image" content="{{ .Site.Params.logo.url | absURL }}">
   <meta property="og:type" content="website">
 {{ else }}
   <title>{{ .Title }}{{ with .Params.subtitle }} - {{ . }} {{ end }} - {{ .Site.Title }}</title>
