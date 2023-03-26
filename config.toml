@@ -5,7 +5,7 @@ theme = "jonkeane"
 googleAnalytics = "G-4G0MWM1GJ4"
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
-keywords = ["Data science", "predictive models", "statistics", "test driven development", "software carpentry", "data carpentry", "data analysis", "research", "teaching", "linguistics", "ASL", "American Sign Language", "fingerspelling", "phonetics", "syntax", "morphology"]
+keywords = ["software engineering", "engineering leadership", "test driven development", "performance engineering", "benchmarking", "metric driven development", "continuous integration", "continuous delivery", "data science", "machine learning", "data visualization", "statistics",  "research", "linguistics", "American Sign Language", "fingerspelling", "phonetics"]
 
 [permalinks]
     post = "/:year/:month/:day/:slug/"
@@ -32,7 +32,7 @@ keywords = ["Data science", "predictive models", "statistics", "test driven deve
     style = "monokailight"
 
 [params]
-    description = "Jonathan Keane's Professional Website Data scientist and software developer with a PhD in Linguistics. Interests include data science, software developement, predictive models, articulatory phonetics, and computational approaches to language modeling, sign language phonetics and phonology."
+    description = "Engineering and Data Science Leader — Interests include: leadership, inclusive teams, CI/CD, test-driven-development, metric-driven-development, performance engineering, data science, and machine learning. Past life: a PhD in Linguistics with a focus on articulatory phonetics, computational approaches to language modeling, and sign language phonetics and phonology."
     author = "Jonathan Keane"
 
     # options for highlight.js (version, additional languages, and theme)
