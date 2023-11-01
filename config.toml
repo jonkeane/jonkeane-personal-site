@@ -15,17 +15,21 @@ keywords = ["software engineering", "engineering leadership", "test driven devel
     url = "https://photo.jonkeane.com"
     weight = 1
 [[menu.external]]
+    name = "woodworking"
+    url = "https://mokkou.jonkeane.com"
+    weight = 2
+[[menu.external]]
     name = "publications"
     url = "https://pubs.jonkeane.com"
-    weight = 2
+    weight = 3
 [[menu.external]]
     name = "github"
     url = "https://github.com/jonkeane"
-    weight = 3
+    weight = 4
 [[menu.external]]
     name = "email"
     url = "mailto:jkeane@gmail.com"
-    weight = 4
+    weight = 5
 
 [markup]
   [markup.highlight]
@@ -51,4 +55,3 @@ keywords = ["software engineering", "engineering leadership", "test driven devel
     [params.logo]
     url = "images/jonSquareRev.png"
     alt = "Picture of Jonathan Keane"
-
