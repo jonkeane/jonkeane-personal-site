@@ -1,7 +1,7 @@
 ---
 title: There is no such thing as a flaky test 
 date: 2024-03-10
-cover_image: DSC00500.jpg
+cover_image: _DSC2699.jpg
 slug: flakes
 ---
 
