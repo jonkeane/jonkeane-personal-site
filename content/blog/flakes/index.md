@@ -3,6 +3,7 @@ title: There is no such thing as flaky tests
 date: 2024-03-11
 cover_image: _DSC2699.jpg
 slug: flakes
+tags: ['testing', 'engineering']
 ---
 
 "Is that failure a flaky test? — We can ignore that failure, it's a flake — Let me rerun these; that's a flake." everywhere that I've worked; every team I've worked with; I've heard these or similar.[^1] When I was earlier in my career this felt reassuring and calming. The test failed, but it's ok! It sometimes just does that, click re-run and move on. Simple! 
