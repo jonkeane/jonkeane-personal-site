@@ -4,6 +4,7 @@ subtitle: How acknowledging when you're wrong is the secret weapon to building b
 date: 2023-03-20
 cover_image: DSC00500.jpg
 slug: you_are_wrong
+tags: ['engineering', 'leadership']
 ---
 
 Nobody is infallible: we all find ourselves in circumstances where we are wrong about something. This can take a number of forms: plain wrong on the facts; misunderstanding the context of a situation and proposing something that is not fit for purpose; the world changes out from under you, and what was once right is no longer. Of course everyone tries to minimize being in this situation — but what you do when you find yourself there says a lot about you as a leader and can have a huge impact on the team that you're leading.
