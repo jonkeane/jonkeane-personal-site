@@ -16,13 +16,21 @@ So if there is no such thing as a flaky test — what is going on here? Why do p
 
 #### testing at the wrong level
 
-The more layers you have in your tests, the more things to go wrong. MOCKS!
+In most situations, tests come in a bunch of different flavors: unit tests, integration tests, end to end tests, etc. the specific differences between those is outside the scope of this post[^4], but one source of so-called flakiness is from including many layers within tests. End to end tests are great because they test the entire flow through a system, but if your system spans across layers that involve network communication, that chances that something goes wrong in the middle that's not relevant to what your test is testing increases. The more layers you cross, the higher the probability something outside of your test will fail.
+
+As with all things, balance is important: having a balance of unit tests that test a wide range of inputs to small functions balanced with end to end tests that test common flows will behave more reliably than a test suite that is reversed: all of the end to end tests contain the strange inputs and represents the spectrum of inputs and the unit tests are more limited. 
+
+Another option when you're crossing service boundaries (like APIs or databases[^5]) is to use mocks in your tests. The beauty of mocks is that not only do you not need to deal with network connections, but you can also produce conditions or output that would otherwise not be possible from a current, running system.
+
+Testing at the right level helps eliminate sources of random failure in your test suite and thus reduces the tests that fail randomly.
 
 #### testing code that is poorly structured
 
-Poorly structured code makes it difficult to test encapsulated behaviors. This can lead to testing at the wrong level.
+Poorly structured code makes it difficult to test encapsulated behaviors. This is similar to the section above, in fact it's one of the biggest sources of people feeling the need to use a higher level test than actually necessary. If your code has functions that are encapsulated well, writing unit tests that have a bunch of inputs and a bunch of known outputs is easy. But if you have functions that fit together in ways that make their interaction complex, you are much more likely to start writing an integration or end to end test. And typically those will start to include more layers, and more layers means more places to fail.
 
 #### randomness
+
+Working on data and data science tools means working with data that involves randomness. When confronted with randomness, many people start by trying to embrace the randomness: "ok, let's make a random data generator for our tests..." which feels like the right answer—the real-life data is random afterall! But that reaction leads directly to tests that sometimes work, and sometimes don't. There are very few situations where you actually need to have true randomness. Even with projects that use statistical reasoning, it's almost always better to construct data that fits a specific distribution than it is to generate that data during testing.
 
 You probably don't need randomness, but if you do be sure you characterize it in your tests + they can handle if they find themselves to be problematic.
 
@@ -43,3 +51,7 @@ Use it as an opportunity to ask: Are these tests structured correctly? Are they 
 [^2]: And if it's not — that is something you should absolutely change or reconsider your design!
 
 [^3]: We *do* want and need to test against bleeding edge images, but those are separate tests that are targeted at that specifically. Those tests also use dependency resolution methods that are more amenable to changes like this. 
+
+[^4]: But if you're curious, [wikipedia](https://en.wikipedia.org/wiki/Test_automation#Testing_at_different_levels) has some details.
+
+[^5]: I'm such a fan of mocking, I even wrote a whole framework for mocking database interactions: [dittodb](https://dittodb.jonkeane.com)
