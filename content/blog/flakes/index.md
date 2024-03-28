@@ -1,5 +1,5 @@
 ---
-title: There is no such thing as flaky tests
+title: There is no such thing as a flaky test
 date: 2024-03-27
 cover_image: _DSC2699.jpg
 slug: flakes
@@ -8,7 +8,7 @@ tags: ['testing', 'engineering']
 
 "Is that failure a flaky test? — We can ignore that failure, it's a flake — Let me rerun these; that's a flake." everywhere that I've worked; every team I've worked with; I've heard these or similar.[^1] When I was earlier in my career this felt reassuring and calming. The test failed, but it's ok! It sometimes just does that, click re-run and move on. Simple! 
 
-But it also left me unsatisfied: I couldn't ever stop that nagging voice in my head from asking "but why?". Ultimately after some sleepless nights and a number of deep dives into the specific so-called flaky tests, I've come to the conclusion that there is no such thing as flaky tests.  
+But it also left me unsatisfied: I couldn't ever stop that nagging voice in my head from asking "but why?". Ultimately after some sleepless nights and a number of deep dives into the specific so-called flaky tests, I've come to the conclusion that there is no such thing as a flaky test.  
 
 I can hear the shouts on the internet already: "No, no this test really does only fail sometimes. That's the definition of flaky!" and that is absolutely true, that is the definition of flaky. But a test that fails sometimes is not a test that we should rely on. A test that fails sometimes leads us to either reflexively re-run tests when we see a failure — or worse, become desensitized to seeing red in our testing and ignoring it. And in that way, a test that fails sometimes is worse than no test at all![^8]
 
