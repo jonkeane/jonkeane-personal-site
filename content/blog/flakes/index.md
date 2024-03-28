@@ -1,6 +1,6 @@
 ---
 title: There is no such thing as flaky tests
-date: 2024-03-11
+date: 2024-03-27
 cover_image: _DSC2699.jpg
 slug: flakes
 tags: ['testing', 'engineering']
@@ -30,6 +30,8 @@ Testing at the right level helps eliminate sources of random failure in your tes
 #### Testing code that is poorly structured
 
 Poorly structured code makes it difficult to test encapsulated behaviors. This is similar to the section above, in fact it's one of the biggest sources of people feeling the need to use a higher level test than actually necessary. If your code has functions that are encapsulated well, writing unit tests that have a bunch of inputs and a bunch of known outputs is easy. But if you have functions that fit together in ways that make their interaction complex, you are much more likely to start writing an integration or end to end test. And those will start to include more layers, and more layers mean more places to fail.
+
+To use a hypothetical example: say you are writing an API client package. You have a user-facing function that requires data from a few different endpoints depending on the output from one of the two. Let's say this function looks for users who have done at least one of two different actions. The API is such that you can get a list of users and a list of the actions they have taken, but actions of one type require using one endpoint and another set of actions uses a separate endpoint. One way you could write this function is all together where it queries the first endpoint for the list of users, and then based on the information that is received, you query one (or both) of the two other endpoints, and finally produce the result. This works, but because there is a back and forth between multiple endpoints, you are much more likely to write an integration test with the entire API call cycle. But if you broke this function down into the constituent parts (fetching the users, fetching one set of actions, fetching a second set) it's much easier to mock of the data in and out (and test various combinations of users with all of one action, users with both actions, users with neither action, users with 🦎 actions) without reaching for the integration test.
 
 #### Randomness
 
