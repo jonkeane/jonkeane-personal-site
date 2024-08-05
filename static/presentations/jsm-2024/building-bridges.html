@@ -433,8 +433,8 @@ A bit of history
 </section>
 <section id="the-interconnection-problem" class="slide level2">
 <h2>The interconnection problem</h2>
-<img data-src="./images/copy-convert.png" class="r-stretch">
-<aside class="notes">
+
+<img data-src="./images/copy-convert.png" class="r-stretch vertical-center quarto-figure quarto-figure-center"><aside class="notes">
 <p>Many of these were operating in essentially column-oriented ways — but to transfer data ended up writing into row-oriented data structures, then read them back in to something that was column-oriented.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -450,12 +450,12 @@ A bit of history
 </section>
 <section id="the-interconnection-problem-1" class="slide level2">
 <h2>The interconnection problem</h2>
-<img data-src="./images/shared.png" class="r-stretch">
-</section>
+
+<img data-src="./images/shared.png" class="r-stretch vertical-center quarto-figure quarto-figure-center"></section>
 <section id="a-new-standard" class="slide level2">
 <h2>A <em>new</em> standard</h2>
-<img data-src="./images/standards_2x.png" class="r-stretch">
-<aside class="notes">
+
+<img data-src="./images/standards_2x.png" class="r-stretch quarto-figure quarto-figure-center"><aside class="notes">
 <p>Knowing when to break the rules: the founders of the Arrow project saw that although there were standards already, there wasn’t a good option for data interchange that fit analytical workloads. In this case, that 15th standard was needed + would be useful. In hindsight this has been more or less proven to be a good thing — but at the time might have not seemed guaranteed!</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -481,12 +481,12 @@ A bit of history
 </section>
 <section id="the-standard" class="slide level2">
 <h2>The standard</h2>
-<img data-src="./images/shared.png" class="r-stretch">
-</section>
+
+<img data-src="./images/shared.png" class="r-stretch vertical-center quarto-figure quarto-figure-center"></section>
 <section id="with-numerous-language-implementations" class="slide level2">
 <h2>… with numerous language implementations</h2>
-<img data-src="./images/arrow-libraries-structure.png" class="r-stretch">
-<aside class="notes">
+
+<img data-src="./images/arrow-libraries-structure.png" class="r-stretch quarto-figure quarto-figure-center"><aside class="notes">
 <p>But also frequently people refer to the implementations as <em>Arrow</em> like with the Arrow R package.</p>
 <p>Segue into the R package structure</p>
 <style type="text/css">
@@ -659,8 +659,8 @@ Bridges to other developers
 </section>
 <section id="section-4" class="slide level2">
 <h2></h2>
-<img data-src="./images/hashes.png" class="r-stretch">
-<p><a href="https://github.com/apache/arrow/issues/40202">Github issue</a></p>
+
+<img data-src="./images/hashes.png" class="r-stretch quarto-figure quarto-figure-center"><p><a href="https://github.com/apache/arrow/issues/40202">Github issue</a></p>
 <aside class="notes">
 <p>We had a question from someone using targets. The hashes of the same data.frame seemed to be different across platforms. That’s weird!</p>
 <style type="text/css">
@@ -677,8 +677,8 @@ Bridges to other developers
 </section>
 <section id="section-5" class="slide level2">
 <h2></h2>
-<img data-src="./images/hashes-detail.png" class="r-stretch">
-<aside class="notes">
+
+<img data-src="./images/hashes-detail.png" class="r-stretch quarto-figure quarto-figure-center"><aside class="notes">
 <p>Turns out, there are a bunch of reasons this might be: metadata serialization for custom classes, R versions, but generally those are controllable. One thing that <em>is not</em> is the low-level flatbuffer serialization. But it turns out, that’s actually tunable.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -694,8 +694,8 @@ Bridges to other developers
 </section>
 <section id="section-6" class="slide level2">
 <h2></h2>
-<img data-src="./images/hashes-pr.png" class="r-stretch">
-<p><a href="https://github.com/apache/arrow/pull/40392">Github Pull Request</a></p>
+
+<img data-src="./images/hashes-pr.png" class="r-stretch quarto-figure quarto-figure-center"><p><a href="https://github.com/apache/arrow/pull/40392">Github Pull Request</a></p>
 <aside class="notes">
 <p>So someone made a PR to tune, and that was even picked up by an Arrow maintainer to carry it across the finish line.</p>
 <style type="text/css">
@@ -712,8 +712,8 @@ Bridges to other developers
 </section>
 <section id="section-7" class="slide level2">
 <h2></h2>
-<img data-src="./images/gt2gbstringsonavx2.png" class="r-stretch">
-<p>Github <a href="https://github.com/apache/arrow/issues/41813">Issue</a> and <a href="https://github.com/apache/arrow/pull/42188">Pull Request</a></p>
+
+<img data-src="./images/gt2gbstringsonavx2.png" class="r-stretch quarto-figure quarto-figure-center"><p>Github <a href="https://github.com/apache/arrow/issues/41813">Issue</a> and <a href="https://github.com/apache/arrow/pull/42188">Pull Request</a></p>
 <aside class="notes">
 <p>Another one!</p>
 <style type="text/css">
