@@ -435,7 +435,7 @@ A bit of history
 <h2>The interconnection problem</h2>
 <img data-src="./images/copy-convert.png" class="r-stretch">
 <aside class="notes">
-<p>Many of these were operating in essentially column-oriented ways — but to transfer data ended up writting into row-oriented data structures, then read them back in to something that was column-oriented.</p>
+<p>Many of these were operating in essentially column-oriented ways — but to transfer data ended up writing into row-oriented data structures, then read them back in to something that was column-oriented.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -456,7 +456,7 @@ A bit of history
 <h2>A <em>new</em> standard</h2>
 <img data-src="./images/standards_2x.png" class="r-stretch">
 <aside class="notes">
-<p>Knowing when to break the rules: the founders of the Arrow project saw that although there were standards already, there wasn’t a good option for data interchange that fit analytical workloads. In this case, that 15th standard was needed + would be useful. In hindsight this has been more or less proven to be a good thing — but at the time might have not seemed gauranteed!</p>
+<p>Knowing when to break the rules: the founders of the Arrow project saw that although there were standards already, there wasn’t a good option for data interchange that fit analytical workloads. In this case, that 15th standard was needed + would be useful. In hindsight this has been more or less proven to be a good thing — but at the time might have not seemed guaranteed!</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -475,16 +475,16 @@ A bit of history
 </section>
 
 <section>
-<section id="a-standard-with-numerous-langauge-implementations" class="title-slide slide level1 center">
-<h1>A standard <span class="fragment"><em>with numerous langauge implementations</em></span></h1>
+<section id="a-standard-with-numerous-language-implementations" class="title-slide slide level1 center">
+<h1>A standard <span class="fragment"><em>with numerous language implementations</em></span></h1>
 
 </section>
 <section id="the-standard" class="slide level2">
 <h2>The standard</h2>
 <img data-src="./images/shared.png" class="r-stretch">
 </section>
-<section id="with-numerous-langauge-implementations" class="slide level2">
-<h2>… with numerous langauge implementations</h2>
+<section id="with-numerous-language-implementations" class="slide level2">
+<h2>… with numerous language implementations</h2>
 <img data-src="./images/arrow-libraries-structure.png" class="r-stretch">
 <aside class="notes">
 <p>But also frequently people refer to the implementations as <em>Arrow</em> like with the Arrow R package.</p>
@@ -515,7 +515,7 @@ A bit of history
 <aside class="notes">
 <p>Arrow includes the official C++ parquet implementation, so is as fully featured as that is (e.g.&nbsp;as fully featured as the standard is!)</p>
 <p><em>Describe bindings</em></p>
-<p>Same with the cloud filesystem impelmentations, those use the official AWS/GCS SDKs</p>
+<p>Same with the cloud filesystem implementations, those use the official AWS/GCS SDKs</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -595,7 +595,7 @@ Bridges to other languages and engines
 <span id="cb2-16"><a href=""></a>  ) <span class="sc">|&gt;</span> </span>
 <span id="cb2-17"><a href=""></a>  <span class="fu">collect</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <aside class="notes">
-<p>duckdb’s internal represntation is similar to Arrow’s so we can easily and almost zero-copy transfer data to be used there. This takes almost exactly the same amount of time as the same query without the transfer, both around 30-35 seconds.</p>
+<p>duckdb’s internal representation is similar to Arrow’s so we can easily and almost zero-copy transfer data to be used there. This takes almost exactly the same amount of time as the same query without the transfer, both around 30-35 seconds.</p>
 <p>This is slightly shorter than above because we did <code>select</code> early. This is important for passing data, although duckdb will do it’s best to pass down the column filtering</p>
 <p>How this works under the hood:</p>
 <style type="text/css">
