@@ -435,7 +435,7 @@ A bit of history
 <h2>The interconnection problem</h2>
 
 <img data-src="./images/copy-convert.png" class="r-stretch vertical-center quarto-figure quarto-figure-center"><aside class="notes">
-<p>Many of these were operating in essentially column-oriented ways — but to transfer data ended up writing into row-oriented data structures, then read them back in to something that was column-oriented.</p>
+<p>Back around the start of arrow, 2014-2016, many of these were operating in essentially column-oriented ways — but to transfer data ended up writing into row-oriented data structures, then read them back in to something that was column-oriented.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -715,7 +715,7 @@ Bridges to other developers
 
 <img data-src="./images/gt2gbstringsonavx2.png" class="r-stretch quarto-figure quarto-figure-center"><p>Github <a href="https://github.com/apache/arrow/issues/41813">Issue</a> and <a href="https://github.com/apache/arrow/pull/42188">Pull Request</a></p>
 <aside class="notes">
-<p>Another one!</p>
+<p>This one was even more tricky: there was a subtle bug in the Arrow C++ library that would surface only on columns of text greater than 2GB and only on processors that supported a specific type of SIMD optimization. The problem was reported through the R package, but the R package maintainers really didn’t do much, this Arrow contributor who concentrates on the C++ portion of the project, figured out what was wrong and fixed it!</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -734,16 +734,15 @@ Bridges to other developers
 <p>The Arrow standard has established itself as the modern way to interchange data.</p>
 <p><br></p>
 <div class="fragment">
-<p>The community around Arrow brings power to <span class="small-caps">r</span> users that we didn’t have before.</p>
+<p>Frameworks that can interchange with the Arrow format get ~free interchange.</p>
 </div>
 <p><br></p>
 <div class="fragment">
-<p>Frameworks that can interchange with the Arrow format get ~free interchange.</p>
+<p>The community around Arrow brings power to <span class="small-caps">r</span> users that we didn’t have before.</p>
 </div>
 </div>
 <aside class="notes">
 <p>Many systems user Arrow or very Arrow-like representations for data (DuckDB, Velox, etc). In some ways, if the standard is used and proliferates, that is success, even if the Arrow libraries themselves aren’t used.</p>
-<p>Arrow was made a top-level ASF project in 2016, though got it’s start before then with the ideas like Feather + some work by Apache Drill.</p>
 <p>But the libraries that have been created are bringing powerful features to the R community, built and maintained by people who don’t have intrinsic motivation to be in the R world, but are because of the structure of the project.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
