@@ -21,13 +21,15 @@
       </a>
       <div class="spacer"></div>
       {{ if .Params.cover_image }}
+        {{ $pageLink := .RelPermalink }}
         {{ $image := .Resources.GetMatch .Params.cover_image }}
-        {{ $x2100x := $image.Resize "2100x q90" }}
-        {{ $x1400x := $image.Resize "1400x q90" }}
-        {{ $x700x := $image.Resize "700x q90" }}
-        {{ $alt_text := $image.Exif.Tags.ImageDescription }}
+        {{ with $image }}
+        {{ $x2100x := .Resize "2100x q90" }}
+        {{ $x1400x := .Resize "1400x q90" }}
+        {{ $x700x := .Resize "700x q90" }}
+        {{ $alt_text := .Exif.Tags.ImageDescription }}
         <div class="blog-image">
-            <a href="{{ .RelPermalink }}">
+            <a href="{{ $pageLink }}">
                 <picture>
                     <source
                     srcset="{{ $x2100x.RelPermalink }} 3x,
@@ -38,6 +40,7 @@
             </a>
         </div>
         <div class="spacer"></div>
+        {{ end }}
       {{ end }}
       {{ if .Params.subtitle }}
         <a href="{{ .RelPermalink }}">

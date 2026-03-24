@@ -23,8 +23,10 @@
   {{ end }}
   {{ if .Params.cover_image }}
       {{ $image := .Resources.GetMatch .Params.cover_image }}
-      <meta property="og:image" content="{{ $image.Permalink }}">
-      <meta name="twitter:image" content="{{ $image.Permalink }}">
+      {{ with $image }}
+      <meta property="og:image" content="{{ .Permalink }}">
+      <meta name="twitter:image" content="{{ .Permalink }}">
+      {{ end }}
   {{ end }}
   <meta property="og:type" content="website">
 {{ else if .IsHome }}

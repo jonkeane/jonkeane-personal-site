@@ -476,6 +476,29 @@ nav ul#mainnav li a {
 
 }
 
+/* #Tables
+================================================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5em 0; }
+table th, table td {
+    padding: 8px 12px;
+    text-align: left;
+    vertical-align: middle; }
+table thead th {
+    background-color: #ffffff;
+    font-weight: bold;}
+table tbody tr:nth-child(odd) {
+    background-color: #f4f8f8; }
+table tbody tr:nth-child(even) {
+    background-color: #ffffff; }
+table tbody th {
+    background-color: #e6f2ef;
+    color: #006699;
+    font-weight: bold;
+    border-color: #b0cfc9; }
+
 /* Non 960 */
 @media only screen and (max-width: 959px) {
     #logo {
