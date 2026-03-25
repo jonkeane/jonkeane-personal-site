@@ -134,6 +134,14 @@ a.cite {
   text-align: right;
 }
 
+.read-more-link a {
+  display: block;
+  text-align: right;
+  color: #009966;
+  font-style: italic;
+  font-size: 90%;
+}
+
 .floatright {
     float: right;
     margin-left: 10px;

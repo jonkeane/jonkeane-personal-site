@@ -82,6 +82,15 @@ h3 {
   margin-bottom: 0.4em;
 }
 
+/* Blog list: tighten gap between title (h2) and subtitle (h3) */
+.doc-section h2 {
+  margin-bottom: 0.1em;
+}
+.doc-section h3 {
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+}
+
 h4 {
   margin-top: 1.2em;
   margin-bottom: 0.3em;

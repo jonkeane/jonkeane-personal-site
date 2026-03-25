@@ -1,7 +1,7 @@
 ---
 title: Shopping for knives in Japan
 date: 2026-03-23
-# cover_image: _DSC2699.jpg
+cover_image: _DSC5880.jpg
 slug: knife_shopping_japan
 tags: ['cooking', 'knives', 'travel', 'japan']
 ---
@@ -113,7 +113,7 @@ Though Kappabashi has a huge selection of stores, Kyōto has a few standouts, an
 
 **Tokuzō Knives** (徳蔵) A good selection of more traditional knives compared to Jikkō. [website](https://tokuzoknives.com/pages/osakanamba) [map](https://maps.app.goo.gl/EHEPV5hcnjyp36dk7)
 
-**Genrihei Santō** (源利平 山東) A well-regarded traditional shop slightly outside of  Ōsaka (though not as far away as Sakai, which is a city known for knife production as well). This was handsdown my favorite knife shop. It's in a residential area (don't get freaked out that you seem to be walking into an apartment building, you are and also you are in the right place), but has so many knives to choose from. As is pretty common, you will select knife blanks and they will add handles for you. That can take a few hours, but you can also asked them to use a service like Yamato transport[^2] to send it to your hotel (I did, they were a little surprised I knew about it to suggest it, but were very very happy to oblige). If I go back to Japan, I absolutely will make my way back to here. [map](https://maps.app.goo.gl/HEmctcsDaHGu1H8z8) [website](https://hamono310.com)
+**Genrihei Santō** (源利平 山東) A well-regarded traditional shop slightly outside of  Ōsaka (though not as far away as Sakai, which is a city known for knife production as well). This was handsdown my favorite knife shop. It's in a residential area (don't get freaked out that you seem to be walking into an apartment building, you are and also you are in the right place), but has so many knives to choose from. As is pretty common, you will select knife blanks and they will add handles for you. That can take a few hours, but you can also asked them to use a service like Yamato transport[^2] to send it to your hotel (I did, they were a little surprised I knew about it to suggest it, but were very very happy to oblige). If I go back to Japan, I absolutely will make my way back to here. [website](https://hamono310.com) [map](https://maps.app.goo.gl/HEmctcsDaHGu1H8z8)
 
 **Tower Knives** A bit outside of the restaurant shopping district, but worth checking out. When I visited there were many staff members helping people try out different knives, including a number of people very comfortable in English. I didn't buy any knives here myself, but it was nice to try a few out when I was choosing. [website](https://www.towerknives.com) [map](https://maps.app.goo.gl/MrbYF4CUXLup3SDy8)
 
