@@ -20,7 +20,7 @@ I've developed [pyelan](https://github.com/jonkeane/pyelan), a python module tha
 
 For my dissertation, I implemented a computational model of the phonetics-phonology interface, that I call the Articulatory Model of Handshape. The implementation is as the [amohs](https://github.com/jonkeane/amohs) python module. This module not only implements automatic translation from phonological features to various types of phonetic representations (including joint angle targets), but it also uses an external library to render {{< smallcaps 3d >}} images of hands.
 
-The Articulatory Model of Handshape uses a slightly modified version of <a class="cite" href="https://scholar.google.com/scholar?q=%22A+Prosodic+Model+of+Sign+Language+Phonology%22" title="D. Brentari. A Prosodic Model of Sign Language Phonology. The MIT Press, 1998.">Brentari's 1998</a> Prosodic Model of handshape for a phonological representation of handshape. It than provides representations for phonetic specifications either as tract variables (at a categorical level), and as phonetic joint angle targets (a continuous level) for handshapes. Using these representations, comparisons between handshapes can be made deriving a theory-driven metric of handshape similarity.
+The Articulatory Model of Handshape uses a slightly modified version of {{< cite href="https://scholar.google.com/scholar?q=%22A+Prosodic+Model+of+Sign+Language+Phonology%22" title="D. Brentari. A Prosodic Model of Sign Language Phonology. The MIT Press, 1998." >}}Brentari's 1998{{< /cite >}} Prosodic Model of handshape for a phonological representation of handshape. It than provides representations for phonetic specifications either as tract variables (at a categorical level), and as phonetic joint angle targets (a continuous level) for handshapes. Using these representations, comparisons between handshapes can be made deriving a theory-driven metric of handshape similarity.
 
 On top of the computational implementation described above, the module uses an external library, [LibHand](http://www.libhand.org/) to render images of synthesized handshapes. Currently, the model only renders isolated handshapes, but in the future could be extended to sequences of handshapes (including transitions), that is, video of handshapes moving over time. Because they are based on representations that can be linked to multiple levels of phonetics and phonology, these videos could include information about coarticulation (contextual dependencies) of the kind that was demonstrated in my dissertation.
 
@@ -29,11 +29,9 @@ At the time that I was trying, [LibHand](http://www.libhand.org/) failed to comp
 ### SLGloss LaTeX package
 
 In collaboration with [Itamar Kastner](https://files.nyu.edu/ik747/public/), I've helped developed [the SLGloss LaTeX package](https://github.com/itamarkast/slgloss) to make it easier to typeset sign language glosses. It has three main features:
-<ol>
-  <li> It typesets sign glosses in smallcaps to integrate typographically with surrounding text, as well as allows for non-manual markings over specific constituents.</li>
-  <li> It typesets fingerspelled words in small caps with hyphens between the letters</li>
-  <li>It typesets lists of individual fingerspelled letters with hyphens on either side.</li>
-  </ol>
+1. It typesets sign glosses in smallcaps to integrate typographically with surrounding text, as well as allows for non-manual markings over specific constituents.
+1. It typesets fingerspelled words in small caps with hyphens between the letters
+1. It typesets lists of individual fingerspelled letters with hyphens on either side.
 
 ### Fflipper
 
@@ -41,7 +39,7 @@ I've developed [fflipper](https://github.com/jonkeane/fflipper), a python module
 
 ### {{< smallcaps asl >}} fingerspelling chart
 
-<img src="images/Asl_alphabet_gallaudet.jpg" alt="Chart of ASL fingerspelling handshapes">
+![Chart of ASL fingerspelling handshapes](/images/Asl_alphabet_gallaudet.jpg)
 
 After seeing many charts that were licensed and reproduced with permission, I decided to recreate a fingerspelling chart and release it using a very liberal content license so researchers and educators that need this chart can use it (nearly) freely. The handshapes are based on the font from David Rakowski.
 
@@ -49,7 +47,9 @@ There a few problems with this chart. The biggest problem is that the orientatio
 
 Download the [full sized, completely vector-based {{< smallcaps pdf >}} version](Asl_alphabet_gallaudet.pdf).
 
-<a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/3.0/88x31.png"></a><p>This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/3.0/88x31.png)](https://creativecommons.org/licenses/by-sa/3.0/)
+
+This work is licensed under a [Creative Commons Attribution-ShareAlike 3.0 Unported License](https://creativecommons.org/licenses/by-sa/3.0/).
 
 
 ### Better type for LaTeX
@@ -63,9 +63,7 @@ I've created [a bash script](https://github.com/jonkeane/MinionProforLaTeX) that
 
 John Owens has developed [a great python tool](http://www.ece.ucdavis.edu/~jowens/code/otfinst/) that installs many OpenType fonts. The only stumbling block I found besides some font incompatibilities was assigning (making up) [Berry names](http://www.tex.ac.uk/tex-archive/info/fontname/fontname.pdf) to the fonts that I wanted to install, which have to be added to the script. I have made up names for the following that seem to adhere most of the conventions. If anyone knows of more widespread names for these typefaces, please [let me know](mailto:jonkeane@uchicago.edu).
 
-<ul>
-  <li>'Neutraface Text' : 'fne'</li>
-  <li>'Neutraface Display' : 'fn3'</li>
-  <li>'Gotham' : 'fg7'</li>
-  <li>'Gotham Rounded' : 'fg8'</li>
-</ul>
+- 'Neutraface Text' : 'fne'
+- 'Neutraface Display' : 'fn3'
+- 'Gotham' : 'fg7'
+- 'Gotham Rounded' : 'fg8'

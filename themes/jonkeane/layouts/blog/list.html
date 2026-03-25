@@ -18,7 +18,7 @@
         {{ $x2100x := .Resize "2100x q90" }}
         {{ $x1400x := .Resize "1400x q90" }}
         {{ $x700x := .Resize "700x q90" }}
-        {{ $alt_text := .Exif.Tags.ImageDescription }}
+        {{ $alt_text := "" }}
         <div class="blog-image">
             <a href="{{ $pageLink }}">
                 <picture>
