@@ -137,6 +137,7 @@ a:hover, a:focus {
 /* Underline only body-copy links */
 p a, p a:visited {
   text-decoration: underline;
+  text-decoration-color: var(--color-text-muted);
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;
 }
