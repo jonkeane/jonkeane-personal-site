@@ -1,24 +1,67 @@
 ---
 title: Language is in the eye of the perceiver
 date: 2026-08-18
-cover_image: _DSC5880.jpg
+# cover_image: _DSC5880.jpg
 slug: language_llms
 tags: ['LLMs', 'linguistics', 'perception']
 ---
 
-Talking with a colleague the other day, and we were lamenting the specific ways in which the output from LLMs annoyed us. The actual details of what we we both saw weren't groundbreaking or anything, but in the moment I was reminded just what is going on with the output of these models. He was saying that he really disliked how it is overly-praising. It was giving him the output he wanted, but he wanted less congratulations. And I said: I don't get praise that annoys me, but what really annoys me is the overly-splainy tone I got. How it would go through all the details of why some thing was important. And, the thing is: we were talking about the exact same model, we were both doing practically the same task. The output was for all practical purposes the same, yet our experiences were vastly different. And that is one of the things that is so vexing about how we interact with the output from these models, what we think about it, and what language and intelligence is.
+I was talking with a colleague the other day about the particular ways Large Language Model ({{< smallcaps llm >}}) output gets under our skin. Neither of us was making a grand claim about the technology; we were comparing notes on an ordinary work task. He was tired of being congratulated. The model would give him perfectly serviceable code and then congratulate him for asking such a thoughtful questions to prompt that. I, on the other hand, was tired of the overly explanatory tone: the long preamble, the insistence on explaining why every small thing mattered.
 
-* studies in the 1970s teaching great apes and chimpanzees language: many researchers were convinced that they had successfully taught language to these primates. And this also meant that language wasn't the sole purview of humans. The researchers who were conducting many of these studies declared that these primates had successfully learned language. They published papers describing all the ways this changed what we understood about languages, and animal intelligence. But ultimately, these primates did not actually learn language, they learned a few words, but they were not actually forming sentence or communicating complex ideas with these. Later work where these conversations between humans and primates were analyzed by researchers who didn't have knowledge about what was happening they did not find any evidence that the primates weren't just immitating what the researchers were doing, or they were seemingly preforming a task. For example, the researchers interacting with the primates would speak into a recorder describing what they were doing, what they were observing — the later analyses would not have access to these notes, but instead just the videos of the interactions. The inital researchers were certain they were being communicated with — but the blinded analysis after the fact found no complex communication.
+What struck me was that we were talking about the same model, doing nearly the same work, and seeing essentially the same output[^1]. Yet we described two very different experiences. He experienced a sycophant. I experienced a lecturer. The text (or strings of tokens in the parlance of {{< smallcaps llms >}}) may have been similar, but the speakers[^9] we each perceived we were dealing with were not.
 
-How could these researchers have gotten this so wrong? Were they lying? Ultimatelly, no I don't believe they did this actively. But instead, as humans, in a situation where something was producing something that looked like they could be language, they saw language. Not because the consciously wanted to, but because our brains are wired and tuned (TODO: footnote about inante grammar or learned) to see patterns that look like language as language. So in so far as there is language, it was being projected onto the primates' output by the researcher, not something the primates were producing.
+And this gets at something about our relationship with these systems: we do not merely read their output. We interpret it. We project a speaker, a stance, an intention, and sometimes a personality. And once those are in place, a string of tokens can _feel like_ communication from an intelligence—even when the things we are responding to may be as much in us as in the text.[^3]
 
-From one of these post-hoc analyses and meta-studies describes this well:
+## We are very good at finding language
 
-> Superficially, many of its utterances seem like sentences. However, objective analyses of our data, as well as of those obtained by other studies, yielded no evidence of an ape's ability to use a grammar. Each instance of presumed grammatical competence could be explained adequately by simple nonlinguistic processes.
+There is a cautionary tale in the history of ape-language research. In the 1960s and 1970s, several projects tried to teach non-human great apes American Sign Language ({{< smallcaps asl >}})[^4]. Those projects were complicated in many ways. The animals involved certainly learned things: they could produce signs based on stimuli, they even strung some of those signs together into sequences. But claims that apes had acquired human-like language were much more contentious.
 
-- Terrace, Petitto, Sanders, & Bever, 1979
+The story of Nim Chimpsky is one example that stays with me[^5]. Researchers working with a chimpanzee named Nim Chimpsky initially had sequences of signs that looked, on the surface, like sentences. Writing in 1979, Terrace said that he had become convinced those combinations were grammatical and comparable to the first sentences of a child.[^8]
 
-And that is exactly what was happening with my colleague and I: we were receiving substantially similar output, but what was different was our perception of that output. We were both projected language and intent on the tokens that the LLM produced. And that is where all of this is coming from. These models are not producing language, but the output they are producing, the strings of tokens that they probabilistically produce, are not language. But we as humans are projecting language onto these outputs. They look like such well crafted writing, it must be communicating ideas, communicating with us from a source of intelligence. 
+But after reviewing more than 19,000 multi-sign utterances and returning to the videotapes of the interactions, the researchers reached a much narrower conclusion. Many of Nim's signs followed prompts from his teachers or repeated signs they had just made. The apparent sentences did not provide evidence for the grammar the researchers had hoped to find. Their conclusion is memorable precisely because it describes a familiar temptation: 
 
+> Superficially, many of its utterances seem like sentences. Their analysis found no evidence that Nim used a grammar; each apparent instance could be accounted for by simpler, nonlinguistic processes.[^2]
 
+This was not a story about researchers lying or foolishly seeing something that was not there. An animal was responding to them with learned signs, in context, and apparently in turn. That is exactly the sort of situation in which a human being is primed to find meaning.
 
+But the later analysis was valuable because it allowed the researcher without direct and proximate access to the social and environmental influences that makes one want to see linguistic communication where there might not be any. A sequence can look like a sentence without being generated by a grammar. A response can be useful, well-structured[^6], and relevant without being a contribution that is conveying meaning in the way that humans do when we use language.
+
+## Fluency gives us a lot to project onto
+
+{{< smallcaps llms >}} put that distinction under unusual pressure. We do not see token probabilities or a training process. We see text that takes a turn in a conversation, adopts a tone, refers back to what we wrote, and can be surprisingly well crafted. It would be strange if we *didn't* treat those cues as evidence of a speaker.
+
+But the cues are not the same thing as a speaker. When an {{< smallcaps llm >}} praises us, explains something at length, or sounds apologetic, it has produced text that conventionally performs praise, explanation, or apology. It does not follow that there is an entity behind the text that admires us, wants us to understand, or feels regret. The output can be genuinely useful without carrying the human intentions that those forms normally imply.
+
+This is also why arguments over whether an {{< smallcaps llm >}} “uses language” so often go nowhere. If language means structured, context-sensitive text that people can use to coordinate work and communicate ideas, then of course these systems participate in language-mediated activity. But anyone who has taken the most basic of introductions to linguistics knows that not only is text **not language**, but that defining what language is requires (as far as we know to this point) a human speaker and perceiver. And even the idea of different languages is messy, and frequently comes down to "do these two individuals understand each other".[^7]
+
+Just because a system can output text which conforms to the orthographic conventions of a language and forms syntactically, morphologically, and seemingly semantic sense, does not mean that the thing that produced it is communicating.
+
+## The model is not the only source of tone
+
+And this comes back to how my colleague and I had such different perceptions of that output we were seeing. The model had not changed personalities between our conversations. We brought different histories and expectations to broadly similar text.
+
+For him, a gratuitous “great question” was a little social performance that he had not asked for. For me, an elaborate explanation was a different sort of performance: it suggested the model assumed I needed to be led gently through the obvious. The annoyance was real in both cases. But it was not proof that the model was either secretly flattering him or condescending to me. We were reacting to familiar conversational signals, and each of us was especially attuned to a different one. Ultimately: we were projecting our own perceptions on the text we were seeing.
+
+## Read the output, not the imagined, projected author
+
+There is a practical payoff to keeping that distinction in view. It helps us evaluate {{< smallcaps llm >}} output on the things that matter: is it correct, relevant, complete enough, and appropriate for the task? It encourages us to verify our perception of the output rather than treating confidence and polish as expertise. And it makes the interaction less emotionally sticky.
+
+Language is an inherently social activity: something speakers and listeners do with one another, complete with assumptions about who is speaking and why. {{< smallcaps llms >}} are extraordinarily good at giving us words that invite those assumptions. The lesson is not that the words are meaningless. It is that meaning, intention, and intelligence are not interchangeable—and that some of what we encounter in the output is our own remarkably capable impulse to assume a human-like intelligence behind the text.
+
+[^1]: Of course, these models are stochastic and the prompts and context leading to the output will produce different results too. But for all practical purposes the alleged intelligence in these models is exactly that same — it's the same weights being applied to the context input to produce a (somewhat randomized) output. We aren't talking about vastly different models that have been trained to produce different styles.
+
+[^3]: I even ended the chat with "the call is coming from inside the house!"
+
+[^4]: There is a whole _fascinating_ history of ableism, colonialism, and general messed-up-edness in this. For the longest time, researchers wanted to try and teach apes language, but knew that the vocal physiology of apes was incompatible with spoken human language. But when, in the 1960s it was *finally* recognized that signed languages are, in fact, actual languages suddenly the field boomed: there was a "newly-invented" (obviously not actually newly or invented!) language that could be used, without all the trappings of the human vocal tract. But that's a different blog post!
+
+[^5]: It helps that there's a good documentary about the whole project that is worth a watch: [Project Nim directed by James Marsh](https://www.imdb.com/title/tt1814836/)
+
+[^2]: H. S. Terrace, L. A. Petitto, R. J. Sanders, and T. G. Bever, “[Can an Ape Create a Sentence?](https://doi.org/10.1126/science.504995),” *Science* 206, no. 4421 (1979): 891–902.
+
+[^6]: Though it should be noted, that the ape studies all found relatively simplistic structures and sequences, even in the most generous cases. 
+
+[^7]: The classic examples being the Scandinavian languages which are all more or less mutually intelligible, though are described as "different languages". Compared with the "Chinese Language" which in many cases lumps Mandarin and Cantonese together which have as much mutual intelligibility as Portuguese and French!  
+
+[^8]: H. S. Terrace, “[How Nim Chimpsky Changed My Mind](https://www.columbia.edu/cu/psychology/terrace/w1001/readings/terrace.pdf),” *Psychology Today* 13, no. 6 (November 1979): 65–76.
+
+[^9]: I'm using the word `speaker` here in an expansive sense: any human producer of language, be it spoken language or signed language.
