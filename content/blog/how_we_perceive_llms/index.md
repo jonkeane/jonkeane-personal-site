@@ -1,14 +1,14 @@
 ---
 title: Language is in the eye of the perceiver
-date: 2026-08-18
-# cover_image: _DSC5880.jpg
+date: 2026-09-13
+cover_image: DSC00218.jpg
 slug: language_llms
 tags: ['LLMs', 'linguistics', 'perception']
 ---
 
 I was talking with a colleague the other day about the particular ways Large Language Model ({{< smallcaps llm >}}) output gets under our skin. Neither of us was making a grand claim about the technology; we were comparing notes on an ordinary work task. He was tired of being congratulated. The model would give him perfectly serviceable code and then congratulate him for asking such thoughtful questions to prompt that output. I, on the other hand, was tired of the overly explanatory tone: the long preamble, the insistence on explaining why every small thing mattered.
 
-What struck me was that we were talking about the same model, doing nearly the same work, and seeing essentially the same output[^1]. Yet we described two very different experiences. He experienced a sycophant. I experienced a lecturer. The text (or strings of tokens in the parlance of {{< smallcaps llms >}}) may have been similar, but the speakers[^2] we each perceived we were dealing with behind that test were not.
+What struck me was that we were talking about the same model, doing nearly the same work, and seeing essentially the same output[^1]. Yet we described two very different experiences. He experienced a sycophant. I experienced a lecturer. The text (or strings of tokens in the parlance of {{< smallcaps llms >}}) may have been similar, but the speakers[^2] we each perceived we were dealing with behind that text were not.
 
 And this gets at something about our relationship with these systems: we do not merely read their output. We interpret it. We project a speaker, a stance, an intention, and sometimes a personality. And once those are in place, a string of tokens can _feel like_ communication from an intelligence—even when the things we are responding to may be as much in us as in the text.[^3]
 
@@ -16,15 +16,17 @@ And this gets at something about our relationship with these systems: we do not 
 
 There is a cautionary tale in the history of ape-language research. In the 1960s and 1970s, several projects tried to teach non-human great apes American Sign Language ({{< smallcaps asl >}}). Those projects were complicated in many ways[^4]. The animals involved certainly learned things: they could produce signs based on stimuli, they even strung some of those signs together into sequences. But claims that apes had acquired human-like language were much more contentious.
 
-The story of Nim Chimpsky is one example that stays with me[^5]. Researchers working with a chimpanzee named Nim Chimpsky initially had sequences of signs that looked, on the surface, like sentences. Writing in 1979, Terrace said that he had become convinced those combinations were grammatical and comparable to the first sentences of a child.[^7]
+{{< img "IMG_3906.jpg" "Hanuman, pointing the way" "floatleft" "300 px" >}}
+
+The story of Nim Chimpsky is one example that stays with me[^5]. Researchers working with a chimpanzee named Nim Chimpsky initially observed sequences of signs that looked, on the surface, like sentences. Writing in 1979, Terrace said that he had become convinced those combinations were grammatical and comparable to the first sentences of a child.[^7]
 
 But after reviewing more than 19,000 multi-sign utterances and returning to the videotapes of the interactions, the researchers reached a much narrower conclusion. Many of Nim's signs followed prompts from his teachers or repeated signs they had just made. The apparent sentences did not provide evidence for the grammar the researchers had hoped to find.
 
-> Initially, the regularities I observed in thousands of Nim's communications in sign language suggested that he was, in fact, using a grammar. However, after analyzing videotapes of his "conversations" with his teachers, I discovered that the sequences of words that looked like sentences were subtle imitation sof the teacher's sequences.[^6]
+> Initially, the regularities I observed in thousands of Nim's communications in sign language suggested that he was, in fact, using a grammar. However, after analyzing videotapes of his "conversations" with his teachers, I discovered that the sequences of words that looked like sentences were subtle imitations of the teacher's sequences.[^6]
 
 This was not a story about researchers lying or fabricating data. An animal was responding to them with learned signs, in context, and apparently in turn. That is exactly the sort of situation in which a human being is primed to find meaning. And so that is what they did: they projected on to Nim language when there was none.
 
-The later analysis was valuable because it allowed the researcher without direct and proximate access to the social and environmental influences that makes us want to see linguistic communication where there might not be any to actually see that there was no real, human-like language here. A sequence can look like a sentence without being generated by a grammar. A response can be useful, well-structured[^8], and relevant without being a contribution that is conveying meaning in the way that humans do when we use language.
+The later analysis was valuable because it allowed the researcher without direct and proximate access to the social and environmental influences that make us want to see linguistic communication where there might not be any to actually see that there was no real, human-like language here. A sequence can look like a sentence without being generated by a grammar. A response can be useful, well-structured[^8], and relevant without being a contribution that is conveying meaning in the way that humans do when we use language.
 
 ## Fluency gives us a lot to project onto
 
@@ -32,11 +34,13 @@ The later analysis was valuable because it allowed the researcher without direct
 
 But the cues are not the same thing as a speaker. When an {{< smallcaps llm >}} praises us, explains something at length, or sounds apologetic, it has produced text that conventionally performs praise, explanation, or apology. It does not follow that there is an entity behind the text that admires us, wants us to understand, or feels regret. The output can be genuinely useful without carrying the human intentions that those forms normally imply.
 
-This is also why arguments over whether an {{< smallcaps llm >}} “uses language” so often go nowhere. If language means structured, context-sensitive text that people can use to coordinate work and communicate ideas, then of course these systems participate in language-mediated activity. But anyone who has taken the most basic of introductions to linguistics knows that not only is text **not language**. Writing is a way to encode a language, but the thing that we as humans naturally learn as children is spoken or signed. We learn this without conscious effort or teaching, and so long as one is exposed to a language as a child, one will acquire that language natively. Where as reading and writing are things we need to teach (and for us unfortunate English speakers/readers with much difficulty due to our various spelling idiosyncrasies!) actively to learn. Another way to think about this, of the ~7k known languages, somewhere around 3k have no recorded writing system.[^10]
+{{< img "000057270012.jpg" "linen, text, art" "floatright" "300 px" >}}
 
-Defining what language actually is requires (as far as we know to this point) a human speaker and perceiver and exists in the context of a community of people who share a common language. Though there is a lot of debate about what constitutes language (and especially how to draw boundaries between one language and another), frequently comes down to "do these two individuals understand each other" also known as mutual intelligibility.[^9]
+Anyone who has taken the most basic of introductions to linguistics knows that not only is text **not language**. Writing is a way to encode a language, but the thing that we as humans naturally learn as children is spoken or signed. We learn this without conscious effort or teaching, and so long as one is exposed to a language as a child, one will acquire that language natively. Whereas reading and writing are things we need to teach (and for us unfortunate English speakers/readers with much difficulty due to our various spelling idiosyncrasies!) actively to learn. Another way to think about this, of the ~7k known languages, somewhere around 3k have no recorded writing system.[^10]
 
-Just because a system can output text which conforms to the orthographic conventions of a language and is syntactically, morphologically, and seemingly semantic well-formed, does not mean that the thing that produced it is communicating with us. But the form is so human-language-like that our brains can't help but project a human-like speaker where there is none.
+Defining what language actually is requires (as far as we know to this point) a human speaker and perceiver and exists in the context of a community of people who share a common language. Though there is a lot of debate about what constitutes language (and especially how to draw boundaries between one language and another), it frequently comes down to "do these two individuals understand each other" also known as mutual intelligibility.[^9]
+
+Just because a system can output text which conforms to the orthographic conventions of a language and is syntactically, morphologically, and seemingly semantically well-formed, does not mean that the thing that produced it is communicating with us. But the form is so human-language-like that our brains can't help but project a human-like speaker where there is none. It doesn't help that many of the names for various facets and features of LLM harnesses use anthropomorphism: `thinking` to mean iterating in a loop of output as input, `memory` to mean previous inputs and outputs, even `conversation` for the sequence of input and output.
 
 ## The model is not the only source of tone
 
@@ -46,11 +50,11 @@ For him, a gratuitous “great question” was a little social performance that 
 
 ## Read the output, not the imagined, projected author
 
-There is a practical benefit to keeping that distinction in mind. It helps us evaluate {{< smallcaps llm >}} output on the things that matter: is it correct, relevant, complete enough, and appropriate for the task? It encourages us to verify our perception of the output rather than treating confidence and polish as expertise. Just because something is syntactically correct doesn't mean it's the right answer to a question posed. 
+There is a practical benefit to keeping that distinction in mind. It helps us evaluate {{< smallcaps llm >}} output on the things that matter: is it correct, relevant, complete enough, and appropriate for the task? It encourages us to verify both the output and our perception of the output rather than treating confidence and polish as expertise. Just because something is syntactically correct doesn't mean it's the right answer to a question posed. 
 
-And this reflection on what we are reading and what it makes us think about the person or machine that produced this text is good practice even with human-crafted text and communication: a healthy skepticism when someone is selling you something and they seemingly are saying all the right things is beneficial. 
+And this reflection on what we are reading and what it makes us think about the person or machine that produced this text is good practice even with human-crafted text and communication: a healthy skepticism when someone is selling you something and they seem to be saying all the right things is beneficial. 
 
-Language is an inherently social activity: something speakers and listeners do with one another, complete with assumptions about who is speaking and why. {{< smallcaps llms >}} are extraordinarily good at giving us words that invite those assumptions to be foisted on the output. The lesson is not that the words are meaningless. It is that meaning, intention, and intelligence are not interchangeable—and that some of what we encounter in the output is our own remarkably capable impulse to assume a human-like intelligence behind the text.
+Language is an inherently social activity: something speakers and listeners do with one another, complete with assumptions about who is speaking and why. {{< smallcaps llms >}} are extraordinarily good at giving us words that invite those assumptions to be foisted on the output. The lesson is not that the words are useless. It is that meaning, intention, and intelligence are not interchangeable—and that some of what we encounter in the output is our own remarkably capable impulse to assume a human-like intelligence behind the text. Checking our innate tendencies to anthropomorphize helps us use these tools as tools instead of inventing stories about beings that don't exist.
 
 _Many thanks to Erika for their feedback on drafts of this post._
 
