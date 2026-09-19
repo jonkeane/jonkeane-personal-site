@@ -41,7 +41,7 @@ Anyone who has taken the most basic of introductions to linguistics knows that n
 {{< img "IMG_4086.jpg" "one, two, three" "floatleft" "300 px" >}}
 
 
-Defining what language actually is requires (as far as we know to this point) a human speaker and perceiver and exists in the context of a community of people who share a common language. Though there is a lot of debate about what constitutes language (and especially how to draw boundaries between one language and another), it frequently comes down to "do these two individuals understand each other" also known as mutual intelligibility.[^9]
+Defining what language actually is requires (as far as we know to this point) a human speaker and perceiver and exists in the context of a community of people who share that common language[^11]. Though there is a lot of debate about what constitutes language (and especially how to draw boundaries between one language and another), it frequently comes down to "do these two individuals understand each other" also known as mutual intelligibility.[^9]
 
 Just because a system can output text which conforms to the orthographic conventions of a language and is syntactically, morphologically, and seemingly semantically well-formed, does not mean that the thing that produced it is communicating with us. But the form is so human-language-like that our brains can't help but project a human-like speaker where there is none. It doesn't help that many of the names for various facets and features of LLM harnesses use anthropomorphism: `thinking` to mean iterating in a loop of output as input, `memory` to mean previous inputs and outputs, even `conversation` for the sequence of input and output.
 
@@ -81,3 +81,5 @@ _Many thanks to Erika for their feedback on drafts of this post._
 [^9]: The classic examples being the Scandinavian languages which are all more or less mutually intelligible, though are described as "different languages". Compared with the "Chinese Language" which in many cases lumps Mandarin and Cantonese together which have as much mutual intelligibility as Portuguese and French!  
 
 [^10]: From the [Ethnologue](https://www.ethnologue.com/faq/how-many-languages-unwritten/) "The exact number of unwritten languages is difficult to determine precisely. Ethnologue (28th edition) has data to indicate that of the currently listed 7,170 living languages, 4,153 have a developed writing system."
+
+[^11]: Yes, this is circular in a way. And that's exactly the tension of drawing sharp boundaries around something that is much more gradient in practice. But for the purposes of human to non-human, the separation is clear.
