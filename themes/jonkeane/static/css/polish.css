@@ -345,7 +345,7 @@ table tbody tr:last-child td {
 
   /* Separate an image caption from the paragraph that follows it. */
   .article-content figure {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
   }
 
   nav ul#external li a,
