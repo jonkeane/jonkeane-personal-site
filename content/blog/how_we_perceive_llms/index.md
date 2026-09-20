@@ -8,17 +8,17 @@ tags: ['LLMs', 'linguistics', 'perception']
 
 I was talking with a colleague the other day about the particular ways Large Language Model ({{< smallcaps llm >}}) output gets under our skin. Neither of us was making a grand claim about the technology; we were comparing notes on an ordinary work task. He was tired of being congratulated. The model would give him perfectly serviceable code and then congratulate him for asking such thoughtful questions to prompt that output. I, on the other hand, was tired of the overly explanatory tone: the long preamble, the insistence on explaining why every small thing mattered.
 
-What struck me was that we were talking about the same model, doing nearly the same work, and seeing essentially the same output[^1]. Yet we described two very different experiences. He experienced a sycophant. I experienced a lecturer. The text (or strings of tokens in the parlance of {{< smallcaps llms >}}) may have been similar, but the speakers[^2] we each perceived we were dealing with behind that text were not.
+What struck me was that we were talking about the same model, doing nearly the same work, and seeing essentially the same output.[^1] Yet we described two very different experiences. He experienced a sycophant. I experienced a lecturer. The text (or strings of tokens in the parlance of {{< smallcaps llms >}}) may have been similar, but the speakers[^2] we each perceived we were dealing with behind that text were not.
 
 And this gets at something about our relationship with these systems: we do not merely read their output. We interpret it. We project a speaker, a stance, an intention, and sometimes a personality. And once those are in place, a string of tokens can _feel like_ communication from an intelligence—even when the things we are responding to may be as much in us as in the text.[^3]
 
 ## We are very good at finding language
 
-There is a cautionary tale in the history of ape-language research. In the 1960s and 1970s, several projects tried to teach non-human great apes American Sign Language ({{< smallcaps asl >}}). Those projects were complicated in many ways[^4]. The animals involved certainly learned things: they could produce signs based on stimuli, they even strung some of those signs together into sequences. But claims that apes had acquired human-like language were much more contentious.
+There is a cautionary tale in the history of ape-language research. In the 1960s and 1970s, several projects tried to teach non-human great apes American Sign Language ({{< smallcaps asl >}}). Those projects were complicated in many ways.[^4] The animals involved certainly learned things: they could produce signs based on stimuli, they even strung some of those signs together into sequences. But claims that apes had acquired human-like language were much more contentious.
 
 {{< img "IMG_3906.jpg" "Hanuman, pointing the way" "floatleft" "300 px" >}}
 
-The story of Nim Chimpsky is one example that stays with me[^5]. Researchers working with a chimpanzee named Nim Chimpsky initially observed sequences of signs that looked, on the surface, like sentences. Writing in 1979, Terrace said that he had become convinced those combinations were grammatical and comparable to the first sentences of a child.[^7]
+The story of Nim Chimpsky is one example that stays with me.[^5] Researchers working with a chimpanzee named Nim Chimpsky initially observed sequences of signs that looked, on the surface, like sentences. Writing in 1979, Terrace said that he had become convinced those combinations were grammatical and comparable to the first sentences of a child.[^7]
 
 But after reviewing more than 19,000 multi-sign utterances and returning to the videotapes of the interactions, the researchers reached a much narrower conclusion. Many of Nim's signs followed prompts from his teachers or repeated signs they had just made. The apparent sentences did not provide evidence for the grammar the researchers had hoped to find.
 
@@ -41,7 +41,7 @@ Anyone who has taken the most basic of introductions to linguistics knows that n
 {{< img "IMG_4086.jpg" "one, two, three" "floatleft" "300 px" >}}
 
 
-Defining what language actually is requires (as far as we know to this point) a human speaker and perceiver and exists in the context of a community of people who share that common language[^11]. Though there is a lot of debate about what constitutes language (and especially how to draw boundaries between one language and another), it frequently comes down to "do these two individuals understand each other" also known as mutual intelligibility.[^9]
+Defining what language actually is requires (as far as we know to this point) a human speaker and perceiver and exists in the context of a community of people who share that common language.[^11] Though there is a lot of debate about what constitutes language (and especially how to draw boundaries between one language and another), it frequently comes down to "do these two individuals understand each other" also known as mutual intelligibility.[^9]
 
 Just because a system can output text which conforms to the orthographic conventions of a language and is syntactically, morphologically, and seemingly semantically well-formed, does not mean that the thing that produced it is communicating with us. But the form is so human-language-like that our brains can't help but project a human-like speaker where there is none. It doesn't help that many of the names for various facets and features of LLM harnesses use anthropomorphism: `thinking` to mean iterating in a loop of output as input, `memory` to mean previous inputs and outputs, even `conversation` for the sequence of input and output.
 
