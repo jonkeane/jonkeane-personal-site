@@ -343,6 +343,11 @@ table tbody tr:last-child td {
     padding-top: 0;
   }
 
+  /* Separate an image caption from the paragraph that follows it. */
+  .article-content figure {
+    margin-bottom: 1rem;
+  }
+
   nav ul#external li a,
   nav ul#external li a:visited,
   nav ul#external li a:active {
