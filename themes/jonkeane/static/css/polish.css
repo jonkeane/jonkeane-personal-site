@@ -293,6 +293,30 @@ article .blog-image {
   margin-bottom: 1.5rem;
 }
 
+/* Full-width figures in article text */
+.article-content figure.fullwidth {
+  display: block;
+  width: 100%;
+  margin: 0 0 1.5em;
+}
+
+.article-content figure.fullwidth img {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  float: none;
+}
+
+.article-content figure.fullwidth figcaption {
+  display: block;
+  margin-top: 0.35em;
+  color: var(--color-text-muted);
+  font-size: 0.85em;
+}
+
 /* ===== Tables ============================================ */
 table {
   font-size: 15px;

@@ -8,19 +8,28 @@ tags: ['cooking', 'knives', 'travel', 'japan']
 
 Japan is one of the smallish number of countries with a strong tradition and style of knife making. If you are used to German / Western style knives, there is a whole different world of Japanese knives. Though Western style knives are popular — and you will find many Western style chefs knives in stores, especially department stores — the rabbit hole goes so much deeper in Japanese knives. I'm a bit of a collector and love to embrace the things that are unique in places I visit so when I went to Japan I set out to get a few knives that are unique to this tradition. This is a guide synthesizing what I've learned across several trips, and buying a number of knives. Starting with (some of!) the kinds of knives you'll encounter, different materials, and places to actually go shopping, including a few that are quite off the beaten path.
 
+{{< img "yanagiba-saya.jpg" "Yanagiba and saya" "fullwidth" >}}
+
+
 ## Knife types
 
 Traditional Japanese knife shapes tend to be more specialized compared to the all-purpose Western chef's knife. When digging into this, it seemed like there was basically a knife for every conceivable task. And a bit of vocabulary the Japanese word for knife is written as 包丁 and is pronounced **hōchō** or **bōchō** in some compound words. This list of knife types isn't exhaustive[^1], but here are some of the traditional shapes. 
 
 ### The traditional three 
 
-In traditional kitchens, these three knives were the ones that were used. For most cooks, these aren't all that practical since they are relatively limited in their application. And I was even talked out of buying these in at least one shop since they aren't what a Western cook is looking for. But I did ultimately get one of each of these, and use them all from time to time, and it is a treat each time I do!
+In traditional kitchens, these three knives were the ones that were used. For most cooks, these aren't all that practical since they are relatively limited in their application. And I was even talked out of buying these in at least one shop since they aren't what a Western cook is looking for. But I did ultimately get one of each of these, and use them all from time to time. In my kitchen, the Usuba is probably my most used — ironically exactly the knife I was told I shouldn't get.
 
 **Usuba** (薄刃) Single-beveled, thinner, and sharper for precision vegetable work. There is also a double-beveled version with the same shape called a Nakiri. The Usuba is slightly harder to maintain than the Nakiri, and takes some getting used to, but makes slicing even large vegetables thinly a joy. This might not be for everyone, but I chop cabbage for slaw often enough that I reach for my Usuba frequently.
 
+{{< img "usuba.jpg" "Usuba" "fullwidth" >}}
+
 **Deba** (出刃) A thick, heavy knife for butchering fish and breaking down poultry. The spine is thick enough to chop through small bones. Single-beveled. Typically 150–210mm. Probably not necessary unless you're regularly dealing with whole fish.
 
+{{< img "deba.jpg" "Deba" "fullwidth" >}}
+
 **Yanagiba** (柳刃) The long, slender sashimi knife. Designed to slice fish in a single drawing stroke, which produces a clean cut that doesn't compress or tear the flesh. Typically 240–300mm and single-beveled. It is typically only used on fish that has already been filleted (e.g. with a Deba).
+
+{{< img "yanagiba.jpg" "Yanagiba" "fullwidth" >}}
 
 ### Other varieties
 
@@ -32,17 +41,21 @@ In traditional kitchens, these three knives were the ones that were used. For mo
 
 **Kiritsuke** (切付) A traditional multi-purpose knife used by head chefs, with a distinctive angled tip. Traditionally single-beveled; double-beveled versions exist but are technically a different knife. The single-bevel version requires significant skill to use well.
 
+{{< img "kiritsuke.jpg" "Kiritsuke" "fullwidth" >}}
+
 **Honesuki** (骨透き) A pointed, stiff-bladed knife for breaking down poultry. Smaller and more precise than a Deba. Single beveled.
+
+{{< img "honesuki.jpg" "Honesuki" "fullwidth" >}}
 
 **Menkiri** (麺切り) A tall, rectangular knife for cutting noodles like soba and udon. A very specialized tool, but if you make noodles at home, or like the look of a massive square of steel, this is the knife for you.
 
 ### Single bevel vs. double bevel
 
-What is this single bevel vs double bevel all about? This is one of the biggest structural distinctions in Japanese knives.
+What is this single bevel vs double bevel all about? This is one of the biggest structural distinctions in knives in general. As far as I know, Japanese knives are the only style that are commonly single beveled.
 
-A **double-bevel** blade (*ryōba*, 両刃) is ground on both sides to form a V-shape, like nearly all Western knives. These are symmetrical, easier to sharpen, and work equally well in either hand. The Santoku, Gyūtō, and Nakiri are all double-beveled.
+A **double-bevel** blade (*ryōba*, 両刃) is ground on both sides to form a V-shape, like nearly all Western knives. These are symmetrical, easier to sharpen, and work equally well in either hand. The angles these knives are sharpened to range from 15–30° on either side, leading to a total angle in the 30-60° range. The Santoku, Gyūtō, and Nakiri are all double-beveled.
 
-A **single-bevel** blade (*kataba*, 片刃) is ground on only one side — the other side is flat or very slightly hollow. The result is more of a wedge cross-section. This allows for an extremely acute cutting edge and gives the cook precise control over where the cut goes. The flat back also helps the knife release food cleanly. The Usuba, Yanagiba, Deba, and traditional Kiritsuke are all single-beveled.
+A **single-bevel** blade (*kataba*, 片刃) is ground on only one side — the other side is flat or very slightly hollow. The result is more of a wedge cross-section. This allows for an extremely acute cutting edge and gives the cook precise control over where the cut goes. The flat back also helps the knife release food cleanly. The angles these knives are sharpened to range from 12–17° on the bevel side and since there's only one bevel, that is also the total angle. This leads to a generally smaller angle than double bevel grinds and therefore sharper knife. The Usuba, Yanagiba, Deba, and traditional Kiritsuke are all single-beveled.
 
 Single-bevel knives are capable of more precise cuts — a sushi chef's thin, clean slices through fish are from a Yanagiba. But single-bevel knives are harder to sharpen, require more learning and technique to use accurately, and are almost always made for right-handed use. Left-handed single-bevel knives exist but are rarer (and probably pricier). Unless you already have some experience with Japanese knives, starting with double-bevel is the sensible move. Or if you're a sucker for a learning project (like me). I don't regret getting any of my single bevels, though they took a bit of work to get used to.
 
@@ -82,6 +95,9 @@ Most mass-market knives are stainless, meaning chromium has been added to resist
 ## Knife storage + protection
 
 Traditionally, knives are stored with wooden sheaths called **saya** (鞘). Some stores will include them, but it's common that you would need to ask about it when you're buying a knife. They are specific to the shape and length of the knife, so ask when you get the knife for best luck finding a fit.
+
+{{< img "saya.jpg" "Saya" "fullwidth" >}}
+
 
 ## Where to shop
 
@@ -123,11 +139,11 @@ This is a bit off the beaten path, but if you're in Niigata, or you happen to be
 
 ## A few other things to note
 
-**Bring your passport.** Knives bought at knife shops can often be purchased tax-free for foreign visitors with a passport. Most tax free items will talk about showing them at the airport after security, but for knives everyone understands that those need to be checked. I've never had an issue with this.
+Knives bought at knife shops can often be purchased tax-free for foreign visitors with a passport. Most tax free items will talk about showing them at the airport after security, but for knives everyone understands that those need to be checked. I've never had an issue with this.
 
-**Cash can get you a discount.** Several shops will offer a small discount (5–10%) for cash purchases versus credit card.
+Several shops will offer a small discount (5–10%) for cash purchases versus credit card. Last time I was there in 2022 Shigeharu was still cash-only even!
 
-**Don't panic about customs.** Kitchen knives are ok to bring back to the US in checked luggage, of course. Wrap the blade thoroughly. A *saya* (wooden sheath), if your shop sells or makes them for the knife, is ideal — many will make one on the spot or while you wait.
+Kitchen knives are ok to bring back to the US in checked luggage. Wrap the blade thoroughly. A *saya* (wooden sheath), if your shop sells or makes them for the knife, is ideal — many will make one on the spot or while you wait.
 
 [^1]: I didn't even include the Octopus knife (Takobiki) in this list!
 
