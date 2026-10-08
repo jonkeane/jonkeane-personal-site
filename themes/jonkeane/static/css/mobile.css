@@ -56,6 +56,14 @@
     display: block;
     overflow-x: auto;
   }
+  /* ...or inside its focusable scroll-table wrapper, when it has one */
+  .table-scroll {
+    overflow-x: auto;
+  }
+  .table-scroll table {
+    display: table;
+    overflow: visible;
+  }
 }
 
 /* ===== Option B: sticky bar + menu ======================= */

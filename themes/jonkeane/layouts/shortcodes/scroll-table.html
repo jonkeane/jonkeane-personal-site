@@ -1,0 +1,6 @@
+{{- /* scroll-table label="..." wraps a Markdown table that may be wider than
+       a phone. The region is focusable so keyboard users can scroll it, and
+       the label names it for screen readers. */ -}}
+<div class="table-scroll" role="region" tabindex="0" aria-label="{{ .Get "label" }}">
+{{ .Inner | .Page.RenderString (dict "display" "block") }}
+</div>
