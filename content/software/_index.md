@@ -1,5 +1,6 @@
 ---
 title: Software
+slug: software
 weight: 2
 ---
 

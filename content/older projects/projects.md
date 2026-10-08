@@ -7,6 +7,8 @@ weight: 1
 
 A selected list of past and current projects.
 
+<!--more-->
+
 ### Police Early Intervention System
 [project webpage](https://dssg.uchicago.edu/project/expanding-our-early-intervention-system-for-adverse-police-interactions/) | [project github repo](https://github.com/dssg/police-eis/) 
 

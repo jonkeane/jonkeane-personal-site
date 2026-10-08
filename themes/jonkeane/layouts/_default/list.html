@@ -9,18 +9,19 @@
 {{ .Content }}
 </div>
 {{ range .Pages }}
-{{ if and (ne .Type "blog") .IsPage }}
+{{ if .IsPage }}
 <hr>
 <div class="doc-section clearfix" id="{{ .Title }}">
+  <a href="{{ .RelPermalink }}">
   {{ if .Params.full_title }}
   <h2>{{ .Params.full_title }}</h2>
   {{ else }}
   <h2>{{ .Title }}</h2>
   {{ end }}
+  </a>
   <div class="spacer"></div>
-
-{{ .Content }}
-
+  {{ .Summary }}
+  <div class="read-more-link"><a href="{{ .RelPermalink }}">more →</a></div>
 </div>
 {{ end }}
 {{ end }}

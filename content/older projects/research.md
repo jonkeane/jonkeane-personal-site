@@ -6,6 +6,8 @@ weight: 4
 
 I was a postdoctoral scholar at the [Center for Sign, Gesture, and Language](http://gslcenter.uchicago.edu/) at the [University of Chicago](http://uchicago.edu) from 2014 to 2016. Previously, I worked as a research assistant in the [Sign Language Linguistics Lab](http://signlanguagelab.uchicago.edu) as well as the [Chicago Language Modeling Lab](http://clml.uchicago.edu). I have many research interests, particularly articulatory phonetics and phonology, morphology, and computational approaches to each. I have worked on a number of projects involving sign language phonetics and phonology, how perception and action influence gesture, and how gesture and sign languages interact.
 
+<!--more-->
+
   Broadly speaking, I'm interested in how humans use their bodies to communicate both linguistically and non-linguistically. My primary focus is on how signers (people who use sign languages) use their body, arms, and hands in linguistic systems. How are the infinite number of possible configurations for a given articulator divided into meaningful groups (*ie* phonological units)? How much variation is allowed within these groups? What are the factors that contribute to this variation?
 
    Since the fall of 2009, I've been working with a research group consisting of researchers who specialize in linguistics, speech and language processing, and computer vision, with the goal of developing automated sign language recognition tools. This collaboration fostered my interest in the phonetics of sign languages. I hope to continue to develop models and tools that contribute both to our knowledge of phonetics generally, and inform automatic recognizers of fingerspelling.
@@ -26,4 +28,4 @@ I was a postdoctoral scholar at the [Center for Sign, Gesture, and Language](htt
 
 #### Dissertation project
 
-[My dissertation (defended August, 2014)](https://pubs.jonkeane.com/papers/Keane2014ad.html) develops an articulatory phonology model (for more information, see the more detailed description [below](#amohs)) linking the phonology and phonetics of handshapes in American Sign Language ({{< smallcaps asl >}}), which was validated against data on handshape variation. On top of handshape variation, my dissertation includes detailed analyses of temporal information of the fingerspelling of native {{< smallcaps asl >}} signers.
+[My dissertation (defended August, 2014)](https://pubs.jonkeane.com/papers/Keane2014ad.html) develops an articulatory phonology model (for more information, see the more detailed description [on the software page](/older-projects/software/#amohs)) linking the phonology and phonetics of handshapes in American Sign Language ({{< smallcaps asl >}}), which was validated against data on handshape variation. On top of handshape variation, my dissertation includes detailed analyses of temporal information of the fingerspelling of native {{< smallcaps asl >}} signers.

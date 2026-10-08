@@ -2,21 +2,19 @@
   <nav>
 
   <a href="{{ .Site.BaseURL }}"><img id="jon" alt="{{ .Site.Params.logo.alt }}" src="{{ .Site.Params.logo.url | relURL }}"></a>
-  {{ if .IsHome }}
-  {{ partial "main-nav.html" . }}
-  {{ else }}
-  {{ partial "sub-nav.html" . }}
-  {{ end }}
+  <a class="nav-name" href="{{ .Site.BaseURL }}">{{ .Site.Params.author }}</a>
+  <button class="nav-toggle" type="button" popovertarget="navpanel"><span class="when-closed">menu</span><span class="when-open">close</span></button>
 
+  <div id="navpanel" popover>
+  {{ partial "site-nav.html" . }}
+
+  <h5 class="nav-label">elsewhere</h5>
   <ul id="external">
-    {{ if not .IsHome }}
-          <li><a href="{{ .Site.BaseURL }}">jonkeane.com</a></li>
-    {{ end }}
     {{ range .Site.Menus.external }}
       <li><a href="{{ .URL }}">{{ .Name }}</a></li>
     {{ end }}
   </ul>
+  </div>
   </nav>
   <br/>
 </div>
-
