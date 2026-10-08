@@ -5,6 +5,8 @@ weight: 3
 
 I dabble in hardware development (really, mostly hacking existing products to do things I find useful).
 
+<!--more-->
+
 ### Button board
 Through the process of collecting various kinds of psycholinguistic data, I found the need to have a versatile, inexpensive feedback system for participants to use in order to interact with a computer during the course of an experiment. Although button boxes exist already, they are typically very expensive, and not of the form factor we desired for use in experiments.
 
@@ -18,4 +20,4 @@ I developed a [setup](https://github.com/jonkeane/kindle-weather-display) that g
 
 Not content to just tack a kindle on the wall, I built [a wood frame](https://www.flickr.com/photos/jonkeane/sets/72157639487321246/) using a laser cutter to house the kindle and reroute the usb cable for charging.
 
-{{< figure src="kindleWeather.jpg" alt="Image of the kindle weather and arrival times display, in a wood frame." class="scale-with-grid">}}
+{{< figure src="/older-projects/kindleWeather.jpg" alt="Image of the kindle weather and arrival times display, in a wood frame." class="scale-with-grid">}}

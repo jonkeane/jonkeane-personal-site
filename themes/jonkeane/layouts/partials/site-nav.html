@@ -1,0 +1,23 @@
+{{- /* Site menu (desktop sidebar and phone panel): the same site links on
+       every page, with the pages of the section you're in (e.g. blog
+       posts) listed under it. */ -}}
+{{ $limit := 8 }}
+  <ul id="sitenav">
+    <li><a href="{{ .Site.Home.RelPermalink }}"{{ if .IsHome }} class="current"{{ end }}>home</a></li>
+    {{ range .Site.Home.Pages }}
+      {{ $inSection := or (eq $.RelPermalink .RelPermalink) ($.IsDescendant .) }}
+      <li><a href="{{ .RelPermalink }}"{{ if $inSection }} class="current"{{ end }}>{{ lower .Title }}</a>
+      {{ if and $inSection .Pages }}
+        <ul class="section-pages">
+        {{ range first $limit .Pages }}
+          {{ $here := eq $.RelPermalink .RelPermalink }}
+          <li{{ if $here }} class="current"{{ end }}><a href="{{ .RelPermalink }}"{{ if $here }} aria-current="page"{{ end }}>{{ lower .Title }}</a></li>
+        {{ end }}
+        {{ if gt (len .Pages) $limit }}
+          <li class="more"><a href="{{ .RelPermalink }}">see all →</a></li>
+        {{ end }}
+        </ul>
+      {{ end }}
+      </li>
+    {{ end }}
+  </ul>

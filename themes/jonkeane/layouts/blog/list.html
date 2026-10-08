@@ -20,7 +20,9 @@
         {{ $x700x := .Resize "700x q90" }}
         {{ $alt_text := "" }}
         <div class="blog-image">
-            <a href="{{ $pageLink }}">
+            {{- /* Decorative duplicate of the title link below, so hide it from
+                   keyboard and screen readers */}}
+            <a href="{{ $pageLink }}" tabindex="-1" aria-hidden="true">
                 <picture>
                     <source
                     srcset="{{ $x2100x.RelPermalink }} 3x,

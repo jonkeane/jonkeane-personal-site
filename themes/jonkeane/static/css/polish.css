@@ -11,7 +11,7 @@
 /* ===== CSS Custom Properties ============================= */
 :root {
   --color-primary:     #006699;
-  --color-teal:        #009966;
+  --color-teal:        #007f56;  /* #009966 is under 4.5:1 on white */
   --color-accent:      #FF9900;
   --color-navy:        #003366;
   --color-text:        #2d3748;
@@ -132,6 +132,12 @@ a, a:visited {
 
 a:hover, a:focus {
   color: var(--color-navy);
+}
+
+/* Keyboard focus ring (mouse clicks don't trigger :focus-visible) */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
 }
 
 /* Underline only body-copy links */

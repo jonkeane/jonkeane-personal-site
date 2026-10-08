@@ -5,6 +5,8 @@ weight: 2
 
 Some interesting and hopefully helpful tools for others — mostly from my academic days
 
+<!--more-->
+
 
 ### MocapGrip
 
@@ -45,7 +47,7 @@ After seeing many charts that were licensed and reproduced with permission, I de
 
 There a few problems with this chart. The biggest problem is that the orientation of many letters is altered to show the configuration of the fingers. In reality, all of the handshapes are made with the palming facing out, away from the signer with the exception of {{< smallcaps -g- >}} (in, towards the signer), {{< smallcaps -h- >}} (in, towards the signer), {{< smallcaps -p- >}} (down), {{< smallcaps -q- >}} (down) and the end of {{< smallcaps -j- >}} (to the side)
 
-Download the [full sized, completely vector-based {{< smallcaps pdf >}} version](Asl_alphabet_gallaudet.pdf).
+Download the [full sized, completely vector-based {{< smallcaps pdf >}} version](/older-projects/Asl_alphabet_gallaudet.pdf).
 
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/3.0/88x31.png)](https://creativecommons.org/licenses/by-sa/3.0/)
 

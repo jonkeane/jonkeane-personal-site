@@ -1,0 +1,303 @@
+/*
+ * mobile.css — phone layout
+ *
+ * Loaded last. Everything here is scoped to Skeleton's "all mobile
+ * sizes" breakpoint so the desktop sidebar layout is untouched.
+ */
+
+/* ===== Shared fixes ====================================== */
+@media only screen and (max-width: 767px) {
+
+  /* Fluid column instead of Skeleton's fixed 300px / 420px */
+  .container {
+    width: auto;
+    padding: 0 20px;
+  }
+  .container .sidebar.columns,
+  .container .twelve.columns {
+    display: block;  /* Skeleton columns are inline when unfloated */
+    width: auto;
+    float: none;
+  }
+  div.container {
+    padding-top: 16px;
+  }
+  .sidebar > br {
+    display: none;
+  }
+
+  /* polish.css sets header h1 without a breakpoint, which wins over
+     jk.css's mobile size; restore a phone-sized heading */
+  header h1 {
+    font-size: 36px;
+    letter-spacing: -0.5px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  .article-title {
+    margin-top: 0.4em;
+  }
+
+  .article-content {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+
+  /* Nothing in the article should be wider than the screen */
+  .article-content img,
+  .article-content figure {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Wide content scrolls inside itself, not the page */
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+  /* ...or inside its focusable scroll-table wrapper, when it has one */
+  .table-scroll {
+    overflow-x: auto;
+  }
+  .table-scroll table {
+    display: table;
+    overflow: visible;
+  }
+}
+
+/* ===== Option B: sticky bar + menu ======================= */
+/* Small photo, name, and a "menu" button in a sticky top bar.
+   The button reveals the desktop sidebar contents as a panel. */
+
+/* Desktop: the bar and menu-only bits stay hidden */
+.nav-name,
+.nav-toggle,
+nav .nav-label {
+  display: none;
+}
+.nav-toggle .when-open {
+  display: none;
+}
+
+/* Desktop: #navpanel is a popover only on phones. Undo the browser's
+   popover styles so it stays in the sidebar, always shown. Browsers
+   without popover support ignore the attribute and get this anyway. */
+#navpanel[popover] {
+  display: block;
+  position: static;
+  inset: auto;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: visible;
+  color: inherit;
+  background: none;
+}
+
+/* Site menu, shared by the desktop sidebar and the phone panel */
+nav ul#sitenav {
+  float: none;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+nav ul#sitenav li {
+  margin: 0 0 10px;
+}
+nav ul#sitenav li a {
+  font-size: 20px;
+  line-height: 1.4;
+}
+nav ul#sitenav li a.current {
+  color: var(--color-teal);
+}
+
+/* Pages in the current section (e.g. blog posts) */
+nav ul#sitenav ul.section-pages {
+  float: none;
+  margin: 8px 0 14px 2px;
+  padding-left: 14px;
+  border-left: 2px solid var(--color-border);
+  font-size: 100%;
+}
+nav ul#sitenav ul.section-pages li {
+  margin: 0 0 8px;
+  line-height: 1.35;
+}
+nav ul#sitenav ul.section-pages li a,
+nav ul#sitenav ul.section-pages li a:visited {
+  font-size: 15px;
+  line-height: 1.35;
+}
+nav ul#sitenav ul.section-pages li.current {
+  margin-left: -16px;
+  padding-left: 14px;
+  border-left: 2px solid var(--color-accent);
+}
+nav ul#sitenav ul.section-pages li.current a {
+  color: var(--color-teal);
+}
+nav ul#sitenav ul.section-pages li.more a {
+  font-style: italic;
+  font-weight: normal;
+  color: var(--color-teal);
+}
+
+/* Fill the sidebar rather than jk.css's fixed width, so a scrollbar
+   (below) doesn't push the pills sideways */
+nav ul#external {
+  float: none;
+  width: auto;
+}
+
+/* Desktop: the sidebar is position: fixed, so when a section's pages
+   make it taller than the window it scrolls inside itself. 64px is
+   the container's top padding (polish.css). */
+@media only screen and (min-width: 768px) {
+  nav {
+    box-sizing: border-box;
+    max-height: calc(100vh - 64px);
+    padding-bottom: 16px;
+    overflow-y: auto;
+  }
+}
+
+/* Narrow desktop: jk.css shrinks the sidebar to 124px */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  nav ul#sitenav li a {
+    font-size: 15px;
+  }
+  nav ul#sitenav ul.section-pages li a,
+  nav ul#sitenav ul.section-pages li a:visited {
+    font-size: 12px;
+  }
+  /* "WOODWORKING" is wider than a 124px pill at the desktop size */
+  nav ul#external li a,
+  nav ul#external li a:visited {
+    padding: 6px 8px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+  div.container {
+    padding-top: 0;
+  }
+
+  /* Anchors (headings, footnotes) land below the sticky bar, not under it */
+  html {
+    scroll-padding-top: 72px;
+  }
+
+  .container .sidebar.columns {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    margin: 0 -20px 12px;
+    padding: 0 20px;
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  nav {
+    position: static;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0;
+  }
+
+  nav img#jon {
+    display: block;
+    width: 36px;
+    margin: 0;
+    padding: 0;
+    float: none;
+  }
+
+  nav .nav-name,
+  nav .nav-name:visited {
+    display: block;
+    flex: 1;
+    font-size: 19px;
+    font-weight: bold;
+    color: #181818;
+    letter-spacing: -0.2px;
+  }
+
+  nav .nav-toggle {
+    display: block;
+    border: 0;
+    border-radius: 0;
+    margin: 0;
+    padding: 6px 12px;
+    background: #767676;
+    color: #fff;
+    font-family: Azuro, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    line-height: 1.4;
+    cursor: pointer;
+  }
+  nav:has(#navpanel:popover-open) .nav-toggle {
+    background: var(--color-primary);
+  }
+  nav:has(#navpanel:popover-open) .nav-toggle .when-closed {
+    display: none;
+  }
+  nav:has(#navpanel:popover-open) .nav-toggle .when-open {
+    display: inline;
+  }
+
+  /* The panel: a popover the button opens (Esc or a tap outside
+     closes it). It sits just under the sticky bar, which is 57px:
+     10px padding + 36px photo + 10px padding + 1px border. */
+  #navpanel[popover]:not(:popover-open) {
+    display: none;
+  }
+  #navpanel:popover-open {
+    position: fixed;
+    inset: 57px 0 auto;
+    padding: 8px 20px 16px;
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+    /* A long menu scrolls inside itself */
+    max-height: calc(100vh - 57px);
+    max-height: calc(100dvh - 57px);
+    overflow-y: auto;
+  }
+
+  nav ul#external {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Other sites get their own labelled group */
+  nav .nav-label {
+    display: block;
+    margin: 16px 0 8px;
+    padding-top: 14px;
+    border-top: 1px solid var(--color-border);
+  }
+
+  nav ul#external {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+  }
+  nav ul#external li {
+    margin: 0;
+  }
+  nav ul#external li a,
+  nav ul#external li a:visited {
+    display: block;
+  }
+}

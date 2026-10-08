@@ -80,11 +80,13 @@ Traditional Japanese knives are made from high-carbon steel, which comes in two 
 
 TL;DR white steel is sharper out of the box and easier to get back to sharp, but needs more frequent sharpening and more careful use. Blue steel holds the edge longer and is more forgiving, but requires more skill to get fully sharp. For most purposes, White #2 or Blue #2 are sensible starting points.
 
-|                    | White #1     | White #2     | Blue #1    | Blue #2        | Super Blue     |
+{{< scroll-table label="Carbon steel comparison" >}}
+| Property           | White #1     | White #2     | Blue #1    | Blue #2        | Super Blue     |
 |--------------------|--------------|--------------|------------|----------------|----------------|
 | **Peak sharpness** | Sharpest     | Very sharp   | Sharp      | Less sharp     | Least sharp    |
 | **Edge retention** | Shortest     | Short        | Longer     | Even longer    | Longest        |
 | **Brittleness**    | Most brittle | Less brittle | Forgiving  | More forgiving | Most forgiving |
+{{< /scroll-table >}}
 
 But, carbon steel has one major downside: it rusts. Quickly. Leave water on the blade and you'll have rust spots before the meal is done. You need to wipe the blade dry immediately after use. Over time carbon steel develops a *patina* — a greyish layer of oxidation that actually protects the steel. There are two approaches people take: some treat the patina as a badge of use and honor, while others polish and oil their knives regularly to maintain the clean appearance.
 

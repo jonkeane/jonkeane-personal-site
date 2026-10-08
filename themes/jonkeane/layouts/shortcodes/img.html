@@ -1,5 +1,8 @@
+{{- /* img "file" "caption" "class" "width" "alt"
+       The caption is visible and read by screen readers, so alt defaults to
+       empty rather than repeating it; pass alt only to describe more. */ -}}
 {{ $img := $.Page.Resources.GetMatch (.Get 0)}}
 <figure class="{{ (.Get 2) }}">
-	<img src="{{ $img.RelPermalink }}" alt="{{ (.Get 1) }}" width="{{ (.Get 3) }}"/>
+	<img src="{{ $img.RelPermalink }}" alt="{{ .Get 4 | default "" }}"{{ with .Get 3 }} width="{{ . }}"{{ end }}>
 	<figcaption>{{ (.Get 1) }}</figcaption>
 </figure>

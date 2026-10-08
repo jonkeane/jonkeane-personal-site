@@ -44,9 +44,9 @@
 	h1 { color: #181818; font-size: 46px; line-height: 50px; margin-bottom: 14px;}
 	h2 { color: #009966; font-size: 35px; line-height: 40px; margin-bottom: 0;}
 	h3 { color: #006699; font-size: 21px; line-height: 30px; margin-bottom: 0; font-weight: bold; }
-	h4 { color: #009966; font-size: 21px; line-height: 30px; margin-bottom: 0; }
+	h4 { color: #007f56; font-size: 21px; line-height: 30px; margin-bottom: 0; }
 	h5 { color: #006699; font-size: 14px; line-height: 21px; font-weight: bold;}
-	h6 { color: #009966; font-size: 14px; line-height: 21px; }
+	h6 { color: #007f56; font-size: 14px; line-height: 21px; }
 	.subheader { color: #777; }
 
     .spacer { height: 10px; }
@@ -90,7 +90,7 @@ sub {
 
 /* #Links
 ================================================== */
-	a, a:visited { color: #006699; text-decoration: none; outline: 0; }
+	a, a:visited { color: #006699; text-decoration: none; }
 	a:hover, a:focus { color: #003366; }
 	p a, p a:visited { line-height: inherit; }
 
@@ -136,7 +136,7 @@ a.cite {
 .read-more-link a {
   display: block;
   text-align: right;
-  color: #009966;
+  color: #007f56;
   font-style: italic;
   font-size: 90%;
 }
@@ -228,12 +228,12 @@ nav ul#external li a:active {
     line-height: 30px;
     margin: 0;
     background: #767676;
-    color: #EEE;
+    color: #fff;
 }
 nav ul#external li a:hover,
 nav ul#external li a:focus {
     background: #006699;
-    color: #EEE;
+    color: #fff;
 }
 
 nav ul#subnav {
