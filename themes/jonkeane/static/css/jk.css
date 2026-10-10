@@ -390,6 +390,18 @@ figcaption {
   width: var(--figure-width, auto);
   max-width: 100%;
 }
+/* Keep specificity low so stacked mobile figures reset the side margins. */
+.article-content figure:where(.floatleft) {
+  margin: 4px 20px 16px 0;
+}
+.article-content figure:where(.floatright) {
+  margin: 4px 0 16px 20px;
+}
+.article-content figure.floatleft figcaption,
+.article-content figure.floatright figcaption {
+  box-sizing: border-box;
+  padding: 6px 4px 4px;
+}
 .article-content figure figcaption {
   /* Long caption words must not widen a small column span. */
   overflow-wrap: anywhere;
