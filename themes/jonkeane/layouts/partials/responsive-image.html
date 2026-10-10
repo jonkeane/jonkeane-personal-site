@@ -1,0 +1,20 @@
+{{- /* Width descriptors, intrinsic dimensions, and no upscaling. Loading
+       remains eager; lazy loading and async decoding are deferred. */ -}}
+{{- $image := .image -}}
+{{- $widths := .widths | default (slice 320 480 640 700 960 1080 1280 1400 1920 2100 2200) -}}
+{{- $format := .format | default $image.MediaType.SubType -}}
+{{- $candidates := slice -}}
+{{- $maxWidth := index $widths (sub (len $widths) 1) -}}
+{{- range $widths -}}
+  {{- if le . $image.Width -}}
+    {{- $variant := $image.Resize (printf "%dx %s q85" . $format) -}}
+    {{- $candidates = $candidates | append (printf "%s %dw" $variant.RelPermalink $variant.Width) -}}
+  {{- end -}}
+{{- end -}}
+{{- if and (lt $image.Width $maxWidth) (not (in $widths $image.Width)) -}}
+  {{- $variant := $image.Resize (printf "%dx %s q85" $image.Width $format) -}}
+  {{- $candidates = $candidates | append (printf "%s %dw" $variant.RelPermalink $variant.Width) -}}
+{{- end -}}
+{{- $fallbackWidth := int (math.Min ($.fallbackWidth | default 700) $image.Width) -}}
+{{- $fallback := $image.Resize (printf "%dx %s q85" $fallbackWidth $format) -}}
+<img{{ with .id }} id="{{ . }}"{{ end }}{{ with .class }} class="{{ . }}"{{ end }} src="{{ $fallback.RelPermalink }}" srcset="{{ delimit $candidates ", " }}" sizes="{{ .sizes }}" width="{{ $fallback.Width }}" height="{{ $fallback.Height }}" alt="{{ .alt | default "" }}">

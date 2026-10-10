@@ -57,3 +57,11 @@ keywords = ["software engineering", "engineering leadership", "test driven devel
     [params.logo]
     url = "images/jonSquareRev.png"
     alt = "Picture of Jonathan Keane"
+
+# Let Hugo process shared images while keeping their original static URLs.
+[[module.mounts]]
+    source = "assets"
+    target = "assets"
+[[module.mounts]]
+    source = "static/images"
+    target = "assets/images"

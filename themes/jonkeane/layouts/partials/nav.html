@@ -1,7 +1,7 @@
 <div class="three columns sidebar">
   <nav>
 
-  <a href="{{ .Site.BaseURL }}"><img id="jon" alt="{{ .Site.Params.logo.alt }}" src="{{ .Site.Params.logo.url | relURL }}"></a>
+  <a href="{{ .Site.BaseURL }}">{{ partial "responsive-image.html" (dict "image" (resources.Get .Site.Params.logo.url) "id" "jon" "alt" .Site.Params.logo.alt "format" "jpeg" "widths" (slice 72 108 160 248 320 372 480) "fallbackWidth" 320 "sizes" "(max-width: 767px) 36px, (max-width: 959px) 124px, 160px") }}</a>
   <a class="nav-name" href="{{ .Site.BaseURL }}">{{ .Site.Params.author }}</a>
   <button class="nav-toggle" type="button" popovertarget="navpanel"><span class="when-closed">menu</span><span class="when-open">close</span></button>
 

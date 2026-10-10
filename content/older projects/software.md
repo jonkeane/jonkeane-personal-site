@@ -41,7 +41,7 @@ I've developed [fflipper](https://github.com/jonkeane/fflipper), a python module
 
 ### {{< smallcaps asl >}} fingerspelling chart
 
-![Chart of ASL fingerspelling handshapes](/images/Asl_alphabet_gallaudet.jpg)
+{{< img "/images/Asl_alphabet_gallaudet.png" "" "floatleft" "236" "Chart of ASL fingerspelling handshapes" >}}
 
 After seeing many charts that were licensed and reproduced with permission, I decided to recreate a fingerspelling chart and release it using a very liberal content license so researchers and educators that need this chart can use it (nearly) freely. The handshapes are based on the font from David Rakowski.
 
@@ -49,7 +49,7 @@ There a few problems with this chart. The biggest problem is that the orientatio
 
 Download the [full sized, completely vector-based {{< smallcaps pdf >}} version](/older-projects/Asl_alphabet_gallaudet.pdf).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/3.0/88x31.png)](https://creativecommons.org/licenses/by-sa/3.0/)
+{{< badge href="https://creativecommons.org/licenses/by-sa/3.0/" src="https://i.creativecommons.org/l/by-sa/3.0/88x31.png" alt="Creative Commons License" width="88" height="31" >}}
 
 This work is licensed under a [Creative Commons Attribution-ShareAlike 3.0 Unported License](https://creativecommons.org/licenses/by-sa/3.0/).
 

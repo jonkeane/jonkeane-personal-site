@@ -356,12 +356,48 @@ article ol {
   padding: 0px;
 }
 
+.blog-image img,
+nav img#jon {
+  height: auto;
+}
+
 figure {
   display: table;
 }
 figcaption {
   display: table-caption;
   caption-side: bottom;
+}
+
+/* A figure's display width is independent of its intrinsic image size. */
+.article-content figure {
+  width: var(--figure-width, auto);
+  max-width: 100%;
+}
+.article-content figure img {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  float: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Low-detail illustrations can keep their small, wrapped presentation. */
+.article-content figure.compact {
+  width: var(--figure-width, 125px);
+  max-width: 40%;
+}
+
+.article-content img.small-image {
+  box-sizing: border-box;
+  display: inline-block;
+  float: none;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 /* Anything smaller than standard 960 */

@@ -1,8 +1,28 @@
 {{- /* img "file" "caption" "class" "width" "alt"
-       The caption is visible and read by screen readers, so alt defaults to
-       empty rather than repeating it; pass alt only to describe more. */ -}}
-{{ $img := $.Page.Resources.GetMatch (.Get 0)}}
-<figure class="{{ (.Get 2) }}">
-	<img src="{{ $img.RelPermalink }}" alt="{{ .Get 4 | default "" }}"{{ with .Get 3 }} width="{{ . }}"{{ end }}>
-	<figcaption>{{ (.Get 1) }}</figcaption>
+       Captions are read by screen readers; alt defaults to empty.
+       Static images are available through the images asset mount. */ -}}
+{{- $source := .Get 0 -}}
+{{- $image := .Page.Resources.GetMatch $source -}}
+{{- if not $image -}}
+  {{- $image = resources.Get (strings.TrimPrefix "/" $source) -}}
+{{- end -}}
+{{- $class := .Get 2 | default "" -}}
+{{- $width := replaceRE "[^0-9]" "" (.Get 3 | default "") -}}
+{{- $sizes := partial "image-sizes.html" . -}}
+{{- $widths := slice 320 480 640 700 960 1080 1280 1400 1920 2100 2200 -}}
+{{- if and $width (not (in $class "fullwidth")) -}}
+  {{- $sizes = printf "(max-width: 679px) calc(100vw - 40px), (max-width: 767px) 640px, (max-width: 879px) calc(100vw - 212px), %spx" $width -}}
+{{- end -}}
+{{- if in $class "compact" -}}
+  {{- $breakpoint := printf "%.0f" (add (div (float $width) 0.4) 40) -}}
+  {{- $sizes = printf "(max-width: %spx) calc(40vw - 16px), %spx" $breakpoint $width -}}
+  {{- $widths = slice (int $width) (mul (int $width) 2) (mul (int $width) 3) $image.Width -}}
+{{- end -}}
+{{- with $image -}}
+<figure class="{{ $class }}"{{ with $width }} style="--figure-width: {{ . }}px"{{ end }}>
+  {{ partial "responsive-image.html" (dict "image" . "sizes" $sizes "widths" $widths "alt" ($.Get 4 | default "")) }}
+  {{ with $.Get 1 }}<figcaption>{{ . }}</figcaption>{{ end }}
 </figure>
+{{- else -}}
+  {{- errorf "Image %q not found in %s" $source .Page.File.Path -}}
+{{- end -}}

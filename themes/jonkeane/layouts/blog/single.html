@@ -12,19 +12,11 @@
 
     {{ if .Params.cover_image }}
       {{ $image := .Resources.GetMatch .Params.cover_image }}
-      {{ $x2100x := $image.Resize "2100x q90" }}
-      {{ $x1400x := $image.Resize "1400x q90" }}
-      {{ $x700x := $image.Resize "700x q90" }}
-      {{ $alt_text := "" }}
+      {{ with $image }}
       <div class="blog-image">
-          <picture>
-              <source
-              srcset="{{ $x2100x.RelPermalink }} 3x,
-                      {{ $x1400x.RelPermalink }} 2x,
-                      {{ $x700x.RelPermalink }} 1x">
-              <img src="{{ $x700x.RelPermalink }}" alt = "{{ $alt_text }}">
-          </picture>
+        {{ partial "responsive-image.html" (dict "image" . "sizes" (partial "image-sizes.html" .) "alt" "") }}
       </div>
+      {{ end }}
     {{ end }}
 
     <div class="article-content">
