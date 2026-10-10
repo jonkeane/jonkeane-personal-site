@@ -1,9 +1,29 @@
 /*
- * mobile.css — phone layout
+ * mobile.css — responsive layout
  *
- * Loaded last. Everything here is scoped to Skeleton's "all mobile
- * sizes" breakpoint so the desktop sidebar layout is untouched.
+ * Loaded last. Phone and tablet refinements preserve the desktop sidebar.
  */
+
+/* A fluid tablet column avoids holding the article at 556px until 960px.
+   The 124px sidebar and 48px gap retain the existing tablet proportions. */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .container {
+    width: calc(100% - 40px);
+  }
+  .container .sidebar.columns {
+    width: 124px;
+    margin: 0;
+  }
+  .container .twelve.columns {
+    display: block;
+    box-sizing: border-box;
+    float: none;
+    width: calc(100% - 172px);
+    max-width: 700px;
+    margin: 0 0 0 172px;
+    padding-left: 0;
+  }
+}
 
 /* ===== Shared fixes ====================================== */
 @media only screen and (max-width: 767px) {
@@ -11,6 +31,7 @@
   /* Fluid column instead of Skeleton's fixed 300px / 420px */
   .container {
     width: auto;
+    max-width: 640px;
     padding: 0 20px;
   }
   .container .sidebar.columns,
@@ -51,6 +72,60 @@
     height: auto;
   }
 
+  /* Standalone Markdown illustrations stack too. Badges deliberately
+     keep their small size through .small-image in jk.css. */
+  .article-content img {
+    display: block;
+    box-sizing: border-box;
+    float: none;
+    width: 100%;
+    margin: 0 0 1em;
+    padding: 0;
+  }
+
+  /* Stack figures and captions above the text instead of leaving a
+     narrow column beside desktop's floated images. */
+  .article-content figure {
+    display: block;
+    float: none;
+    clear: both;
+    width: 100%;
+    margin: 0 0 1.5em;
+  }
+
+  .article-content figure img {
+    display: block;
+    box-sizing: border-box;
+    float: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .article-content figure figcaption {
+    display: block;
+    margin-top: 0.35em;
+  }
+
+  /* Ditto is the deliberate mobile wrapping exception. */
+  .article-content figure.compact {
+    display: table;
+    clear: none;
+    width: var(--figure-width, 125px);
+    max-width: 40%;
+    margin: 0 0 1em 10px;
+  }
+  .article-content figure.compact.floatright {
+    float: right;
+  }
+  .article-content figure.compact.floatleft {
+    float: left;
+    margin: 0 10px 1em 0;
+  }
+  .article-content figure.compact figcaption {
+    display: table-caption;
+  }
+
   /* Wide content scrolls inside itself, not the page */
   table {
     display: block;
@@ -63,6 +138,22 @@
   .table-scroll table {
     display: table;
     overflow: visible;
+  }
+}
+
+/* A floated photo leaves too little room for prose in the narrow tablet
+   column. Stack it until the article has at least 668px to work with. */
+@media only screen and (min-width: 768px) and (max-width: 879px) {
+  .article-content figure:not(.compact) {
+    display: block;
+    float: none;
+    clear: both;
+    width: 100%;
+    margin: 0 0 1.5em;
+  }
+  .article-content figure:not(.compact) figcaption {
+    display: block;
+    margin-top: 0.35em;
   }
 }
 

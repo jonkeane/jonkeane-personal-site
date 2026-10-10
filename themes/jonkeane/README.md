@@ -39,6 +39,24 @@ The main changes I made to the original hugo-lithium-theme are:
 
 1. Replaced the variable `.Permalink` with `.RelPermalink`, and function `absURL` with `relURL` where necessary. It is a bad idea to use full absolute links (with the protocol and domain) in general. For example, `.Permalink` and `absURL` may generate URLs of the form `http://www.example.com/foo/bar.html`, but `/foo/bar.html` is more portable.
 
+## Site image maintenance
+
+Blog covers and the `img` shortcode use `partials/responsive-image.html` to
+generate width-based candidates and intrinsic dimensions without upscaling.
+The portrait uses compressed JPEG variants of the original static PNG.
+`partials/image-sizes.html` and the shortcode's floated-image slots must stay
+in sync with the column and figure breakpoints in `static/css/mobile.css`.
+The `compact` figure class retains small illustrations with text wrapping,
+including on phones. Use the `badge` shortcode for small licensing images.
+Images remain eager; lazy loading and asynchronous decoding are deferred.
+
+The sharper fingerspelling PNG can be regenerated from the vector PDF by
+running this command from the repository root (requires Poppler):
+
+```sh
+pdftoppm -singlefile -scale-to-x 2200 -scale-to-y -1 -png 'content/older projects/Asl_alphabet_gallaudet.pdf' static/images/Asl_alphabet_gallaudet
+```
+
 ## License
 
 The original hugo-lithium-theme was released by Jonathan Rutheiser under [the MIT License](https://github.com/jrutheiser/hugo-lithium-theme/blob/master/LICENSE.md). The modified version in this repository is also released under MIT.
