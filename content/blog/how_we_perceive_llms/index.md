@@ -16,7 +16,7 @@ And this gets at something about our relationship with these systems: we do not 
 
 There is a cautionary tale in the history of ape-language research. In the 1960s and 1970s, several projects tried to teach non-human great apes American Sign Language ({{< smallcaps asl >}}). Those projects were complicated in many ways.[^4] The animals involved certainly learned things: they could produce signs based on stimuli, they even strung some of those signs together into sequences. But claims that apes had acquired human-like language were much more contentious.
 
-{{< img "IMG_3906.jpg" "Hanuman, pointing the way" "floatleft" "300 px" >}}
+{{< img "IMG_3906.jpg" "Hanuman, pointing the way" "floatleft col-span-5" >}}
 
 The story of Nim Chimpsky is one example that stays with me.[^5] Researchers working with a chimpanzee named Nim Chimpsky initially observed sequences of signs that looked, on the surface, like sentences. Writing in 1979, Terrace said that he had become convinced those combinations were grammatical and comparable to the first sentences of a child.[^7]
 
@@ -32,13 +32,13 @@ The later analysis was valuable because it allowed the researcher without direct
 
 {{< smallcaps llms >}} put that distinction under unusual pressure. We do not see token probabilities or a training process. We see text that takes a turn in a conversation, adopts a tone, refers back to what we wrote, and can be surprisingly well crafted. It would be strange if we *didn't* treat those cues as evidence of a speaker.
 
-{{< img "000057270012.jpg" "linen, text, art" "floatright" "300 px" >}}
+{{< img "000057270012.jpg" "linen, text, art" "floatright col-span-5" >}}
 
 But the cues are not the same thing as a speaker. When an {{< smallcaps llm >}} praises us, explains something at length, or sounds apologetic, it has produced text that conventionally performs praise, explanation, or apology. It does not follow that there is an entity behind the text that admires us, wants us to understand, or feels regret. The output can be genuinely useful without carrying the human intentions that those forms normally imply.
 
 Anyone who has taken the most basic of introductions to linguistics knows that not only is text **not language**. Writing is a way to encode a language, but the thing that we as humans naturally learn as children is spoken or signed. We learn this without conscious effort or teaching, and so long as one is exposed to a language as a child, one will acquire that language natively. Whereas reading and writing are things we need to teach (and for us unfortunate English speakers/readers with much difficulty due to our various spelling idiosyncrasies!) actively to learn. Another way to think about this, of the ~7k known languages, somewhere around 3k have no recorded writing system.[^10]
 
-{{< img "IMG_4086.jpg" "one, two, three" "floatleft" "300 px" >}}
+{{< img "IMG_4086.jpg" "one, two, three" "floatleft col-span-5" >}}
 
 
 Defining what language actually is requires (as far as we know to this point) a human speaker and perceiver and exists in the context of a community of people who share that common language.[^11] Though there is a lot of debate about what constitutes language (and especially how to draw boundaries between one language and another), it frequently comes down to "do these two individuals understand each other" also known as mutual intelligibility.[^9]

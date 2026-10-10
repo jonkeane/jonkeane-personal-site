@@ -369,10 +369,30 @@ figcaption {
   caption-side: bottom;
 }
 
-/* A figure's display width is independent of its intrinsic image size. */
+/* Figures can span 1–12 equal columns of the article, independently of
+   Skeleton's page columns. Floats still let prose wrap around the image.
+   mobile.css expands ordinary figures to all 12 columns below 880px. */
+.article-content .col-span-1  { --figure-width: calc(100% * 1 / 12); }
+.article-content .col-span-2  { --figure-width: calc(100% * 2 / 12); }
+.article-content .col-span-3  { --figure-width: calc(100% * 3 / 12); }
+.article-content .col-span-4  { --figure-width: calc(100% * 4 / 12); }
+.article-content .col-span-5  { --figure-width: calc(100% * 5 / 12); }
+.article-content .col-span-6  { --figure-width: calc(100% * 6 / 12); }
+.article-content .col-span-7  { --figure-width: calc(100% * 7 / 12); }
+.article-content .col-span-8  { --figure-width: calc(100% * 8 / 12); }
+.article-content .col-span-9  { --figure-width: calc(100% * 9 / 12); }
+.article-content .col-span-10 { --figure-width: calc(100% * 10 / 12); }
+.article-content .col-span-11 { --figure-width: calc(100% * 11 / 12); }
+.article-content .col-span-12 { --figure-width: 100%; }
+
+/* Explicit pixel widths remain available for compact illustrations. */
 .article-content figure {
   width: var(--figure-width, auto);
   max-width: 100%;
+}
+.article-content figure figcaption {
+  /* Long caption words must not widen a small column span. */
+  overflow-wrap: anywhere;
 }
 .article-content figure img {
   box-sizing: border-box;
