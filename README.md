@@ -2,6 +2,25 @@ Personal site
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c74b6216-637e-4dbb-aab7-4f7c313cb31e/deploy-status)](https://app.netlify.com/sites/sharp-neumann-8ff22c/deploys)
 
+## Post dates
+
+Keep `date` as the original publication date. The updated date uses an explicit
+`lastmod` value first, then the latest Git author date for the post's Markdown
+file, then `date` when Git history is unavailable. It appears on post pages and
+the blog listing only when its calendar date is later than publication.
+
+To override Git, add an editorial date to the post's front matter:
+
+```yaml
+date: 2026-10-04
+lastmod: 2026-10-08
+```
+
+An override stays fixed until changed or removed. Without an override, any
+committed Markdown change advances the Git date; uncommitted edits and changes
+only to images or the theme do not. Git-based builds need the repository's full
+history, rather than a shallow checkout.
+
 ## Image export sizes
 
 For sharp images on 3× Retina displays, export at **three times the largest
