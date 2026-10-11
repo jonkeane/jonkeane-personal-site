@@ -20,7 +20,7 @@
     {{ end }}
 
     <div class="article-content">
-      {{ .Content }}
+      {{ partial "content-with-footnote-titles.html" .Content }}
     </div>
   </article>
 
