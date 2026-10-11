@@ -181,6 +181,29 @@ h2 a:hover, h3 a:hover {
   text-decoration: none;
 }
 
+/* Blog heading permalinks stay quiet until hover or keyboard focus. */
+.article-content .heading-anchor {
+  display: inline-block;
+  margin-inline-start: 0.4em;
+  font-size: 0.65em;
+  font-weight: normal;
+  vertical-align: middle;
+  color: var(--color-text-muted);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.article-content .anchored-heading:hover .heading-anchor,
+.article-content .anchored-heading:focus-within .heading-anchor {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.article-content .heading-anchor:hover,
+.article-content .heading-anchor:focus-visible {
+  color: var(--color-primary);
+}
+
 /* ===== Strong ============================================ */
 /* Inherit body color — colored bold text feels dated */
 strong {
