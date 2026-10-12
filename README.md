@@ -47,13 +47,25 @@ For a full-width photo, omit the width and use `fullwidth`:
 {{< img "yanagiba-saya.jpg" "Yanagiba and saya" "fullwidth" >}}
 ```
 
-For photos that float beside text on desktop, set a displayed width and choose
-the side:
+For photos that float beside text on desktop, choose a side and a column span:
 
 ```go-html-template
-{{< img "IMG_3906.jpg" "Hanuman, pointing the way" "floatleft" "300" >}}
-{{< img "000057270012.jpg" "linen, text, art" "floatright" "300" >}}
+{{< img "IMG_3906.jpg" "Hanuman, pointing the way" "floatleft col-span-5" >}}
+{{< img "000057270012.jpg" "linen, text, art" "floatright col-span-5" >}}
 ```
+
+`col-span-1` through `col-span-12` divide the **article's text width** into 12 equal parts. For example, `col-span-4` is one third, `col-span-5` is five twelfths, and `col-span-6` is half. The existing gap between figure and prose is additional to that width. These classes are independent of Skeleton's page columns; there is no framework dependency.
+
+At the current 700px desktop reading width, five columns display at about 292px. Column-sized figures adjust with the article on wider tablets. Below an 880px viewport, ordinary figures stack at the full article width, with their captions underneath. Use `fullwidth` for a full-width figure without wrapping at every viewport size.
+
+Omit the fourth (pixel-width) argument when using column spans. To supply alt
+text, leave that argument empty and use the fifth argument:
+
+```go-html-template
+{{< img "/images/Asl_alphabet_gallaudet.png" "" "floatleft col-span-4" "" "Chart of ASL fingerspelling handshapes" >}}
+```
+
+Explicit pixel widths remain supported and override a column class if both are supplied. Keep them for compact illustrations with a deliberate size.
 
 For a compact illustration that stays small and lets text wrap beside it,
 combine `compact` with `floatright` or `floatleft` and supply a width:

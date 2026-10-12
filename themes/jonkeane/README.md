@@ -46,6 +46,12 @@ generate width-based candidates and intrinsic dimensions without upscaling.
 The portrait uses compressed JPEG variants of the original static PNG.
 `partials/image-sizes.html` and the shortcode's floated-image slots must stay
 in sync with the column and figure breakpoints in `static/css/mobile.css`.
+Article figures can use `floatleft col-span-5` or `floatright col-span-5`
+without a pixel-width argument. `col-span-1` through `col-span-12` in `jk.css`
+measure fractions of the article width; the existing stacking rules in
+`mobile.css` make ordinary figures full width below an 880px viewport.
+The shortcode mirrors those spans in the responsive image `sizes` attribute.
+The site README includes examples and the optional alt-text argument.
 The `compact` figure class retains small illustrations with text wrapping,
 including on phones. Use the `badge` shortcode for small licensing images.
 Images remain eager; lazy loading and asynchronous decoding are deferred.

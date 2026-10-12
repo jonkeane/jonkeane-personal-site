@@ -10,6 +10,14 @@
 {{- $width := replaceRE "[^0-9]" "" (.Get 3 | default "") -}}
 {{- $sizes := partial "image-sizes.html" . -}}
 {{- $widths := slice 320 480 640 700 960 1080 1280 1400 1920 2100 2200 -}}
+{{- /* Column utilities size figures relative to the 12-column article.
+       Mirror mobile.css's stacking and article widths for srcset selection.
+       An explicit pixel width still takes precedence, as it does in CSS. */ -}}
+{{- $spans := findRE `\bcol-span-(?:[1-9]|1[0-2])\b` $class -}}
+{{- if and $spans (not $width) (not (in $class "fullwidth")) -}}
+  {{- $columns := int (strings.TrimPrefix "col-span-" (index $spans 0)) -}}
+  {{- $sizes = printf "(max-width: 679px) calc(100vw - 40px), (max-width: 767px) 640px, (max-width: 879px) calc(100vw - 212px), (max-width: 911px) calc((100vw - 212px) * %d / 12), calc(700px * %d / 12)" $columns $columns -}}
+{{- end -}}
 {{- if and $width (not (in $class "fullwidth")) -}}
   {{- $sizes = printf "(max-width: 679px) calc(100vw - 40px), (max-width: 767px) 640px, (max-width: 879px) calc(100vw - 212px), %spx" $width -}}
 {{- end -}}

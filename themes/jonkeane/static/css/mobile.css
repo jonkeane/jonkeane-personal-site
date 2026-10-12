@@ -113,14 +113,14 @@
     clear: none;
     width: var(--figure-width, 125px);
     max-width: 40%;
-    margin: 0 0 1em 10px;
+    margin: 4px 0 1em 20px;
   }
   .article-content figure.compact.floatright {
     float: right;
   }
   .article-content figure.compact.floatleft {
     float: left;
-    margin: 0 10px 1em 0;
+    margin: 4px 20px 1em 0;
   }
   .article-content figure.compact figcaption {
     display: table-caption;
