@@ -1,6 +1,6 @@
 ---
 title: Falsehoods programmers believe about words
-date: 2026-10-11
+date: 2026-10-12
 cover_image: _DSC2033.jpg
 slug: words
 tags: ['words', 'linguistics', 'programming', 'engineering']
