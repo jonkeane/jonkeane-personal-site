@@ -3,9 +3,14 @@ languageCode = "en-us"
 title = "Jonathan Keane, PhD"
 theme = "jonkeane"
 googleAnalytics = "G-4G0MWM1GJ4"
+enableGitInfo = true
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 keywords = ["software engineering", "engineering leadership", "test driven development", "performance engineering", "benchmarking", "metric driven development", "continuous integration", "continuous delivery", "data science", "machine learning", "data visualization", "statistics",  "research", "linguistics", "American Sign Language", "fingerspelling", "phonetics"]
+
+[frontmatter]
+    # An explicit editorial date overrides Git; new posts fall back to publication.
+    lastmod = ["lastmod", ":git", "date"]
 
 [permalinks]
     post = "/:year/:month/:day/:slug/"

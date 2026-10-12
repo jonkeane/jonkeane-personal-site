@@ -32,12 +32,10 @@
         <h2>{{ .Title }}</h2>
       {{ end }}
       {{ if .Params.subtitle }}
-        <a href="{{ .RelPermalink }}">
-            <h3>{{ .Params.subtitle }}</h3>
-        </a>
+        <h3>{{ .Params.subtitle }}</h3>
       {{ end }}
-        <h5>{{ .Date.Format "2006-01-02" }}</h5>
       </a>
+      {{ partial "post-dates.html" . }}
       <div class="spacer"></div>
       {{ .Summary }} 
       <div class="read-more-link"><a href="{{ .RelPermalink }}">more →</a></div>

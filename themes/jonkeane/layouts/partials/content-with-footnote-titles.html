@@ -1,0 +1,27 @@
+{{- /* Add native tooltips to Goldmark footnote links at build time. */ -}}
+{{- $content := string . -}}
+{{- $titles := dict -}}
+{{- range findRE `<li id="fn:[^"]+">` $content -}}
+  {{- $id := replaceRE `<li id="([^"]+)">` "$1" . -}}
+  {{- $tail := index (split $content .) 1 -}}
+  {{- /* Stop at the next footnote or section end, preserving lists inside notes. */ -}}
+  {{- $boundary := `(?s)^(.*?)</li>\s*(?:<li id="fn:[^"]+">|</ol>\s*</div>)` -}}
+  {{- with findRE $boundary $tail 1 -}}
+    {{- $note := replaceRE $boundary "$1" (index . 0) -}}
+    {{- $note = replaceRE `(?s)<a[^>]*class="footnote-backref"[^>]*>.*?</a>` "" $note -}}
+    {{- $note = replaceRE `</(?:p|li|blockquote|pre|h[1-6])>` "$0 " $note -}}
+    {{- $text := $note | plainify | htmlUnescape -}}
+    {{- $text = replaceRE `[\s\x{00a0}]+` " " $text | strings.TrimSpace -}}
+    {{- $titles = merge $titles (dict $id ($text | htmlEscape)) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- range findRE `<a href="#fn:[^"]+"[^>]*class="footnote-ref"[^>]*>` $content -}}
+  {{- $reference := . -}}
+  {{- $id := replaceRE `<a href="#([^"]+)".*` "$1" $reference -}}
+  {{- with index $titles $id -}}
+    {{- $link := replace $reference "<a " (printf `<a title="%s" ` .) -}}
+    {{- $content = replace $content $reference $link -}}
+  {{- end -}}
+{{- end -}}
+{{- return ($content | safeHTML) -}}

@@ -1,0 +1,4 @@
+<h{{ .Level }} id="{{ .Anchor }}" class="anchored-heading{{ with .Attributes.class }} {{ . }}{{ end }}">
+  {{- .Text -}}
+  <a class="heading-anchor" href="#{{ .Anchor }}" aria-label="Link to {{ .PlainText }}"><span aria-hidden="true">§</span></a>
+</h{{ .Level }}>
