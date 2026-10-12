@@ -3,7 +3,7 @@ title: Language is in the eye of the perceiver
 date: 2026-09-13
 cover_image: DSC00218.jpg
 slug: language_llms
-tags: ['LLMs', 'linguistics', 'perception']
+tags: ['LLMs', 'language', 'linguistics', 'perception']
 ---
 
 I was talking with a colleague the other day about the particular ways Large Language Model ({{< smallcaps llm >}}) output gets under our skin. Neither of us was making a grand claim about the technology; we were comparing notes on an ordinary work task. He was tired of being congratulated. The model would give him perfectly serviceable code and then congratulate him for asking such thoughtful questions to prompt that output. I, on the other hand, was tired of the overly explanatory tone: the long preamble, the insistence on explaining why every small thing mattered.
@@ -43,7 +43,7 @@ Anyone who has taken the most basic of introductions to linguistics knows that n
 
 Defining what language actually is requires (as far as we know to this point) a human speaker and perceiver and exists in the context of a community of people who share that common language.[^11] Though there is a lot of debate about what constitutes language (and especially how to draw boundaries between one language and another), it frequently comes down to "do these two individuals understand each other" also known as mutual intelligibility.[^9]
 
-Just because a system can output text which conforms to the orthographic conventions of a language and is syntactically, morphologically, and seemingly semantically well-formed, does not mean that the thing that produced it is communicating with us. But the form is so human-language-like that our brains can't help but project a human-like speaker where there is none. It doesn't help that many of the names for various facets and features of LLM harnesses use anthropomorphism: `thinking` to mean iterating in a loop of output as input, `memory` to mean previous inputs and outputs, even `conversation` for the sequence of input and output.
+Just because a system can output text which conforms to the orthographic conventions of a language and is syntactically, morphologically, and seemingly semantically well-formed, does not mean that the thing that produced it is communicating with us. But the form is so human-language-like that our brains can't help but project a human-like speaker where there is none. It doesn't help that many of the names for various facets and features of {{< smallcaps llm >}} harnesses use anthropomorphism: `thinking` to mean iterating in a loop of output as input, `memory` to mean previous inputs and outputs, even `conversation` for the sequence of input and output.
 
 ## The model is not the only source of tone
 
@@ -57,7 +57,7 @@ There is a practical benefit to keeping that distinction in mind. It helps us ev
 
 And this reflection on what we are reading and what it makes us think about the person or machine that produced this text is good practice even with human-crafted text and communication: a healthy skepticism when someone is selling you something and they seem to be saying all the right things is beneficial. 
 
-Language is an inherently social activity: something speakers and listeners do with one another, complete with assumptions about who is speaking and why. {{< smallcaps llms >}} are extraordinarily good at giving us words that invite those assumptions to be foisted on the output. The lesson is not that the words are useless. It is that meaning, intention, and intelligence are not interchangeable—and that some of what we encounter in the output is our own remarkably capable impulse to assume a human-like intelligence behind the text. Checking our innate tendencies to anthropomorphize helps us use these tools as tools instead of inventing stories about beings that don't exist.
+Language is an inherently social activity: something speakers and listeners do with one another, complete with assumptions about who is speaking and why. {{< smallcaps llms >}} are extraordinarily good at giving us words that invite those assumptions to be foisted on the output. The lesson is not that the words are useless. It is that meaning, intention, and intelligence are not interchangeable—and that some of what we encounter in the output is our own remarkably capable impulse to assume a human-like intelligence behind the text. Don't fall into the same trap that researchers did with the ape-studies: we see something that looks _close_ to language and we innately want it to actually be language — even when it's simply a reward-based trick by an animal or the surprisingly well constructed text from an {{< smallcaps llm >}}. Checking our innate tendencies to anthropomorphize helps us use these tools as tools instead of inventing stories about beings that don't exist.
 
 _Many thanks to Erika and Allison for their feedback on drafts of this post._
 
