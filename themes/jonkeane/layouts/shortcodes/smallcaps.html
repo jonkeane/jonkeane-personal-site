@@ -1,1 +1,9 @@
-<span style="font-variant: small-caps; font-size: 1.2em;">{{ .Get 0 }}</span>{{- /* Keep adjacent punctuation from becoming separated by the template newline. */ -}}
+<span class="smallcaps">
+  {{- range findRE "[0-9]+|[^0-9]+" (.Get 0) -}}
+    {{- if findRE "^[0-9]+$" . -}}
+      <span class="numerals">{{ . }}</span>
+    {{- else -}}
+      {{ . }}
+    {{- end -}}
+  {{- end -}}
+</span>{{- /* Keep adjacent punctuation from becoming separated by the template newline. */ -}}
